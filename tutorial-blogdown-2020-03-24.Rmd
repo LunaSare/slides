@@ -1,0 +1,636 @@
+---
+title: "Use blogdown to create a website"
+subtitle: "Introducing blogdown"
+author: "Luna L. Sanchez Reyes"
+institute: "University of California, Merced"
+params:
+  event: "Enviro-lunch Seminar"
+  date: "March 12, 2020"
+  place: "Merced, California"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: ["kunoichi", "ninjutsu", "../ninjutsu-luna-extras.css", "assets/ninpo.css", "metropolis-fonts"]
+    seal: false 
+    self_contained: false
+    nature:
+      ratio: "16:9"
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(echo = FALSE)
+options(knitr.duplicate.label = 'allow')
+```
+class: inverse, center, middle
+
+#Create a Website Using R!
+
+<br/>
+
+##An Introduction to .amber[blogdown]
+
+<br/><br/><br/><br/>
+
+####Luna L. Sánchez Reyes
+
+####University of California, Merced
+
+<br/><br/><br/><br/>
+
+.pull-right[`r params$date` &#183; `r params$place`]
+
+---
+class: split-two center
+
+.row.bg-cyan[.content.vmiddle[
+# .amber[Step 1:] Create an academic backbone of a website
+
+]]
+.row.bg-amber[.content.vmiddle[
+# .light-blue[Step 2:] Customize the backbone with your profile and work.
+]]
+
+---
+
+class: split-2-1-1, left
+
+.row[.content.vmiddle.center[
+#Installing .amber[blogdown]
+]]
+
+.row.bg-amber[
+.content.v40[
+### &emsp; `r emo::ji("arrow_down")` &nbsp; You can install any package in R with the function  .cyan.font-mono[install.packages()]
+]]
+
+.row.slide-in-right[.content.v40[
+### &emsp; `r emo::ji("pencil2")` &nbsp; Open R and just do .amber.font-mono[install.packages("blogdown")]
+]]
+
+.row[
+]
+
+---
+class: split-20
+
+.row[.content.vmiddle.center[
+# Starting a .amber[new website project]
+]]
+
+.row.split-30[
+.row.slide-in-right.bg-amber[.content.vmiddle[
+### &emsp; `r emo::ji("100")` &nbsp; This will .light-blue[download all the necessary files] to create the backbone of your website.
+]]
+.row[.content[
+.row.split-two[
+.column[.content.nopadding[
+<img src="media/dsquintana1.gif" width="100%" />
+]]
+.column.split-four[
+.row[.content.vmiddle[
+### `r emo::ji("arrow_left")` &nbsp; Go to the .amber[File] menu > .amber[New project...]
+]]
+.row[.content.vmiddle[
+### `r emo::ji("file_folder")` &nbsp; Name your project in .amber[Directory name].
+]]
+.row[.content.vmiddle[
+### `r emo::ji("exclamation_mark")` &nbsp; Make sure to enter .amber[gcushen/hugo-academic] as the Hugo theme.
+]]
+.row[.content.vmiddle[
+### `r emo::ji("heavy_check_mark")` &nbsp; Keep all other options .amber[the same].
+]]
+]
+]
+]]
+]
+
+---
+class: split-25
+
+.row[.content.vmiddle.center[
+# Creating an .amber["hugo"] website backbone
+]]
+
+.row.split-two.center[
+.column.split-two.center[
+.row[.content.vmiddle[
+### `r emo::ji("books")` &nbsp; Load blogdown using the command .amber.font-mono[library(blogdown)] 
+]]
+.row[.content[
+### `r emo::ji("down_arrow")` &nbsp; Install the "hugo" framework with .amber.font-mono[blogdown::install_hugo(]
+### .amber.font-mono[force = TRUE)]
+]]
+]
+.column.split-two.bg-amber.slide-in-right.center[
+.row[.content.vmiddle[
+### &emsp; `r emo::ji("bone")` &nbsp; This generates the .light-blue[backbone files] that constitute the template website. 
+]]
+.row[.content[
+### &emsp; `r emo::ji("memo")` &nbsp; Wee will see later how to .light-blue[edit these files to customize] the website.
+]]
+]
+]
+---
+class: split-1-2-1
+
+.row[.content.vmiddle.center[
+# Building the .amber[template] of the website
+]]
+
+.row[
+.row.split-two[
+.column[.content.nopadding[
+<img src="media/dsquintana2.gif" width="100%" />
+]]
+.column.split-two.center[
+.row[.content.vmiddle[
+### `r emo::ji("bowl")` &nbsp; Run the command .amber.font-mono[blogdown::serve_site()]
+]]
+.row[.content.v30[
+### `r emo::ji("eyes")` &nbsp; Run this command every time you want to .amber[check] what your website will look like.
+]]
+]
+]
+]
+.row.split-two.slide-in-left.bg-amber[
+.row[.content.vmiddle[
+### &emsp; `r emo::ji("calling")` &nbsp; This builds a mobile version of your site on the RStudio .light-blue[viewer window].
+]]
+.row[.content.vmiddle[
+### &emsp; `r emo::ji("computer")` &nbsp; Copy-paste the .light-blue[server address] into a web browser for a desktop version of your site.
+]]
+]
+ 
+
+---
+class: split-20
+
+.row[.content.vmiddle.center[
+# Let's .cyan[customize] the website!
+]]
+
+.row.split-70.slide-in-left[
+.row.split-two[
+.column.split-four[
+.row.bg-deep-orange[.content.vmiddle[
+### Control basic information of your website
+]]
+.row.bg-green[.content.vmiddle[
+### Change the general appearance of the website.
+]]
+.row.bg-main2[.content.vmiddle[
+### Add your academic content.
+]]
+.row.bg-pink[.content.vmiddle[
+### Upload your CV.
+]]
+]
+.column[.content.center.nopadding[
+<img src="media/file-viewer2.gif" width="100%" />
+]]
+]
+
+.row.split-two.center[
+.column.bg-cyan[.content.vmiddle[
+### &emsp; `r emo::ji("memo")` &nbsp; You will do this by .amber[editing the files on the project backbone].
+]]
+.column[.content.vmiddle[
+### &emsp; `r emo::ji("point_up")` &nbsp; .cyan[Open] any file by .cyan[selecting] it from your .cyan[file browser].
+]]
+]
+]
+---
+class: split-10
+
+.row[.content.center.vmiddle[
+## Controlling .deep-orange[basic info] on your website.
+]]
+
+.row.split-60[
+.row.split-two[
+.column[.content.center[
+<img src="media/config-toml1.gif" width="95%" />
+]]
+.column[.content.center[
+<img src="media/config-toml2.gif" width="95%" />
+]]
+]
+.row.slide-in-right.split-25[
+.column[.content.v20.center[
+## `r emo::ji("point_up")` Open the .deep-orange[config.toml] file and edit it to:
+]]
+.column.split-three.bg-deep-orange[
+.row[.content[
+### &emsp; `r emo::ji("triangular_flag")` Change the .amber[title] of your website.
+]]
+.row[.content[
+### &emsp; `r emo::ji("link")` Add the .amber[URL] of your site once you have one.
+]]
+.row[.content[
+### &emsp; `r emo::ji("copyright")` Add a .amber[copyright]. Just follow the instructions on the file.
+]]
+]
+]
+]
+---
+class: split-20
+
+.row[.content.vmiddle.center[
+# Control the .green[general appearance] of your website 
+]]
+
+.row.split-two[
+.column.split-25[
+.row[.content.vmiddle.center[
+## `r emo::ji("point_down")` Files in the .green[config/_default] folder will allow you to:
+]]
+.row[.content.nopadding[
+<img src="media/config-folder.gif" width="100%" />
+]]
+]
+.column.split-four[
+.row.bg-teal[.content.vmiddle[
+### `r emo::ji("hamburger")` &nbsp; Customize the website .amber[menu].
+<!-- the elements of the menu and their order within the menu, as well as the menu's general position in the site. -->
+]]
+.row.bg-green[.content.vmiddle[
+### `r emo::ji("mailbox_with_mail")`&nbsp;  Modify your .amber[contact] information.
+]]
+.row.bg-lime[.content.vmiddle[
+### `r emo::ji("art")` &nbsp; Set the color and font .orange[theme] of the site in any way you want!
+]]
+.row.bg-light-green[.content.vmiddle[
+### `r emo::ji("speech_balloon")` &nbsp; Configure the site in various .amber[languages] (Example website code [here]())
+]]
+]
+]
+
+---
+class: split-20
+
+.row[.content.vmiddle.center[
+# Customize the website .teal[menu]
+]]
+
+.row.split-90[
+.row.split-60.bg-teal[
+.column[.content.nopadding.center.vmiddle[
+<img src="media/blogdown1.gif" width="100%" />
+]]
+.column.split-two[
+.row[.content.vmiddle[
+### &emsp; `r emo::ji("point_left")` As you probably know, each element of the menu is a .amber[link] that allows users to easily navigate across the content of a site `r emo::ji("sailboat")``r emo::ji("sailboat")``r emo::ji("sailboat")`
+]]
+.row[.content[
+### &emsp; You can control the .amber[position] of the menu, its .amber[content] and the .amber[order] of its elements.
+]]
+]
+.row[.content[
+]]
+]
+]
+
+---
+class: split-60 teal
+
+.column.split-two[
+.row[.content.center.nopadding[
+.pull-right[<img src="media/menu-position2.gif" width="100%" />]
+]]
+.row[.content.center.nopadding[
+.pull-left[<img src="media/menu-position1.gif" width="100%" />]
+]]
+]
+
+.column.split-two[
+.row[.content.center.v30.black[
+# Modifying the menu's .teal[position]
+]]
+.row.split-two.slide-in-right[
+.row[.content.vmiddle.left[
+### &emsp; `r emo::ji("point_left")` Go to the "Advanced" section of the .amber[params.toml] file.
+]]
+.row[.content.vmiddle.left[
+### &emsp; `r emo::ji("repeat")` And just change the .amber[align] parameter.
+]]
+]
+]
+
+---
+class: split-60 teal
+
+.column.split-two[
+.row[.content.center.nopadding[
+<img src="media/menu-order2.gif" width="100%" />
+]]
+.row[.content.center.nopadding[
+<img src="media/menu-order.gif" width="100%" />
+]]
+]
+
+.column.split-two[
+.row[.content.center.v50.black[
+# Modifying the .teal[order] of the menu's elements
+]]
+.row.split-two.slide-in-right[
+.row[.content.vmiddle.left[
+### `r emo::ji("point_left")` Go to the .amber[menus.toml] file. Each section starting with .amber["[[main]]"] defines settings of a menu element.
+]]
+.row[.content.vmiddle.left[
+### `r emo::ji("weight_lifting_man")` Change the .amber[weight] parameter to modify the position of each element relative to other elements.
+]]
+]
+]
+
+---
+class: split-60 teal
+
+.column.split-two[
+.row[.content.center.nopadding[
+<img src="media/menu-content2.gif" width="100%" />
+]]
+.row[.content.center.nopadding[
+<img src="media/menu-content1.gif" width="100%" />
+]]
+]
+
+.column.split-two[
+.row[.content.center.v80.black[
+# Modifying the menu's .teal[content]
+]]
+.row.split-three.slide-in-right[
+.row[.content.vmiddle.right[
+### .transp["]`r emo::ji("hash")` &nbsp; Also in the .amber[menus.toml] file, place a .amber[hashtag] symbol at the beginning of a line that defines an element you don't want in the menu 
+]]
+.row[.content.vmiddle.right[
+### `r emo::ji("pushpin")` &nbsp; This is known as .amber[commenting out]
+]]
+.row[.content.vmiddle.right[
+### `r emo::ji("cupcake")` &nbsp; Extra: Change the .amber[name] argument and see what happens.
+]]
+]
+]
+
+
+---
+class: bg-white split-20
+
+.row[.content.center.vmiddle[
+## Modifying your .green[contact information]
+]]
+
+.row.split-70[
+.row.split-two[
+.column[.content.center[
+<img src="media/contact1.gif" width="95%" />
+]]
+.column[.content.center[
+<img src="media/contact3.gif" width="95%" />
+]]
+]
+.row.slide-in-right.split-two[
+.column.bg-white[.content.v20.center[
+## `r emo::ji("point_up")` Go to the .green[Contact details] section of .green[params.toml]
+]]
+.column.bg-green[
+.content.v45.center[
+##  And simply edit it with your own information `r emo::ji("stuck_out_tongue_winking_eye")`
+]
+]
+]
+]
+---
+class: bg-white split-20
+
+.row[.content.center.vmiddle[
+## Customizing the .lime[font and color] themes!
+]]
+
+.row.split-70[
+.row.split-two[
+.column[.content.center[
+<img src="media/themes-rstudio.gif" width="95%" />
+]]
+.column[.content.center[
+<img src="media/themes-browser.gif" width="95%" />
+]]
+]
+.row.slide-in-right.split-two[
+.column.bg-white[.content.v20.center[
+## `r emo::ji("point_up")` Go to the .lime[Theme] section of .lime[params.toml]. 
+]]
+.column.bg-lime[
+.content.v45.left[
+##  And modify the .orange[theme] argument `r emo::ji("man_artist")` `r emo::ji("woman_artist")`
+]
+]
+]
+]
+
+
+---
+class: split-20 
+
+.row[.content.vmiddle.center[
+# Add .color-main4[content] to your website 
+]]
+
+.row.split-two[
+.column.split-25[
+.row[.content.vmiddle.center[
+## Files in the `r emo::ji("point_down")` .color-main4[content/] `r emo::ji("point_down")` folder will allow you to:
+]]
+.row[.content.nopadding[
+<img src="media/content-folder-v2.gif" width="100%" />
+]]
+]
+.column.split-three[
+.row.bg-main4.black[.content.vmiddle[
+### `r emo::ji("test_tube")` `r emo::ji("telescope")` `r emo::ji("microscope")` &nbsp; Edit yours and your colleagues' .amber[bios].
+]]
+.row.bg-main1.gray[.content.vmiddle[
+### &nbsp;.amber[Design] the .amber[content] of your home &nbsp; `r emo::ji("man_construction_worker")` `r emo::ji("house")` `r emo::ji("woman_construction_worker")`
+]]
+.row.bg-main2.black[.content.vmiddle[
+### `r emo::ji("nerd")` &nbsp; Add your .amber[work:] courses, blogposts, projects, publications, tutorials and talks.
+]]
+]
+]
+---
+class: split-60 color-main4
+
+.column.split-two[
+.row[.content.center.nopadding[
+.pull-right[<img src="media/bio1.gif" width="100%" />]
+]]
+.row[.content.center.nopadding[
+.pull-left[<img src="media/bio.gif" width="100%" />]
+]]
+]
+
+.column.split-20[
+.row.bg-main3[.content.center.v30.black[
+.font2[Adding your .white[bio] into] .font1-85.white[content/authors/admin/]
+]]
+.row.split-four.slide-in-right.font_medium[
+.row[.content.v20.left[
+`r emo::ji("camera_flash")` &nbsp; Add or update a .amber[profile photo] by saving it into this folder. `r emo::ji("warning")` Name the file .amber[avatar.jpg].
+]]
+.row[.content.v20.left[
+`r emo::ji("mortar_board")` &nbsp; Edit your.amber[biography] details (e.g, position, affiliation, education details) in the .amber[_index.md] file.
+]]
+.row[.content.v20.left[
+`r emo::ji("tropical_drink")` &nbsp; Add your .amber[social media] details and a link to your Google Scholar profile page, also in .amber[_index.md].
+]]
+.row[.content.left[
+`r emo::ji("handshake")` &nbsp; .font0-75[Add a colleague's bio: Make a new folder into .amber[content/authors/]. Name it whatever you want, but it has to have the files .amber[_index.md] and .amber[avatar.jpg].]
+]]
+]
+]
+
+---
+class: split-20
+
+.row[.content.vmiddle.center[
+# Design the .color-main3[content] of your home page `r emo::ji("house")`
+]]
+
+.row.split-90[
+.row.split-60.bg-main1[
+.column[.content.nopadding.center.vmiddle[
+<img src="media/home-files.gif" width="100%" />
+]]
+.column.split-10.center[
+.row[.content.font0-85[
+Most content of a website lives in the home page.
+]]
+.row.split-four[
+.row[.content.v10.color-main4[
+It is easier to identify different parts of your website when each has its own personality or .amber[design]. 
+]]
+.row[.content.font_medium[
+Different ways of presenting content are called .amber[widgets].
+]]
+.row[.content.color-main4[
+`r emo::ji("point_left")` &nbsp; 
+.font1-5[Each `".md"` file within the folder .amber[content/home/] represents a different widget.] 
+]]
+.row[.content.v50[
+Go to [Hugo Academic's documentation](https://sourcethemes.com/academic/docs/page-builder/) for more details on widgets.
+]]
+]
+]
+.row[.content[
+]]
+]
+]
+
+---
+class: split-60 purple
+
+.column.split-two[
+.row[.content.center.nopadding[
+.pull-right[<img src="media/menu-position2.gif" width="100%" />]
+]]
+.row[.content.center.nopadding[
+.pull-left[<img src="media/menu-position1.gif" width="100%" />]
+]]
+]
+
+.column.split-two[
+.row[.content.center.v30.black[
+# .purple[Adding] or .purple[removing] a widget from home
+]]
+.row.split-two.slide-in-right[
+.row[.content.center[
+### &nbsp; `r emo::ji("point_left")` &nbsp; Open up the .amber[.md] file of the widget you want to remove.
+]]
+.row[.content.v20.center[
+### &emsp; `r emo::ji("eyes")` &nbsp; And just change 
+### .amber[active=true] to .amber[active=false].
+]]
+]
+]
+
+---
+
+class: split-60 purple
+
+.column.split-two[
+.row[.content.center.nopadding[
+.pull-right[<img src="media/menu-position2.gif" width="100%" />]
+]]
+.row[.content.center.nopadding[
+.pull-left[<img src="media/menu-position1.gif" width="100%" />]
+]]
+]
+
+.column.split-two[
+.row[.content.center.v60.black[
+# .purple[Duplicating] a widget in the home
+]]
+.row.split-two.slide-in-right[
+.row[.content.center[
+### &nbsp; `r emo::ji("point_left")` &nbsp; Select the .amber[.md] file of the widget you want to duplicate
+]]
+.row[.content.v20.center[
+### &emsp; `r emo::ji("dancers")` &nbsp; And simply duplicate the file into the same folder (.amber[content/home/]).
+]]
+]
+]
+ 
+---
+class: split-20
+
+.row[.content.vmiddle.center[
+# Add .purple[results] from your work
+]]
+
+.row.split-90[
+.row.split-60.bg-main2[
+.column[.content.nopadding.center.vmiddle[
+<img src="media/blogdown1.gif" width="100%" />
+]]
+.column.split-two[
+.row[.content.vmiddle[
+### `r emo::ji("point_left")` &nbsp; Widgets in the home link to your work. This is stored in folders within the .amber[content/] folder.
+]]
+.row[.content[
+### &nbsp; The folders .amber[courses/], .amber[posts/], .amber[projects/], .amber[publications/], .amber[slides/] and .amber[talks/] are preset, but you can add as many sections as you need `r emo::ji("open_file_folder")``r emo::ji("card_file_box")``r emo::ji("file_cabinet")`
+]]
+]
+.row[.content[
+]]
+]
+]
+
+---
+class: left,  middle
+
+.center[Last but not least, add a PDF of your CV]
+
+<br/><br/><br/>
+
+Simply copy your CV to `static/files/cv.pdf` 
+
+Then, uncomment, --remove the hashtag "#" signs at the beginning of the lines of the CV section in `config/_default/_menus.toml` file.
+
+---
+class: left,  middle
+
+Bonus!
+
+Modify the mini-logo on the browser
+
+<br/><br/><br/>
+
+
+---
+
+```{r child='unix_shell_break_2019.11.14.Rmd'}
+```

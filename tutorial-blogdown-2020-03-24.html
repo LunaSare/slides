@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <title>Use blogdown to create a website</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Luna L. Sanchez Reyes" />
+    <link href="libs/remark-css/kunoichi.css" rel="stylesheet" />
+    <link href="libs/remark-css/ninjutsu.css" rel="stylesheet" />
+    <link href="libs/remark-css/metropolis-fonts.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../ninjutsu-luna-extras.css" type="text/css" />
+    <link rel="stylesheet" href="assets/ninpo.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+class: inverse, center, middle
+
+#Create a Website Using R!
+
+&lt;br/&gt;
+
+##An Introduction to .amber[blogdown]
+
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+
+####Luna L. Sánchez Reyes
+
+####University of California, Merced
+
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+
+.pull-right[March 12, 2020 &amp;#183; Merced, California]
+
+---
+class: split-two center
+
+.row.bg-cyan[.content.vmiddle[
+# .amber[Step 1:] Create an academic backbone of a website
+
+]]
+.row.bg-amber[.content.vmiddle[
+# .light-blue[Step 2:] Customize the backbone with your profile and work.
+]]
+
+---
+
+class: split-2-1-1, left
+
+.row[.content.vmiddle.center[
+#Installing .amber[blogdown]
+]]
+
+.row.bg-amber[
+.content.v40[
+### &amp;emsp; ⬇️ &amp;nbsp; You can install any package in R with the function  .cyan.font-mono[install.packages()]
+]]
+
+.row.slide-in-right[.content.v40[
+### &amp;emsp; ✏️ &amp;nbsp; Open R and just do .amber.font-mono[install.packages("blogdown")]
+]]
+
+.row[
+]
+
+---
+class: split-20
+
+.row[.content.vmiddle.center[
+# Starting a .amber[new website project]
+]]
+
+.row.split-30[
+.row.slide-in-right.bg-amber[.content.vmiddle[
+### &amp;emsp; 💯 &amp;nbsp; This will .light-blue[download all the necessary files] to create the backbone of your website.
+]]
+.row[.content[
+.row.split-two[
+.column[.content.nopadding[
+&lt;img src="media/dsquintana1.gif" width="100%" /&gt;
+]]
+.column.split-four[
+.row[.content.vmiddle[
+### ⬅️ &amp;nbsp; Go to the .amber[File] menu &gt; .amber[New project...]
+]]
+.row[.content.vmiddle[
+### 📁 &amp;nbsp; Name your project in .amber[Directory name].
+]]
+.row[.content.vmiddle[
+### ❗ &amp;nbsp; Make sure to enter .amber[gcushen/hugo-academic] as the Hugo theme.
+]]
+.row[.content.vmiddle[
+### ✔️ &amp;nbsp; Keep all other options .amber[the same].
+]]
+]
+]
+]]
+]
+
+---
+class: split-25
+
+.row[.content.vmiddle.center[
+# Creating an .amber["hugo"] website backbone
+]]
+
+.row.split-two.center[
+.column.split-two.center[
+.row[.content.vmiddle[
+### 📚 &amp;nbsp; Load blogdown using the command .amber.font-mono[library(blogdown)] 
+]]
+.row[.content[
+### ⬇️ &amp;nbsp; Install the "hugo" framework with .amber.font-mono[blogdown::install_hugo(]
+### .amber.font-mono[force = TRUE)]
+]]
+]
+.column.split-two.bg-amber.slide-in-right.center[
+.row[.content.vmiddle[
+### &amp;emsp; 🦴 &amp;nbsp; This generates the .light-blue[backbone files] that constitute the template website. 
+]]
+.row[.content[
+### &amp;emsp; 📝 &amp;nbsp; Wee will see later how to .light-blue[edit these files to customize] the website.
+]]
+]
+]
+---
+class: split-1-2-1
+
+.row[.content.vmiddle.center[
+# Building the .amber[template] of the website
+]]
+
+.row[
+.row.split-two[
+.column[.content.nopadding[
+&lt;img src="media/dsquintana2.gif" width="100%" /&gt;
+]]
+.column.split-two.center[
+.row[.content.vmiddle[
+### 🍜 &amp;nbsp; Run the command .amber.font-mono[blogdown::serve_site()]
+]]
+.row[.content.v30[
+### 👀 &amp;nbsp; Run this command every time you want to .amber[check] what your website will look like.
+]]
+]
+]
+]
+.row.split-two.slide-in-left.bg-amber[
+.row[.content.vmiddle[
+### &amp;emsp; 📲 &amp;nbsp; This builds a mobile version of your site on the RStudio .light-blue[viewer window].
+]]
+.row[.content.vmiddle[
+### &amp;emsp; 💻 &amp;nbsp; Copy-paste the .light-blue[server address] into a web browser for a desktop version of your site.
+]]
+]
+ 
+
+---
+class: split-20
+
+.row[.content.vmiddle.center[
+# Let's .cyan[customize] the website!
+]]
+
+.row.split-70.slide-in-left[
+.row.split-two[
+.column.split-four[
+.row.bg-deep-orange[.content.vmiddle[
+### Control basic information of your website
+]]
+.row.bg-green[.content.vmiddle[
+### Change the general appearance of the website.
+]]
+.row.bg-main2[.content.vmiddle[
+### Add your academic content.
+]]
+.row.bg-pink[.content.vmiddle[
+### Upload your CV.
+]]
+]
+.column[.content.center.nopadding[
+&lt;img src="media/file-viewer2.gif" width="100%" /&gt;
+]]
+]
+
+.row.split-two.center[
+.column.bg-cyan[.content.vmiddle[
+### &amp;emsp; 📝 &amp;nbsp; You will do this by .amber[editing the files on the project backbone].
+]]
+.column[.content.vmiddle[
+### &amp;emsp; ☝️ &amp;nbsp; .cyan[Open] any file by .cyan[selecting] it from your .cyan[file browser].
+]]
+]
+]
+---
+class: split-10
+
+.row[.content.center.vmiddle[
+## Controlling .deep-orange[basic info] on your website.
+]]
+
+.row.split-60[
+.row.split-two[
+.column[.content.center[
+&lt;img src="media/config-toml1.gif" width="95%" /&gt;
+]]
+.column[.content.center[
+&lt;img src="media/config-toml2.gif" width="95%" /&gt;
+]]
+]
+.row.slide-in-right.split-25[
+.column[.content.v20.center[
+## ☝️ Open the .deep-orange[config.toml] file and edit it to:
+]]
+.column.split-three.bg-deep-orange[
+.row[.content[
+### &amp;emsp; 🚩 Change the .amber[title] of your website.
+]]
+.row[.content[
+### &amp;emsp; 🔗 Add the .amber[URL] of your site once you have one.
+]]
+.row[.content[
+### &amp;emsp; ©️ Add a .amber[copyright]. Just follow the instructions on the file.
+]]
+]
+]
+]
+---
+class: split-20
+
+.row[.content.vmiddle.center[
+# Control the .green[general appearance] of your website 
+]]
+
+.row.split-two[
+.column.split-25[
+.row[.content.vmiddle.center[
+## 👇 Files in the .green[config/_default] folder will allow you to:
+]]
+.row[.content.nopadding[
+&lt;img src="media/config-folder.gif" width="100%" /&gt;
+]]
+]
+.column.split-four[
+.row.bg-teal[.content.vmiddle[
+### 🍔 &amp;nbsp; Customize the website .amber[menu].
+&lt;!-- the elements of the menu and their order within the menu, as well as the menu's general position in the site. --&gt;
+]]
+.row.bg-green[.content.vmiddle[
+### 📬&amp;nbsp;  Modify your .amber[contact] information.
+]]
+.row.bg-lime[.content.vmiddle[
+### 🎨 &amp;nbsp; Set the color and font .orange[theme] of the site in any way you want!
+]]
+.row.bg-light-green[.content.vmiddle[
+### 💬 &amp;nbsp; Configure the site in various .amber[languages] (Example website code [here]())
+]]
+]
+]
+
+---
+class: split-20
+
+.row[.content.vmiddle.center[
+# Customize the website .teal[menu]
+]]
+
+.row.split-90[
+.row.split-60.bg-teal[
+.column[.content.nopadding.center.vmiddle[
+&lt;img src="media/blogdown1.gif" width="100%" /&gt;
+]]
+.column.split-two[
+.row[.content.vmiddle[
+### &amp;emsp; 👈 As you probably know, each element of the menu is a .amber[link] that allows users to easily navigate across the content of a site ⛵⛵⛵
+]]
+.row[.content[
+### &amp;emsp; You can control the .amber[position] of the menu, its .amber[content] and the .amber[order] of its elements.
+]]
+]
+.row[.content[
+]]
+]
+]
+
+---
+class: split-60 teal
+
+.column.split-two[
+.row[.content.center.nopadding[
+.pull-right[&lt;img src="media/menu-position2.gif" width="100%" /&gt;]
+]]
+.row[.content.center.nopadding[
+.pull-left[&lt;img src="media/menu-position1.gif" width="100%" /&gt;]
+]]
+]
+
+.column.split-two[
+.row[.content.center.v30.black[
+# Modifying the menu's .teal[position]
+]]
+.row.split-two.slide-in-right[
+.row[.content.vmiddle.left[
+### &amp;emsp; 👈 Go to the "Advanced" section of the .amber[params.toml] file.
+]]
+.row[.content.vmiddle.left[
+### &amp;emsp; 🔁 And just change the .amber[align] parameter.
+]]
+]
+]
+
+---
+class: split-60 teal
+
+.column.split-two[
+.row[.content.center.nopadding[
+&lt;img src="media/menu-order2.gif" width="100%" /&gt;
+]]
+.row[.content.center.nopadding[
+&lt;img src="media/menu-order.gif" width="100%" /&gt;
+]]
+]
+
+.column.split-two[
+.row[.content.center.v50.black[
+# Modifying the .teal[order] of the menu's elements
+]]
+.row.split-two.slide-in-right[
+.row[.content.vmiddle.left[
+### 👈 Go to the .amber[menus.toml] file. Each section starting with .amber["[[main]]"] defines settings of a menu element.
+]]
+.row[.content.vmiddle.left[
+### 🏋 Change the .amber[weight] parameter to modify the position of each element relative to other elements.
+]]
+]
+]
+
+---
+class: split-60 teal
+
+.column.split-two[
+.row[.content.center.nopadding[
+&lt;img src="media/menu-content2.gif" width="100%" /&gt;
+]]
+.row[.content.center.nopadding[
+&lt;img src="media/menu-content1.gif" width="100%" /&gt;
+]]
+]
+
+.column.split-two[
+.row[.content.center.v80.black[
+# Modifying the menu's .teal[content]
+]]
+.row.split-three.slide-in-right[
+.row[.content.vmiddle.right[
+### .transp["]#️⃣ &amp;nbsp; Also in the .amber[menus.toml] file, place a .amber[hashtag] symbol at the beginning of a line that defines an element you don't want in the menu 
+]]
+.row[.content.vmiddle.right[
+### 📌 &amp;nbsp; This is known as .amber[commenting out]
+]]
+.row[.content.vmiddle.right[
+### 🧁 &amp;nbsp; Extra: Change the .amber[name] argument and see what happens.
+]]
+]
+]
+
+
+---
+class: bg-white split-20
+
+.row[.content.center.vmiddle[
+## Modifying your .green[contact information]
+]]
+
+.row.split-70[
+.row.split-two[
+.column[.content.center[
+&lt;img src="media/contact1.gif" width="95%" /&gt;
+]]
+.column[.content.center[
+&lt;img src="media/contact3.gif" width="95%" /&gt;
+]]
+]
+.row.slide-in-right.split-two[
+.column.bg-white[.content.v20.center[
+## ☝️ Go to the .green[Contact details] section of .green[params.toml]
+]]
+.column.bg-green[
+.content.v45.center[
+##  And simply edit it with your own information 😜
+]
+]
+]
+]
+---
+class: bg-white split-20
+
+.row[.content.center.vmiddle[
+## Customizing the .lime[font and color] themes!
+]]
+
+.row.split-70[
+.row.split-two[
+.column[.content.center[
+&lt;img src="media/themes-rstudio.gif" width="95%" /&gt;
+]]
+.column[.content.center[
+&lt;img src="media/themes-browser.gif" width="95%" /&gt;
+]]
+]
+.row.slide-in-right.split-two[
+.column.bg-white[.content.v20.center[
+## ☝️ Go to the .lime[Theme] section of .lime[params.toml]. 
+]]
+.column.bg-lime[
+.content.v45.left[
+##  And modify the .orange[theme] argument 👨‍🎨 👩‍🎨
+]
+]
+]
+]
+
+
+---
+class: split-20 
+
+.row[.content.vmiddle.center[
+# Add .color-main4[content] to your website 
+]]
+
+.row.split-two[
+.column.split-25[
+.row[.content.vmiddle.center[
+## Files in the 👇 .color-main4[content/] 👇 folder will allow you to:
+]]
+.row[.content.nopadding[
+&lt;img src="media/content-folder-v2.gif" width="100%" /&gt;
+]]
+]
+.column.split-three[
+.row.bg-main4.black[.content.vmiddle[
+### 🧪 🔭 🔬 &amp;nbsp; Edit yours and your colleagues' .amber[bios].
+]]
+.row.bg-main1.gray[.content.vmiddle[
+### &amp;nbsp;.amber[Design] the .amber[content] of your home &amp;nbsp; 👷‍♂️ 🏠 👷‍♀️
+]]
+.row.bg-main2.black[.content.vmiddle[
+### 🤓 &amp;nbsp; Add your .amber[work:] courses, blogposts, projects, publications, tutorials and talks.
+]]
+]
+]
+---
+class: split-60 color-main4
+
+.column.split-two[
+.row[.content.center.nopadding[
+.pull-right[&lt;img src="media/bio1.gif" width="100%" /&gt;]
+]]
+.row[.content.center.nopadding[
+.pull-left[&lt;img src="media/bio.gif" width="100%" /&gt;]
+]]
+]
+
+.column.split-20[
+.row.bg-main3[.content.center.v30.black[
+.font2[Adding your .white[bio] into] .font1-85.white[content/authors/admin/]
+]]
+.row.split-four.slide-in-right.font_medium[
+.row[.content.v20.left[
+📸 &amp;nbsp; Add or update a .amber[profile photo] by saving it into this folder. ⚠️ Name the file .amber[avatar.jpg].
+]]
+.row[.content.v20.left[
+🎓 &amp;nbsp; Edit your.amber[biography] details (e.g, position, affiliation, education details) in the .amber[_index.md] file.
+]]
+.row[.content.v20.left[
+🍹 &amp;nbsp; Add your .amber[social media] details and a link to your Google Scholar profile page, also in .amber[_index.md].
+]]
+.row[.content.left[
+🤝 &amp;nbsp; .font0-75[Add a colleague's bio: Make a new folder into .amber[content/authors/]. Name it whatever you want, but it has to have the files .amber[_index.md] and .amber[avatar.jpg].]
+]]
+]
+]
+
+---
+class: split-20
+
+.row[.content.vmiddle.center[
+# Design the .color-main3[content] of your home page 🏠
+]]
+
+.row.split-90[
+.row.split-60.bg-main1[
+.column[.content.nopadding.center.vmiddle[
+&lt;img src="media/home-files.gif" width="100%" /&gt;
+]]
+.column.split-10.center[
+.row[.content.font0-85[
+Most content of a website lives in the home page.
+]]
+.row.split-four[
+.row[.content.v10.color-main4[
+It is easier to identify different parts of your website when each has its own personality or .amber[design]. 
+]]
+.row[.content.font_medium[
+Different ways of presenting content are called .amber[widgets].
+]]
+.row[.content.color-main4[
+👈 &amp;nbsp; 
+.font1-5[Each `".md"` file within the folder .amber[content/home/] represents a different widget.] 
+]]
+.row[.content.v50[
+Go to [Hugo Academic's documentation](https://sourcethemes.com/academic/docs/page-builder/) for more details on widgets.
+]]
+]
+]
+.row[.content[
+]]
+]
+]
+
+---
+class: split-60 purple
+
+.column.split-two[
+.row[.content.center.nopadding[
+.pull-right[&lt;img src="media/menu-position2.gif" width="100%" /&gt;]
+]]
+.row[.content.center.nopadding[
+.pull-left[&lt;img src="media/menu-position1.gif" width="100%" /&gt;]
+]]
+]
+
+.column.split-two[
+.row[.content.center.v30.black[
+# .purple[Adding] or .purple[removing] a widget from home
+]]
+.row.split-two.slide-in-right[
+.row[.content.center[
+### &amp;nbsp; 👈 &amp;nbsp; Open up the .amber[.md] file of the widget you want to remove.
+]]
+.row[.content.v20.center[
+### &amp;emsp; 👀 &amp;nbsp; And just change 
+### .amber[active=true] to .amber[active=false].
+]]
+]
+]
+
+---
+
+class: split-60 purple
+
+.column.split-two[
+.row[.content.center.nopadding[
+.pull-right[&lt;img src="media/menu-position2.gif" width="100%" /&gt;]
+]]
+.row[.content.center.nopadding[
+.pull-left[&lt;img src="media/menu-position1.gif" width="100%" /&gt;]
+]]
+]
+
+.column.split-two[
+.row[.content.center.v60.black[
+# .purple[Duplicating] a widget in the home
+]]
+.row.split-two.slide-in-right[
+.row[.content.center[
+### &amp;nbsp; 👈 &amp;nbsp; Select the .amber[.md] file of the widget you want to duplicate
+]]
+.row[.content.v20.center[
+### &amp;emsp; 👯 &amp;nbsp; And simply duplicate the file into the same folder (.amber[content/home/]).
+]]
+]
+]
+ 
+---
+class: split-20
+
+.row[.content.vmiddle.center[
+# Add .purple[results] from your work
+]]
+
+.row.split-90[
+.row.split-60.bg-main2[
+.column[.content.nopadding.center.vmiddle[
+&lt;img src="media/blogdown1.gif" width="100%" /&gt;
+]]
+.column.split-two[
+.row[.content.vmiddle[
+### 👈 &amp;nbsp; Widgets in the home link to your work. This is stored in folders within the .amber[content/] folder.
+]]
+.row[.content[
+### &amp;nbsp; The folders .amber[courses/], .amber[posts/], .amber[projects/], .amber[publications/], .amber[slides/] and .amber[talks/] are preset, but you can add as many sections as you need 📂🗃🗄
+]]
+]
+.row[.content[
+]]
+]
+]
+
+---
+class: left,  middle
+
+.center[Last but not least, add a PDF of your CV]
+
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+
+Simply copy your CV to `static/files/cv.pdf` 
+
+Then, uncomment, --remove the hashtag "#" signs at the beginning of the lines of the CV section in `config/_default/_menus.toml` file.
+
+---
+class: left,  middle
+
+Bonus!
+
+Modify the mini-logo on the browser
+
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+
+
+---
+
+
+
+background-image: url("https://media.giphy.com/media/l1EtdgbvFeTLxx2W4/giphy.gif")
+background-position: 50% 65%
+background-size: 650px 
+
+## Time for a break!
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"ratio": "16:9",
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

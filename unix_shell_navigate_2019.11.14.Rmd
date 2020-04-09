@@ -1,0 +1,130 @@
+class:center, section-start
+
+# The Unix **Shell**
+
+##Navigating Files and Directories
+
+<br/><br/>
+
+```{r, out.width = "450px"}
+knitr::include_graphics("media/files-paper.jpg")
+```
+
+---
+class: center
+
+# The file system
+
+<br/><br/>
+
+.pull-left[
+### - Create
+
+### - Inspect
+
+### - Rename
+
+### - Delete
+]
+
+.pull-right[
+### ... files AND directories (folders)
+]
+
+---
+
+## Find out where you are in the file system ...
+
+<br/><br/>
+
+# -Use the command `pwd`
+
+---
+class: center
+
+background-image: url("media/filesystem.svg")
+background-position: top
+background-size: contain
+
+---
+
+class: center
+
+background-image: url("media/home-directories.svg")
+background-position: top
+background-size: contain
+
+---
+
+class: center
+
+## Note the double meaning of *slashes*
+
+---
+
+# Let's get on to commands!
+
+<br/><br/>
+
+### General syntax: Getting the most out of commands.
+
+<br/><br/>
+
+### Getting help: the `--help` option and the `man` command.
+
+---
+--- 
+
+## Change locations in your file system
+
+<br/><br/>
+
+# - Use the command `cd`
+
+---
+
+background-image: url("https://media.giphy.com/media/4BgQaxfQfeqys/giphy.gif")
+background-position: 50% 65%
+background-size: 650px 
+
+## Going down the rabbit hole is easy ...
+
+---
+
+## How do we go back up?
+
+--
+
+.pull-left[
+<br/><br/><br/>
+
+# Type 
+
+#`cd data-shell`
+]
+
+--
+
+.pull-right[
+
+### What's wrong?
+
+![](https://media.giphy.com/media/J2q8zK4HgrT5C/giphy.gif)
+]
+
+---
+
+# Now try these:
+
+.pull-left[
+
+<br/><br/><br/>
+
+### - `cd ..`
+
+### - `cd ~`
+
+### - `cd -`
+
+### - `cd `
+]

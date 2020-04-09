@@ -1,0 +1,57 @@
+.subtitle em {
+  font-style: italic;
+}
+
+.datelife-home {
+  background-image: url(media/datelife_home.png);
+  background-position: top;
+  background-size: contain;
+  background-color: #e7553c;
+  padding-top: 80px;
+  padding-left: 320px;
+}
+
+.datelife-home-blank {
+  background-image: url(media/datelife_home_blank.png);
+  background-position: top;
+  background-size: contain;
+  background-color: #e7553c;
+  padding-top: 100px;
+  padding-left: 110px;
+}
+
+.questions-bw {
+  background-image: url(media/questions_bw.png);
+  background-position: top;
+  background-size: contain;
+  background-color: #e7553c;
+  padding-top: 1px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.questions-color {
+  background-image: url(media/questions_color1.png);
+  background-position: top;
+  background-size: contain;
+  background-color: #e7553c;
+  padding-top: 1px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.section-start {
+  background-image: url(media/bg-section-start.png);
+  background-position: top;
+  background-size: contain;
+  background-color: #0000FF;
+  color: #000000;
+}
+
+.section-start h1 {
+  color: #4682B4;
+}
+
+.section-start h2, .section-start h3 {
+  color: #000000;
+}
