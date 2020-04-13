@@ -11,7 +11,7 @@ output:
   xaringan::moon_reader:
     lib_dir: libs
     css: ["kunoichi", "ninjutsu", "../ninjutsu-luna-extras.css", "assets/ninpo.css", "metropolis-fonts"]
-    seal: false 
+    seal: false
     self_contained: false
     nature:
       ratio: "16:9"
@@ -163,7 +163,7 @@ class: split-1-2-1
 
 .row.split-two.slide-in-left.cyan[
 .row[.content.vmiddle[
-### `r emo::ji("sparkles")` Load blogdown using the command .amber.font-mono[library(blogdown)] 
+### `r emo::ji("sparkles")` Load blogdown using the command .amber.font-mono[library(blogdown)]
 ]]
 .row[.content.vmiddle[
 ### `r emo::ji("bone")` Install the "hugo" framework with .amber.font-mono[blogdown::install_hugo(force = TRUE)]
@@ -203,7 +203,7 @@ class: split-20
 ### &emsp; `r emo::ji("computer")` &nbsp; Copy-paste the `server address` into a web browser for a desktop version of your site.
 ]]
 ]
-] 
+]
 
 ---
 class: split-20
@@ -270,7 +270,7 @@ class: split-10
 class: split-20
 
 .row[.content.vmiddle.center[
-# Control the .green[general appearance] of your website 
+# Control the .green[general appearance] of your website
 ]]
 
 .row.split-two[
@@ -394,7 +394,7 @@ class: split-60 teal
 ]]
 .row.split-three.slide-in-right[
 .row[.content.vmiddle.right[
-### .transp["]`r emo::ji("hash")` &nbsp; Also in the `menus.toml` file, place a `hashtag` symbol at the beginning of a line that defines an element you don't want in the menu 
+### .transp["]`r emo::ji("hash")` &nbsp; Also in the `menus.toml` file, place a `hashtag` symbol at the beginning of a line that defines an element you don't want in the menu
 ]]
 .row[.content.vmiddle.right[
 ### `r emo::ji("pushpin")` &nbsp; This is known as `commenting out`
@@ -451,7 +451,7 @@ class: bg-white split-20
 ]
 .row.slide-in-right.split-two[
 .column.bg-white[.content.v20.center[
-## `r emo::ji("point_up")` Go to the .lime[Theme] section of `params.toml`. 
+## `r emo::ji("point_up")` Go to the .lime[Theme] section of `params.toml`
 ]]
 .column.bg-lime[
 .content.v45.left[
@@ -463,10 +463,10 @@ class: bg-white split-20
 
 
 ---
-class: split-20 
+class: split-20
 
 .row[.content.vmiddle.center[
-# Add .color-main4[content] to your website 
+# Add .color-main4[content] to your website
 ]]
 
 .row.split-two[
@@ -539,14 +539,14 @@ Most content of a website lives in the home page.
 ]]
 .row.split-four[
 .row[.content.v10.color-main4[
-It is easier to identify different parts of your website when each has its own personality or .amber[design]. 
+It is easier to identify different parts of your website when each has its own personality or .amber[design].
 ]]
 .row[.content.font_medium[
 Different ways of presenting content are called .amber[widgets].
 ]]
 .row[.content.color-main4[
-`r emo::ji("point_left")` &nbsp; 
-.font1-5[Each `".md"` file within the folder `content/home/` represents a different widget.] 
+`r emo::ji("point_left")` &nbsp;
+.font1-5[Each `".md"` file within the folder `content/home/` represents a different widget.]
 ]]
 .row[.content.v50[
 Go to [Hugo Academic's documentation](https://sourcethemes.com/academic/docs/page-builder/) for more details on widgets.
@@ -579,7 +579,7 @@ class: split-60 purple
 ### &nbsp; `r emo::ji("point_left")` &nbsp; Open up the `.md` file of the widget you want to remove.
 ]]
 .row[.content.v20.center[
-### &emsp; `r emo::ji("eyes")` &nbsp; And just change 
+### &emsp; `r emo::ji("eyes")` &nbsp; And just change
 ### `active=true` to `active=false`.
 ]]
 ]
@@ -611,7 +611,7 @@ class: split-60 purple
 ]]
 ]
 ]
- 
+
 ---
 class: split-20
 
@@ -644,7 +644,7 @@ class: left,  middle
 
 <br/><br/><br/>
 
-Simply copy your CV to `static/files/cv.pdf` 
+Simply copy your CV to `static/files/cv.pdf`
 
 Then, uncomment, --remove the hashtag "#" signs at the beginning of the lines of the CV section in `config/_default/_menus.toml` file.
 
