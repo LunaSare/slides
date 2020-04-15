@@ -149,7 +149,7 @@ And a website that allows to store git outputs online while collaborating with o
 ---
 class: split-10
 .row.bg-pink[.content[
-# Hands on!
+# Hands on `r shiny::icon("github")`
 ]]
 .row[.content.pad10px[
 <br/><br/>
@@ -200,7 +200,7 @@ Option 2: Create a `new project` in RStudio and initialize it with `git`.
 ---
 class: split-10
 .row.bg-pink[.content[
-# Hands on!
+# Hands on `r emo::ji("card_file_box")`
 ]]
 .row[.content.pad10px[
 <br/>
@@ -244,7 +244,17 @@ There are many markup languages around: html, xml, markdown, latex
 We will focus on markdown for the purpose of this hands on.
 ]]
 ]
+---
+class: split-1-2-1 
+.row.bg-amber[
 
+]
+.row[.content.vmiddle.center[
+# markdown crash course!
+]]
+.row.bg-amber[
+
+]
 ---
 class: split-two
 
@@ -346,19 +356,19 @@ class: split-two
 name: markdown2
 
 .column.split-10[
-.column.bg-red[
+.column.bg-pink[
 ]
 .column.split-four.center[
 .row.bg-light-blue[.content.font_medium[
 markdown emphasizes text with *italics*, **bold**, or  ***both*** using 1, 2, or 3 asterisks respectively, at each side of the text
 ]]
-.row.bg-light-blue[.content.font_medium.v20[
+.row.bg-blue[.content.font_medium.v20[
 Add links to [external sites](https://www.markdownguide.org/basic-syntax/) or [internal sections](#internal) of the document
 ]]
 .row.bg-light-blue[.content.font_medium[
 Add linked URLs <https://www.markdownguide.org/basic-syntax/>
 ]]
-.row.bg-light-blue[.content[
+.row.bg-blue[.content[
 Create horizontal rules with three or more asterisks, dashes, or underscores
 ******
 ______
@@ -368,7 +378,7 @@ ______
 ]
 
 .column.split-four[
-.row.bg-orange[.content.v20[
+.row.bg-amber[.content.v20[
 ```
 markdown emphasizes text with *italics*, **bold**, 
 or  ***both*** using 1, 2, or 3 asterisks respectively, 
@@ -382,7 +392,7 @@ basic-syntax/) or [internal sections](#internal)
 of the document
 ```
 ]]
-.row.bg-orange[.content.v30[
+.row.bg-amber[.content.v30[
 ```
 Add linked URLs <https://www.markdownguide.org/basic-syntax/>
 ```
@@ -398,6 +408,32 @@ ______
 ]]
 
 ]
+---
+class: split-10
+
+.row.bg-pink[.content[
+# Hands on `r emo::ji("rocket")`
+]]
+.row[.content.pad10px[
+<br/><br/>
+
+### Go to the README.md file of the project you just generated
+
+### Edit it on RStudio according to your own project, using markdown
+
+### Save the changes
+
+### Save this version with git:
+### &emsp; Go to your terminal -- navigate to your project directory with `cd`
+### &emsp; Run the commands:
+```{}
+git add .
+git commit -m "a message describing the changes you made"
+git push
+```
+
+## `r emo::ji("tada")` You've made your first version control commit `r emo::ji("tada")`
+]]
 ---
 class: split-1-2-1
 .column.bg-pink[
@@ -617,8 +653,8 @@ bibliography: my_references.bib
 
 ---
 
-```{r child='reproducibility-edit-code-2020-04-15.Rmd'}
-```
+<!-- ```{r child='reproducibility-edit-code-2020-04-15.Rmd'} -->
+<!-- ``` -->
 
 <!-- Here goes the edit and add code section  -->
 

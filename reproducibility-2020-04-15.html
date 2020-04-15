@@ -144,7 +144,7 @@ And a website that allows to store git outputs online while collaborating with o
 ---
 class: split-10
 .row.bg-pink[.content[
-# Hands on!
+# Hands on <i class="fab fa-github"></i>
 ]]
 .row[.content.pad10px[
 &lt;br/&gt;&lt;br/&gt;
@@ -195,7 +195,7 @@ Option 2: Create a `new project` in RStudio and initialize it with `git`.
 ---
 class: split-10
 .row.bg-pink[.content[
-# Hands on!
+# Hands on 🗃
 ]]
 .row[.content.pad10px[
 &lt;br/&gt;
@@ -239,7 +239,17 @@ There are many markup languages around: html, xml, markdown, latex
 We will focus on markdown for the purpose of this hands on.
 ]]
 ]
+---
+class: split-1-2-1 
+.row.bg-amber[
 
+]
+.row[.content.vmiddle.center[
+# markdown crash course!
+]]
+.row.bg-amber[
+
+]
 ---
 class: split-two
 
@@ -341,19 +351,19 @@ class: split-two
 name: markdown2
 
 .column.split-10[
-.column.bg-red[
+.column.bg-pink[
 ]
 .column.split-four.center[
 .row.bg-light-blue[.content.font_medium[
 markdown emphasizes text with *italics*, **bold**, or  ***both*** using 1, 2, or 3 asterisks respectively, at each side of the text
 ]]
-.row.bg-light-blue[.content.font_medium.v20[
+.row.bg-blue[.content.font_medium.v20[
 Add links to [external sites](https://www.markdownguide.org/basic-syntax/) or [internal sections](#internal) of the document
 ]]
 .row.bg-light-blue[.content.font_medium[
 Add linked URLs &lt;https://www.markdownguide.org/basic-syntax/&gt;
 ]]
-.row.bg-light-blue[.content[
+.row.bg-blue[.content[
 Create horizontal rules with three or more asterisks, dashes, or underscores
 ******
 ______
@@ -363,7 +373,7 @@ ______
 ]
 
 .column.split-four[
-.row.bg-orange[.content.v20[
+.row.bg-amber[.content.v20[
 ```
 markdown emphasizes text with *italics*, **bold**, 
 or  ***both*** using 1, 2, or 3 asterisks respectively, 
@@ -377,7 +387,7 @@ basic-syntax/) or [internal sections](#internal)
 of the document
 ```
 ]]
-.row.bg-orange[.content.v30[
+.row.bg-amber[.content.v30[
 ```
 Add linked URLs &lt;https://www.markdownguide.org/basic-syntax/&gt;
 ```
@@ -393,6 +403,32 @@ ______
 ]]
 
 ]
+---
+class: split-10
+
+.row.bg-pink[.content[
+# Hands on 🚀
+]]
+.row[.content.pad10px[
+&lt;br/&gt;&lt;br/&gt;
+
+### Go to the README.md file of the project you just generated
+
+### Edit it on RStudio according to your own project, using markdown
+
+### Save the changes
+
+### Save this version with git:
+### &amp;emsp; Go to your terminal -- navigate to your project directory with `cd`
+### &amp;emsp; Run the commands:
+```{}
+git add .
+git commit -m "a message describing the changes you made"
+git push
+```
+
+## 🎉 You've made your first version control commit 🎉
+]]
 ---
 class: split-1-2-1
 .column.bg-pink[
@@ -612,290 +648,8 @@ bibliography: my_references.bib
 
 ---
 
-
-class: split-30
-
-.row.split-two[
-.row[.content[
-# <i class="fab fa-r-project"></i> Edit the text and code section <i class="fab fa-r-project"></i>
-&lt;br/&gt;
-]]
-.row[.content[
-&lt;!-- ### &amp;emsp; Besides all the markdown features that we [already saw](#markdown): --&gt;
-## .color-main3[Add citations] along the text using the .amber[@ tags] from the .bib file:
-]]
-]
-.row.split-two[
-.column.slide-in-left.bg-purple[.content.v30[
-### This
-
-```{}
-Characteristics of Open Science, following @Fecher2014:
-
-"Our professional network is valuable. It is also limited. 
-Perhaps there are people who are well-placed to help us, 
-in another university or company, in a different country, 
-but we unfortunately do not know them. Surely science 
-would proceed faster if we could reach those people? 
-Or, better, if they could find us?"[@woelfle2011open; 
-@Fecher2014]
-```
-]]
-.column.slide-in-right[.content.v40[
-### Becomes this
-.font0-85[Characteristics of Open Science, following .color-main3[Fecher and Friesike (2014)]:
-&lt;br/&gt;
-“Our professional network is valuable. It is also limited.   
-Perhaps there are people who are well-placed to
-help us,   
-in another university or company, in a different country,   
-but we unfortunately do not know them.
-Surely science   
-would proceed faster if we could reach those people?   
-Or, better, if they could find us?” .color-main3[(Woelfle,
-Olliaro, and Todd 2011; Fecher and Friesike 2014)].]
-]]
-]
----
-class: split-30
-
-.row.split-two[
-.row[.content[
-# <i class="fab fa-r-project"></i> Edit the text and code section <i class="fab fa-r-project"></i>
-&lt;br/&gt;
-]]
-.row[.content[
-## .blue[Add a list of references] at the end of the document by typing .amber[References]:
-]]
-]
-.row.split-two[
-.column.slide-in-left.bg-indigo[.content.v10[
-### This
-
-```{}
-"Our professional network is valuable. It is also limited. 
-Perhaps there are people who are well-placed to help us, 
-in another university or company, in a different country, 
-but we unfortunately do not know them. Surely science 
-would proceed faster if we could reach those people? 
-Or, better, if they could find us?"[@woelfle2011open; 
-@Fecher2014]
-
-References
-```
-]]
-.column.slide-in-right[.content.v40.pad10px[
-### Becomes this
-.font0-85[
-“Our professional network is valuable. It is also limited.   
-Perhaps there are people who are well-placed to
-help us,   
-in another university or company, in a different country,   
-but we unfortunately do not know them.
-Surely science   
-would proceed faster if we could reach those people?   
-Or, better, if they could find us?” .purple[(Woelfle,
-Olliaro, and Todd 2011; Fecher and Friesike 2014)].
-.font_medium[References]  
-Fecher, Benedikt, and Sascha Friesike. 2014. “Open Science: One Term, Five Schools of Thought.” In
-Opening Science: The Evolving Guide on How the Internet Is Changing Research, Collaboration and Scholarly
-Publishing, edited by Sönke Bartling and Sascha Friesike, 17–47. Cham: Springer International Publishing.
-https://doi.org/10.1007/978-3-319-00026-8_2.  
-Woelfle, Michael, Piero Olliaro, and Matthew H Todd. 2011. “Open Science Is a Research Accelerator.”
-Nature Chemistry 3 (10): 745–48.
-2
-]
-
-]]
-]
-
----
-class: split-30
-
-.row.split-two[
-.row[.content[
-# <i class="fab fa-r-project"></i> Edit the text and code section <i class="fab fa-r-project"></i>
-&lt;br/&gt;
-]]
-.row[.content[
-## .teal[Add R code] along the text using .amber[backticks] and .amber[curly braces]:
-]]
-]
-.row.split-two[
-.column.slide-in-left.bg-teal[.content.v30[
-### This code chunk
-
-````markdown
-```{r eval = FALSE, echo = TRUE} 
-library(ape)
-data(chiroptera)
-str(chiroptera)
-```
-````
-
-
-### And this inline code
-
-You can know th enumberof tips in your Chiroptera tree with `length(chiroptera$tip.label)`.
-
-]]
-.column.slide-in-right[.content.v30[
-### renders this
-
-
-```
-## List of 3
-##  $ edge     : int [1:1344, 1:2] 917 918 919 920 920 921 922 922 921 923 ...
-##  $ tip.label: chr [1:916] "Paranyctimene_raptor" "Nyctimene_aello" "Nyctimene_celaeno" "Nyctimene_certans" ...
-##  $ Nnode    : int 429
-##  - attr(*, "class")= chr "phylo"
-```
-
-### will render this
-
-My Chiroptera tree has 916 tips.
-
-]]
-]
----
-class: split-30
-
-.row.split-two[
-.row[.content[
-# <i class="fab fa-r-project"></i> Edit the text and code section <i class="fab fa-r-project"></i>
-&lt;br/&gt;
-]]
-.row[.content[
-## .green[Embed the output of R code] along the text using .amber[backticks] and .amber[curly braces]:
-]]
-]
-.row.split-two[
-.column.slide-in-left.bg-light-green[.content.v30[
-### This code chunk
-
-````markdown
-```{r eval = TRUE} 
-library(ape)
-data(chiroptera)
-str(chiroptera)
-```
-````
-&lt;!-- tip to embed code from here https://support.rstudio.com/hc/en-us/articles/360018181633-Including-verbatim-R-code-chunks-inside-R-Markdown 
-AND HERE FOR JENNY BRYAN's COMPENDIUM:
-https://rmarkdown.rstudio.com/articles_verbatim.html
---&gt;
-
-### And this inline code
-
-My Chiroptera tree has ```  `{r} length(chiroptera$tip.label)`  ``` tips.
-
-]]
-.column.slide-in-right[.content.v30[
-### renders this
-
-
-```
-## List of 3
-##  $ edge     : int [1:1344, 1:2] 917 918 919 920 920 921 922 922 921 923 ...
-##  $ tip.label: chr [1:916] "Paranyctimene_raptor" "Nyctimene_aello" "Nyctimene_celaeno" "Nyctimene_certans" ...
-##  $ Nnode    : int 429
-##  - attr(*, "class")= chr "phylo"
-```
-
-### will render this
-
-My Chiroptera tree has 916 tips.
-
-]]
-]
-
----
-class: split-40
-
-.row.split-30[
-.row[.content[
-# <i class="fab fa-r-project"></i> Edit the text and code section <i class="fab fa-r-project"></i>
-&lt;br/&gt;
-]]
-.row[.content[
-## .deep-orange[Add a plot] without showing the code by setting .amber[echo] to .amber[FALSE] &lt;br/&gt; Control its quality with the .amber[fig.retina] option and its size with .amber[fig.height] and .amber[fig.width]:
-]]
-]
-.row.split-60[
-.column.slide-in-left.bg-deep-orange[.content[
-### This code chunk
-&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
-&lt;pre&gt;&lt;code&gt;```{r eval = TRUE, echo = FALSE, fig.height = 5, fig.retina = 3} 
-plot(chiroptera, type = "c", cex = 0.3)
-```&lt;/code&gt;&lt;/pre&gt;
-]]
-.column.slide-in-right[.content[
-### renders this
-
-&lt;img src="reproducibility-2020-04-15_files/figure-html/unnamed-chunk-4-1.png" width="504" /&gt;
-
-
-]]
-]
----
-class: split-30
-
-.row.split-two[
-.row[.content[
-# <i class="fab fa-r-project"></i> Edit the text and code section <i class="fab fa-r-project"></i>
-&lt;br/&gt;
-]]
-.row[.content[
-## .deep-purple[Add a table] with some formatting with the function .amber[kable] from the .amber[knitr] package:
-]]
-]
-.row.split-40[
-.column.slide-in-left.bg-deep-purple[.content[
-### This code chunk
-&lt;br/&gt;&lt;br/&gt;
-&lt;pre&gt;&lt;code&gt;```{r eval = TRUE, echo = FALSE}
-knitr::kable(iris[1:5, ], caption = 'A caption')
-```&lt;/code&gt;&lt;/pre&gt;
-]]
-.column.slide-in-right[.content[
-### Becomes this
-&lt;br/&gt;&lt;br/&gt;
-
-Table: A caption
-
- Sepal.Length   Sepal.Width   Petal.Length   Petal.Width  Species 
--------------  ------------  -------------  ------------  --------
-          5.1           3.5            1.4           0.2  setosa  
-          4.9           3.0            1.4           0.2  setosa  
-          4.7           3.2            1.3           0.2  setosa  
-          4.6           3.1            1.5           0.2  setosa  
-          5.0           3.6            1.4           0.2  setosa  
-
-
-]]
-]
----
-class: split-40
-
-.row.split-two[
-.row[.content[
-# <i class="fab fa-r-project"></i> Edit the text and code section <i class="fab fa-r-project"></i>
-&lt;br/&gt;
-]]
-.row[.content[
-## Control your .deep-orange[code variables] globally by setting options on the .amber[setup chunk], i.e., the first R code chunk on the .Rmd file:
-]]
-]
-.row.split-60[
-.column.slide-in-left.bg-deep-orange[.content.v40[
-&lt;pre&gt;&lt;code&gt;```{r setup}
-knitr::opts_chunk$set(fig.retina = 3, warning = FALSE, message = FALSE)
-```&lt;/code&gt;&lt;/pre&gt;
-]]
-.column.slide-in-right[.content.v40.center[
-### These can be individually overriden on each chunk, in case you want to show a code warning, for example.
-]]
-]
+&lt;!-- ```{r child='reproducibility-edit-code-2020-04-15.Rmd'} --&gt;
+&lt;!-- ``` --&gt;
 
 &lt;!-- Here goes the edit and add code section  --&gt;
 
