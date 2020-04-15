@@ -653,8 +653,8 @@ bibliography: my_references.bib
 
 ---
 
-<!-- ```{r child='reproducibility-edit-code-2020-04-15.Rmd'} -->
-<!-- ``` -->
+```{r child='reproducibility-edit-code-2020-04-15.Rmd'}
+```
 
 <!-- Here goes the edit and add code section  -->
 
