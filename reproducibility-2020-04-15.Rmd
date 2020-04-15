@@ -1,0 +1,445 @@
+---
+title: "Open Science and Reproducibility"
+author: "Luna L. Sanchez Reyes"
+institute: "University of California, Merced"
+params:
+  event: "QSB Grad Phylogenetics Lecture"
+  date: "April 15, 2020"
+  place: "Merced, California"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: ["kunoichi", "ninjutsu", "../ninjutsu-luna-extras.css", "assets/ninpo.css", "metropolis-fonts"]
+    seal: false
+    self_contained: false
+    nature:
+      ratio: "16:9"
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(echo = FALSE)
+options(knitr.duplicate.label = 'allow')
+```
+class: left, middle
+
+# **Open Science and Reproducibility**
+
+<br/>
+
+## An Introduction
+
+<br/><br/><br/><br/>
+
+### **Luna L. Sánchez Reyes**
+### University of California, Merced
+<br/><br/>
+
+`r params$event`
+
+`r params$date` &#183; `r params$place`
+
+<br/>
+
+Find the code for these slides [`r anicon::faa("github", animate="passing")` here](https://github.com/emitanaka/ninja-theme).
+
+---
+class: bg-teal
+<!-- # Why opening Science? -->
+
+<!-- -- -->
+
+<!-- ## Was it closed?? -->
+# What is Open Science?
+<br/>
+## [Read](https://link.springer.com/chapter/10.1007/978-3-319-00026-8_2) Fecher B., Friesike S. (2014) **Open Science: One term, five schools of thought**. *In:* Bartling S., Friesike S. (eds) Opening Science. Springer, Cham.
+<br/>
+# Some characteristics of Open Science:
+
+---
+class: bg-orange
+
+# Reproducibility &#8800; Open Science
+
+
+
+## But a key aspect to it!
+
+## Importance of reproducibility for you
+
+![Science cat](https://github.com/annakrystalli/talks/raw/master/assets/science-cat.jpg)
+---
+class: bg-pink
+
+# How to make my analyses reproducible?
+
+
+---
+class: split-10
+.row[.content[
+# &emsp; 1) Version control
+]]
+
+.row.split-two[
+.column[.content.center.v40[
+ <img src="http://www.phdcomics.com/comics/archive/phd101212s.gif" height="500px" alt="Image: Jorge Cham www.phdcomics.com">
+ 
+<!-- Or, worse -->
+<!-- <img src="http://smutch.github.io/VersionControlTutorial/_images/vc-xkcd.jpg" width="500px" alt= "Image: xkcd CC BY-NC 2.5"> -->
+]]
+.column.split-30[
+.row[.content[
+## Why?
+
+- Prevent messy file-naming situations
+- Loss of work, resources and time
+
+]]
+.row.split-40[
+.row[.content[
+## How?
+
+We are going to use `git`
+
+]]
+.row[.content[
+Go to terminal and check that you have `git` installed:
+
+```{}
+git version
+```
+For instruction installations, go here.
+]]
+]
+]
+]
+---
+# 2) A contained file structure
+---
+# 3) A markup language for reports
+## Wait, no Word?
+---
+class: split-two
+
+.column.split-10[
+.column.bg-pink[
+
+]
+.column.split-two.bg-blue[
+.row.split-five[
+.row[.content[
+# markdown
+]]
+.row[.content[
+## &emsp; uses hashtags `r emo::ji("hash")`
+]]
+.row[.content.vmiddle[
+### &emsp; &emsp; to create headers
+]]
+.row[.content.vmiddle[
+#### &emsp; &emsp; &emsp; &emsp; &emsp; up to 5 levels, I think...
+]]
+.row[.content[
+##### &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; yes!!!
+]]
+]
+.row.split-two[
+.column[.content.v30[
+- Use hyphens
+- or an asterisk
+- to create a list
+- of some
+- things
+]]
+.column[.content.v30[
+1. Use numbers
+1. to create a
+1. numbered list
+1. of some
+1. other things
+]]
+]
+]
+
+]
+]
+]
+.column.slide-in-right.split-two.bg-amber[
+.row.split-five[
+.row[.content[
+```{}
+# markdown
+```
+]]
+.row[.content[
+```{}
+## uses hashtags `r emo::ji("hash")`
+```
+]]
+.row[.content[
+```{}
+### to create headers
+```
+]]
+.row[.content[
+```{}
+#### up to 5 levels, I think...
+```
+]]
+.row[.content[
+```{}
+#####  yes!!!
+```
+]]
+]
+.row.split-two[
+.column[.content.v30[
+
+&emsp; \- Use hyphens   
+&emsp; \\\* or an asterisk  
+&emsp; \- to create a list  
+&emsp; \- of some  
+&emsp; \- things  
+
+]]
+.column[.content.v30[
+
+.transp[\]1. Use numbers  
+.transp[\]1. to create a   
+.transp[\]1. numbered list   
+.transp[\]1. of some   
+.transp[\]1. other things   
+
+]]
+]
+]
+]
+
+---
+# Rmarkdown
+
+### Not only include code, but run it
+
+### Change formatting for any journal in seconds
+
+### Include citations and format them
+
+### Automatically include a reference list in any format you need
+
+### Render to different file formats, including word `r emo::ji("stuck_out_tongue_winking_eye")`
+
+### And last, but not least...
+---
+class: split-10
+
+.column[
+]
+.column.split-three[
+.row[.content[
+# Add emojis
+
+## Using the R package emo `r emo::ji("crying_cat_face")`
+
+## Check out an almost complete list of emojis [here](https://gist.github.com/rxaviers/7360908).
+]]
+.row[.content[
+# Add icons 
+
+## Using the shiny package, function `icon()`
+
+## `r shiny::icon("r-project")`
+
+]]
+.row[.content[
+# Or, use hex symbols... for the non faint of heart
+]]
+]
+---
+class: split-1-2-1 center
+
+.row.bg-blue[
+
+]
+.row[.content.vmiddle[
+# Let's get to it!
+]]
+.row.bg-blue[
+
+]
+---
+class: split-four, left
+.row[.content.vmiddle.center[
+#Installing the necessary .blue[R packages]
+]]
+
+.row.bg-blue.slide-in-left[.content.center.v40[
+### &emsp; Install any package in `r shiny::icon("r-project")` with the function  .orange.font-mono[install.packages()]
+]]
+
+.row.bg-amber.slide-in-right[.content.center.v40[
+## &emsp;We will need the packages .blue[rmarkdown] and .blue[knitr]
+]]
+
+.row[.content.v40[
+### &emsp; Open R and do &nbsp; .blue.font-mono[install.packages(c("rmarkdown", "knitr"))]
+]]
+---
+class: split-1-2-1, center
+
+.row[.content.vmiddle[
+#Creating a new .blue[rmarkdown] file
+]]
+
+.row.split-two[
+.column.bg-amber[.content.v40[
+### Open a new .Rmd file from RStudio <br/> at .blue[File] > .blue[New File] > .blue[R Markdown]. 
+]]
+
+.column.slide-in-right[.content.v40[
+### This will generate a .amber[template] of an .Rmd file
+]]
+]
+
+.row.slide-in-left[.content.vmiddle[
+### Alternatively, open an empty file an save it as an .blue[.Rmd file]
+]]
+---
+class: split-20
+.row[.content[
+# &emsp; All Rmarkdown files have two main sections
+]]
+.row.split-30[
+.row.slide-in-left.split-two[
+.column[.content.center.font-small[
+### A header, that is called `r emo::ji("sweet_potato")` the YAML `r emo::ji("sweet_potato")`
+
+It sets up various formatting and rendering <br/> options for your report.
+
+]]
+.column.bg-amber[.content[
+```yaml
+---
+title: "A report on rmarkdown possibilities"
+output: html_document
+---
+```
+]]
+]
+.row.slide-in-right.split-two[
+.column[.content.center.v40[
+### `r shiny::icon("r-project")` And the text and code section `r shiny::icon("r-project")`
+
+Which contains your actual report!
+]]
+.column.bg-amber[.content[
+````
+``{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+``
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple 
+formatting syntax for authoring HTML, PDF, and MS 
+Word documents. For more details on using R Markdown see
+<http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be
+generated that includes both content as well as the output 
+of any embedded R code chunks within the document. You can
+embed an R code chunk like this:
+
+``{r cars}
+summary(cars)
+```
+
+````
+]]
+]
+]
+---
+class: split-20
+.row[.content[
+# `r emo::ji("sweet_potato")` Customizing the YAML header options `r emo::ji("sweet_potato")`
+]]
+
+.row.split-three[
+.row.split-two.slide-in-left[
+.column[.content.left.v40[
+.right[Open the YAML header with ---  ]
+
+The only option you *have* to include in the yaml <br/> is the .light-green[output] option.
+
+It specifies instructions for document rendering, i.e.,  <br/> the final format of the report: .light-green[word], .light-green[pdf], or .light-green[html].
+]]
+.column.bg-light-green[.content[
+```yaml
+---
+output:
+  word_document: default
+  pdf_document: default
+  html_document: default
+```
+]]
+]
+.row.split-two.slide-in-right[
+.column[.content.center.v40[
+
+You can add any number of parameters with <br/> the .light-blue[params] option.
+
+Include any of these in your report using <br/> .light-blue['r &nbsp; params$name_of_your_param']   
+to avoid repeating yourself!
+
+]]
+.column.bg-light-blue[.content[
+```yaml
+params:
+  title: "A report on rmarkdown possibilities"
+  date: April 15, 2020
+  place: "Merced, California"
+```
+]]
+]
+
+.row.split-two.slide-in-left[
+.column[.content.right.v40[
+Add a .pink[bibliography] option pointing to a [.bib file](https://www.economics.utoronto.ca/osborne/latex/BIBTEX.HTM) <br/> Any citation manager should be able to <br/> export your references to a .bib file
+
+.left[Close the YAML header with ---  ]
+
+]]
+.column.bg-pink[.content.v40[
+```yaml
+bibliography: my_references.bib
+
+
+
+---
+```
+]]
+]
+]
+---
+class: split-20
+.row[.content[
+# `r shiny::icon("r-project")` Edit the text and code section `r shiny::icon("r-project")`
+]]
+
+.row.split-five
+Besides all the markdown features that we [already saw](#markdown):
+
+embed code and highlight it
+
+embed the output of the code
+  as a chunk
+  or as part of text!
+
+Add citations
+
+Add a list of references
+
+---
+### Render an Rmarkdown document using the knit button on RStudio or by running the command .amber[rmarkdown::render("my_report.Rmd")]
