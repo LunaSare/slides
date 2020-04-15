@@ -45,7 +45,7 @@ class: left, middle
 
 <br/>
 
-Find the code for these slides [`r anicon::faa("github", animate="passing")` here](https://github.com/emitanaka/ninja-theme).
+Find the code for these slides [`r anicon::faa("github", animate="passing")` here](https://github.com/lunasare/slides/blob/master/reproducibility-2020-04-15.Rmd).
 
 ---
 class: bg-teal
@@ -56,26 +56,64 @@ class: bg-teal
 <!-- ## Was it closed?? -->
 # What is Open Science?
 <br/>
-## [Read](https://link.springer.com/chapter/10.1007/978-3-319-00026-8_2) Fecher B., Friesike S. (2014) **Open Science: One term, five schools of thought**. *In:* Bartling S., Friesike S. (eds) Opening Science. Springer, Cham.
+## `r anicon::nia("[Read](https://link.springer.com/chapter/10.1007/978-3-319-00026-8_2)", animate="float")` &nbsp; Fecher B., Friesike S. (2014) **Open Science: One term, five schools of thought**. *In:* &nbsp; Bartling S., Friesike S. (eds) Opening Science. Springer, Cham.
 <br/>
-# Some characteristics of Open Science:
+---
+class: bg-teal
+
+# List some characteristics of Open Science:
+
+-
+-
+-
 
 ---
 class: bg-orange
+# Take away 
+<br/><br/>
+--
 
 # Reproducibility &#8800; Open Science
-
-
+<br/><br/>
+--
 
 ## But a key aspect to it!
+<br/><br/>
+--
 
-## Importance of reproducibility for you
+# Also, doing open science is hard
+
+---
+class: split-10 bg-light-blue
+.row[.content[
+# **Why** should I make my analyses reproducible
+]]
+.row.split-two[
+.column[.content[
+<br/>
+## It is good for science... potentially
+<br/>
+## Importance of reproducibility for you:
+- develop a framework for writing narratives around code and data
+- speed your research advance and discovery
+  - redo analyses faster
+  - make your research known faster
+- establish yourself as a trustworthy researcher(?)
+- understand other research faster
+]]
+.column[.content.v40.center[
 
 ![Science cat](https://github.com/annakrystalli/talks/raw/master/assets/science-cat.jpg)
----
-class: bg-pink
 
-# How to make my analyses reproducible?
+]]
+]
+
+
+
+---
+class: bg-pink center
+<br/><br/><br/><br/><br/>
+# **How** do I make my analyses reproducible?
 
 
 ---
@@ -91,37 +129,122 @@ class: split-10
 <!-- Or, worse -->
 <!-- <img src="http://smutch.github.io/VersionControlTutorial/_images/vc-xkcd.jpg" width="500px" alt= "Image: xkcd CC BY-NC 2.5"> -->
 ]]
-.column.split-30[
-.row[.content[
+.column[.content[
+Or management of changes to documents, computer programs, large web sites, and other collections of information.
+<br/><br/>
 ## Why?
 
 - Prevent messy file-naming situations
 - Loss of work, resources and time
 
-]]
-.row.split-40[
-.row[.content[
+
 ## How?
 
-We are going to use `git`
+We are going to use an open source (free for use) version control software called `git` 
+<br/><br/>
+And a website that allows to store git outputs online while collaborating with others, called `Github`
 
 ]]
-.row[.content[
-Go to terminal and check that you have `git` installed:
+]
+---
+class: split-10
+.row.bg-pink[.content[
+# Hands on!
+]]
+.row[.content.pad10px[
+<br/><br/>
+
+## Go to terminal and check that you have `git` installed by running the command:
 
 ```{}
 git version
 ```
-For instruction installations, go here.
+<br/>
+### &emsp; More on [git](http://annaken.github.io/intro_to_git_course/#/) and installation instructions.
+<br/><br/>
+## Go to your [Github](https://github.com/) account or create an account if you do not have one yet.
+]]
+---
+class: split-10
+.row[.content[
+# &emsp; 2) A self-contained file structure
+]]
+.row.split-two[
+.row.split-two[
+.column[.content.pad10px[
+<br/>
+## Why?
+
+- Keep all materials associated with a particular analysis in the same place
+- The working directory can be set to the one root directory of the project
+- Fresh environment everytime you start working (= faster debugging and testing)
+]]
+.column[.content[
+<br/><br/>
+<img src="https://media.giphy.com/media/3oEjHWPTo7c0ajPwty/giphy.gif" height="250px" alt="Gif: https://giphy.com/gifs/girly-nest-nesting-3oEjHWPTo7c0ajPwty">
 ]]
 ]
+.row[.content.center[
+<br/>
+## How?
+
+Premise: One local project - one Github repo
+
+Option 1: `Fork and clone` a project from `Github`. 
+
+Option 2: Create a `new project` in RStudio and initialize it with `git`.
+
+]]
 ]
+
+---
+class: split-10
+.row.bg-pink[.content[
+# Hands on!
+]]
+.row[.content.pad10px[
+<br/>
+## Option 1<br/><br/>
+### Go to this repo on Github <https://github.com/LunaSare/project-reproducibility>  
+### Press the fork button, to add a copy of this repo to your profile  
+### Once in your profile, press the clone button -- copy that -- go to terminal, and do:
+
+```{}
+git clone 
+```
+
+## Option 2 <br/><br/>
+
+### From Rstudio go to File > New Project > New Directory  
+### Make sure to tick the `Create a git repository` box
+]]
+
+---
+class: split-10
+.row[.content[
+# &emsp; 3) A markup language for reports
+]]
+.row.split-two[
+.column[.content.center[
+<br/>
+## Wait, **why** not Word?
+![word clip](https://media.giphy.com/media/13V60VgE2ED7oc/giphy.gif)
+Have you tried opening a word document with a text editor???
+
+It is ***not*** human-readable...
+
+For the purposes of version control, we prefer markup languages: human-readable, plain-text documents that use tags to define elements and give format to documents.
+]]
+.column[.content.center.v30[
+<br/>
+## How?
+
+There are many markup languages around: html, xml, markdown, latex
+
+We will focus on markdown for the purpose of this hands on.
+]]
 ]
----
-# 2) A contained file structure
----
-# 3) A markup language for reports
-## Wait, no Word?
+
 ---
 class: split-two
 
@@ -218,46 +341,115 @@ class: split-two
 ]
 ]
 ]
-
 ---
-# Rmarkdown
+class: split-two
+name: markdown2
 
-### Not only include code, but run it
-
-### Change formatting for any journal in seconds
-
-### Include citations and format them
-
-### Automatically include a reference list in any format you need
-
-### Render to different file formats, including word `r emo::ji("stuck_out_tongue_winking_eye")`
-
-### And last, but not least...
----
-class: split-10
-
-.column[
+.column.split-10[
+.column.bg-red[
 ]
-.column.split-three[
-.row[.content[
-# Add emojis
-
-## Using the R package emo `r emo::ji("crying_cat_face")`
-
-## Check out an almost complete list of emojis [here](https://gist.github.com/rxaviers/7360908).
+.column.split-four.center[
+.row.bg-light-blue[.content.font_medium[
+markdown emphasizes text with *italics*, **bold**, or  ***both*** using 1, 2, or 3 asterisks respectively, at each side of the text
 ]]
-.row[.content[
-# Add icons 
-
-## Using the shiny package, function `icon()`
-
-## `r shiny::icon("r-project")`
-
+.row.bg-light-blue[.content.font_medium.v20[
+Add links to [external sites](https://www.markdownguide.org/basic-syntax/) or [internal sections](#internal) of the document
 ]]
-.row[.content[
-# Or, use hex symbols... for the non faint of heart
+.row.bg-light-blue[.content.font_medium[
+Add linked URLs <https://www.markdownguide.org/basic-syntax/>
+]]
+.row.bg-light-blue[.content[
+Create horizontal rules with three or more asterisks, dashes, or underscores
+******
+______
+______
 ]]
 ]
+]
+
+.column.split-four[
+.row.bg-orange[.content.v20[
+```
+markdown emphasizes text with *italics*, **bold**, 
+or  ***both*** using 1, 2, or 3 asterisks respectively, 
+at each side of the text
+```
+]]
+.row.bg-orange[.content.v20[
+```
+Add links to [external sites](https://www.markdownguide.org/
+basic-syntax/) or [internal sections](#internal) 
+of the document
+```
+]]
+.row.bg-orange[.content.v30[
+```
+Add linked URLs <https://www.markdownguide.org/basic-syntax/>
+```
+]]
+.row.bg-orange[.content.v10[
+```
+Create horizontal rules with three or more asterisks, 
+dashes, or underscores
+******
+------
+______
+```
+]]
+
+]
+---
+class: split-1-2-1
+.column.bg-pink[
+]
+.column[.content.center.vmiddle[
+# We're not stopping there...
+]]
+.column.bg-pink[
+]
+---
+class:split-10
+
+.row.split-30.slide-in-left[
+.column.bg-blue[
+]
+.column[.content.vmiddle[
+# &emsp; Use R Markdown!
+]]
+]
+.row.split-60[
+.column[.content.center.font_medium[
+
+.font2[Why?]
+
+.left[Effectively *understands* most markup  
+languages]
+
+.right[Not only ***include*** code, but ***run*** the code]
+
+.left[Change formatting for any journal in seconds]
+
+.right[Include citations and format them]
+
+.left[Automatically include a reference list in any <br/> format you need]
+
+.right[Render to different file formats, including word `r emo::ji("stuck_out_tongue_winking_eye")`]
+
+.left[And last, but not least: <br/> &emsp; Easily add emojis and icons]
+]]
+.column.split-two[
+.row[.content[
+
+]
+]
+.row.slide-in-right[.content.center.vmiddle[
+.font2.bg-blue[How?]
+<br/>
+.font3.bg-blue[RStudio]
+]]
+]
+]
+
 ---
 class: split-1-2-1 center
 
@@ -422,24 +614,60 @@ bibliography: my_references.bib
 ]]
 ]
 ]
+
 ---
-class: split-20
-.row[.content[
-# `r shiny::icon("r-project")` Edit the text and code section `r shiny::icon("r-project")`
+
+```{r child='reproducibility-edit-code-2020-04-15.Rmd'}
+```
+
+<!-- Here goes the edit and add code section  -->
+
+---
+class: split-four, left
+.row[.content.vmiddle.center[
+#Rendering the .blue[documents]
 ]]
 
-.row.split-five
-Besides all the markdown features that we [already saw](#markdown):
+.row.bg-amber.slide-in-right[.content.center.v40[
+## &emsp;We will use the .blue[render] function from the .blue[rmarkdown] package
+]]
 
-embed code and highlight it
+.row.bg-blue.slide-in-left[.content.center.v40[
+### Run <br/> .orange.font-mono.font0-85[rmarkdown::render("my_report.Rmd", output_format = "all")] <br/> to generate a report in all formats defined on the yaml
+]]
 
-embed the output of the code
-  as a chunk
-  or as part of text!
-
-Add citations
-
-Add a list of references
-
+.row[.content.v40.center[
+### Alternatively, use the &#x1F9F6; .blue[knit button] &#x1F9F6; from RStudio
+]]
 ---
-### Render an Rmarkdown document using the knit button on RStudio or by running the command .amber[rmarkdown::render("my_report.Rmd")]
+class: split-20
+
+.row[.content.vmiddle[
+# &emsp; These are my rendered documents!
+]]
+.row.split-three[
+.column.bg-red[.content.center[
+ <img src="https://github.com/lunasare/project-reproducibility/raw/master/media/test-pdf.png" width="380px" alt="test-pdf">
+]]
+.column.bg-blue[.content.center[
+ <img src="https://github.com/lunasare/project-reproducibility/raw/master/media/test-word.png" width="380px" alt="test-word">
+]]
+.column.bg-orange[.content.center[
+ <img src="https://github.com/lunasare/project-reproducibility/raw/master/media/test-html.png" width="380px" alt="test-html">
+]]
+]
+---
+background-image: url("https://media.giphy.com/media/DUtSpDzxZZwPu/giphy.gif")
+background-position: 50% 65%
+background-size: 650px 
+
+## Questions?
+---
+name: internal
+background-image: url("https://media.giphy.com/media/cMF3Fa3ZnLs8jk4xM4/giphy.gif")
+background-position: 50% 70%
+background-size: 450px
+
+## Not yet time for a break!
+
+## [Go back](#markdown2) to where you left off `r emo::ji("rocket")`

@@ -1,23 +1,53 @@
+class:split-two
+
+.column.bg-light-blue[.content[
+Insert external or local images
+![Science cat](https://github.com/annakrystalli/talks/raw/master/assets/science-cat.jpg)
+<img source="../media/banksy_2019.11.13.png" width="150px" alt="local-image">
+
+]]
+.column.bg-orange[.content.v30[
+]]
+
+---
+class: split-10
+
+.column[
+]
+.column.split-three[
+.row[.content[
+# Add emojis
+
+## Using the R package emo `r emo::ji("crying_cat_face")`
+
+## Check out an almost complete list of emojis [here](https://gist.github.com/rxaviers/7360908).
+]]
+.row[.content[
+# Add icons 
+
+## Using the shiny package, function `icon()`
+
+## `r shiny::icon("r-project")`
+
+]]
+.row[.content[
+# Or, use hex symbols... for the non faint of heart
+]]
+]
+
+---
+
 class: split-20
-
-.row[.content.vmiddle.center[
-# Adding publications, projects, a blog section, the [sky is the limit]...
+.row[.content.center.vmiddle[
+### Manage your projects with GitHub issues: plan, record and discuss tasks with collaborators
 ]]
-
-.row.split-90[
-.row.split-60.bg-main2[
-.column[.content.nopadding.center.vmiddle[
-<img src="media/blogdown1.gif" width="100%" />
+.row.split-two[
+.column[.content[
+### Issues
+<img src="https://github.com/annakrystalli/talks/raw/master/assets/github_issues.png" width="600px">
 ]]
-.column.split-two[
-.row[.content.vmiddle[
-### `r emo::ji("point_left")` Content that is linked on the widgets is stored in folders on the `content/` folder
+.column[.content[
+### Projects
+<img src="https://github.com/annakrystalli/talks/raw/master/assets/github_projects.png" width="600px">
 ]]
-.row[.content[
-### There are predetermined folders (courses, blog posts, projects, publications, slides and talks), but you can add as many as you need.
-]]
-]
-.row[.content[
-]]
-]
 ]
