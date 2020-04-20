@@ -64,7 +64,7 @@ class: bg-teal
 
 ---
 class: bg-orange
-# Take away 
+# Take away
 &lt;br/&gt;&lt;br/&gt;
 --
 
@@ -120,7 +120,7 @@ class: split-10
 .row.split-two[
 .column[.content.center.v40[
  &lt;img src="http://www.phdcomics.com/comics/archive/phd101212s.gif" height="500px" alt="Image: Jorge Cham www.phdcomics.com"&gt;
- 
+
 &lt;!-- Or, worse --&gt;
 &lt;!-- &lt;img src="http://smutch.github.io/VersionControlTutorial/_images/vc-xkcd.jpg" width="500px" alt= "Image: xkcd CC BY-NC 2.5"&gt; --&gt;
 ]]
@@ -135,7 +135,7 @@ Or management of changes to documents, computer programs, large web sites, and o
 
 ## How?
 
-We are going to use an open source (free for use) version control software called `git` 
+We are going to use an open source (free for use) version control software called `git`
 &lt;br/&gt;&lt;br/&gt;
 And a website that allows to store git outputs online while collaborating with others, called `Github`
 
@@ -185,7 +185,7 @@ class: split-10
 
 Premise: One local project - one Github repo
 
-Option 1: `Fork and clone` a project from `Github`. 
+Option 1: `Fork and clone` a project from `Github`.
 
 Option 2: Create a `new project` in RStudio and initialize it with `git`.
 
@@ -200,17 +200,17 @@ class: split-10
 .row[.content.pad10px[
 &lt;br/&gt;
 ## Option 1&lt;br/&gt;&lt;br/&gt;
-### Go to this repo on Github &lt;https://github.com/LunaSare/project-reproducibility&gt;  
-### Press the fork button, to add a copy of this repo to your profile  
+### Go to this repo on Github &lt;https://github.com/LunaSare/project-reproducibility&gt;
+### Press the fork button, to add a copy of this repo to your profile
 ### Once in your profile, press the clone button -- copy that -- go to terminal, and do:
 
 ```{}
-git clone 
+git clone
 ```
 
 ## Option 2 &lt;br/&gt;&lt;br/&gt;
 
-### From Rstudio go to File &gt; New Project &gt; New Directory  
+### From Rstudio go to File &gt; New Project &gt; New Directory
 ### Make sure to tick the `Create a git repository` box
 ]]
 
@@ -240,7 +240,7 @@ We will focus on markdown for the purpose of this hands on.
 ]]
 ]
 ---
-class: split-1-2-1 
+class: split-1-2-1
 .row.bg-amber[
 
 ]
@@ -327,20 +327,20 @@ class: split-two
 .row.split-two[
 .column[.content.v30[
 
-&amp;emsp; \- Use hyphens   
-&amp;emsp; \\\* or an asterisk  
-&amp;emsp; \- to create a list  
-&amp;emsp; \- of some  
-&amp;emsp; \- things  
+&amp;emsp; \- Use hyphens
+&amp;emsp; \\\* or an asterisk
+&amp;emsp; \- to create a list
+&amp;emsp; \- of some
+&amp;emsp; \- things
 
 ]]
 .column[.content.v30[
 
-.transp[\]1. Use numbers  
-.transp[\]1. to create a   
-.transp[\]1. numbered list   
-.transp[\]1. of some   
-.transp[\]1. other things   
+.transp[\]1. Use numbers
+.transp[\]1. to create a
+.transp[\]1. numbered list
+.transp[\]1. of some
+.transp[\]1. other things
 
 ]]
 ]
@@ -375,15 +375,15 @@ ______
 .column.split-four[
 .row.bg-amber[.content.v20[
 ```
-markdown emphasizes text with *italics*, **bold**, 
-or  ***both*** using 1, 2, or 3 asterisks respectively, 
+markdown emphasizes text with *italics*, **bold**,
+or  ***both*** using 1, 2, or 3 asterisks respectively,
 at each side of the text
 ```
 ]]
 .row.bg-orange[.content.v20[
 ```
 Add links to [external sites](https://www.markdownguide.org/
-basic-syntax/) or [internal sections](#internal) 
+basic-syntax/) or [internal sections](#internal)
 of the document
 ```
 ]]
@@ -394,7 +394,7 @@ Add linked URLs &lt;https://www.markdownguide.org/basic-syntax/&gt;
 ]]
 .row.bg-orange[.content.v10[
 ```
-Create horizontal rules with three or more asterisks, 
+Create horizontal rules with three or more asterisks,
 dashes, or underscores
 ******
 ------
@@ -453,7 +453,7 @@ class:split-10
 
 .font2[Why?]
 
-.left[Effectively *understands* most markup  
+.left[Effectively *understands* most markup
 languages]
 
 .right[Not only ***include*** code, but ***run*** the code]
@@ -504,22 +504,22 @@ class: split-four, left
 ]]
 
 .row.bg-amber.slide-in-right[.content.center.v40[
-## &amp;emsp;We will need the packages .blue[rmarkdown] and .blue[knitr]
+## &amp;emsp;We will need the packages .blue.font-mono[rmarkdown], .blue.font-mono[knitr], and .blue.font-mono[citr]
 ]]
 
 .row[.content.v40[
-### &amp;emsp; Open R and do &amp;nbsp; .blue.font-mono[install.packages(c("rmarkdown", "knitr"))]
+### &amp;emsp; Open R and do &amp;nbsp; .blue.font-mono[install.packages(c("rmarkdown", "knitr", "citr"))]
 ]]
 ---
 class: split-1-2-1, center
 
 .row[.content.vmiddle[
-#Creating a new .blue[rmarkdown] file
+#Creating a new .blue[R markdown] file
 ]]
 
 .row.split-two[
 .column.bg-amber[.content.v40[
-### Open a new .Rmd file from RStudio &lt;br/&gt; at .blue[File] &gt; .blue[New File] &gt; .blue[R Markdown]. 
+### Open a new .Rmd file from RStudio &lt;br/&gt; at .blue[File] &gt; .blue[New File] &gt; .blue[R Markdown].
 ]]
 
 .column.slide-in-right[.content.v40[
@@ -533,7 +533,7 @@ class: split-1-2-1, center
 ---
 class: split-20
 .row[.content[
-# &amp;emsp; All Rmarkdown files have two main sections
+# &amp;emsp; All R markdown files have two main sections
 ]]
 .row.split-30[
 .row.slide-in-left.split-two[
@@ -546,7 +546,7 @@ It sets up various formatting and rendering &lt;br/&gt; options for your report.
 .column.bg-amber[.content[
 ```yaml
 ---
-title: "A report on rmarkdown possibilities"
+title: "A report on R markdown possibilities"
 output: html_document
 ---
 ```
@@ -565,13 +565,13 @@ knitr::opts_chunk$set(echo = TRUE)
 ``
 ## R Markdown
 
-This is an R Markdown document. Markdown is a simple 
-formatting syntax for authoring HTML, PDF, and MS 
+This is an R Markdown document. Markdown is a simple
+formatting syntax for authoring HTML, PDF, and MS
 Word documents. For more details on using R Markdown see
 &lt;http://rmarkdown.rstudio.com&gt;.
 
 When you click the **Knit** button a document will be
-generated that includes both content as well as the output 
+generated that includes both content as well as the output
 of any embedded R code chunks within the document. You can
 embed an R code chunk like this:
 
@@ -613,14 +613,14 @@ output:
 
 You can add any number of parameters with &lt;br/&gt; the .light-blue[params] option.
 
-Include any of these in your report using &lt;br/&gt; .light-blue['r &amp;nbsp; params$name_of_your_param']   
+Include any of these in your report using &lt;br/&gt; .light-blue['r &amp;nbsp; params$name_of_your_param']
 to avoid repeating yourself!
 
 ]]
 .column.bg-light-blue[.content[
 ```yaml
 params:
-  title: "A report on rmarkdown possibilities"
+  title: "A report on R markdown possibilities"
   date: April 15, 2020
   place: "Merced, California"
 ```
@@ -942,7 +942,7 @@ class: split-four, left
 ]]
 
 .row.bg-amber.slide-in-right[.content.center.v40[
-## &amp;emsp;We will use the .blue[render] function from the .blue[rmarkdown] package
+## &amp;emsp;We will use the .blue.font-mono[render()] function from the .blue.font-mono[rmarkdown] package
 ]]
 
 .row.bg-blue.slide-in-left[.content.center.v40[
@@ -972,7 +972,7 @@ class: split-20
 ---
 background-image: url("https://media.giphy.com/media/DUtSpDzxZZwPu/giphy.gif")
 background-position: 50% 65%
-background-size: 650px 
+background-size: 650px
 
 ## Questions?
 ---

@@ -1,11 +1,11 @@
 ---
-title: "Open Science and Reproducibility"
-author: "Luna L. Sanchez Reyes"
-institute: "University of California, Merced"
 params:
-  event: "QSB Grad Phylogenetics Lecture"
-  date: "April 15, 2020"
+  event: "Enviro-lunch!"
+  date: "April 23, 2020"
   place: "Merced, California"
+  title: "Leveraging R for your research"
+  author: "Luna L. Sanchez Reyes"
+  institute: "University of California, Merced"
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -27,16 +27,16 @@ options(knitr.duplicate.label = 'allow')
 ```
 class: left, middle
 
-# **Open Science and Reproducibility**
+# **params$title**
 
 <br/>
 
-## An Introduction
+## Create your own website (and other things) using R!
 
 <br/><br/><br/><br/>
 
-### **Luna L. Sánchez Reyes**
-### University of California, Merced
+### **params$author**
+### params$institute
 <br/><br/>
 
 `r params$event`
@@ -45,15 +45,11 @@ class: left, middle
 
 <br/>
 
-Find the code for these slides [`r anicon::faa("github", animate="passing")` here](https://github.com/lunasare/slides/blob/master/reproducibility-2020-04-15.Rmd).
+Find the code for these slides [`r anicon::faa("github", animate="passing")` here](https://github.com/lunasare/slides/blob/master/leveraging-r-2020-04-20.Rmd).
 
 ---
 class: bg-teal
-<!-- # Why opening Science? -->
 
-<!-- -- -->
-
-<!-- ## Was it closed?? -->
 # What is Open Science?
 <br/>
 ## `r anicon::nia("[Read](https://link.springer.com/chapter/10.1007/978-3-319-00026-8_2)", animate="float")` &nbsp; Fecher B., Friesike S. (2014) **Open Science: One term, five schools of thought**. *In:* &nbsp; Bartling S., Friesike S. (eds) Opening Science. Springer, Cham.
@@ -509,17 +505,17 @@ class: split-four, left
 ]]
 
 .row.bg-amber.slide-in-right[.content.center.v40[
-## &emsp;We will need the packages .blue.font-mono[rmarkdown], .blue.font-mono[knitr], and .blue.font-mono[citr]
+## &emsp;We will need the packages .blue[rmarkdown] and .blue[knitr]
 ]]
 
 .row[.content.v40[
-### &emsp; Open R and do &nbsp; .blue.font-mono[install.packages(c("rmarkdown", "knitr", "citr"))]
+### &emsp; Open R and do &nbsp; .blue.font-mono[install.packages(c("rmarkdown", "knitr"))]
 ]]
 ---
 class: split-1-2-1, center
 
 .row[.content.vmiddle[
-#Creating a new .blue[R markdown] file
+#Creating a new .blue[rmarkdown] file
 ]]
 
 .row.split-two[
@@ -538,7 +534,7 @@ class: split-1-2-1, center
 ---
 class: split-20
 .row[.content[
-# &emsp; All R markdown files have two main sections
+# &emsp; All Rmarkdown files have two main sections
 ]]
 .row.split-30[
 .row.slide-in-left.split-two[
@@ -551,7 +547,7 @@ It sets up various formatting and rendering <br/> options for your report.
 .column.bg-amber[.content[
 ```yaml
 ---
-title: "A report on R markdown possibilities"
+title: "A report on rmarkdown possibilities"
 output: html_document
 ---
 ```
@@ -625,7 +621,7 @@ to avoid repeating yourself!
 .column.bg-light-blue[.content[
 ```yaml
 params:
-  title: "A report on R markdown possibilities"
+  title: "A report on rmarkdown possibilities"
   date: April 15, 2020
   place: "Merced, California"
 ```
@@ -665,7 +661,7 @@ class: split-four, left
 ]]
 
 .row.bg-amber.slide-in-right[.content.center.v40[
-## &emsp;We will use the .blue.font-mono[render()] function from the .blue.font-mono[rmarkdown] package
+## &emsp;We will use the .blue[render] function from the .blue[rmarkdown] package
 ]]
 
 .row.bg-blue.slide-in-left[.content.center.v40[
