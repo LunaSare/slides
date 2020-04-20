@@ -51,3 +51,28 @@ class: split-20
 <img src="https://github.com/annakrystalli/talks/raw/master/assets/github_projects.png" width="600px">
 ]]
 ]
+
+---
+.column[.content.nopadding.center.vmiddle[
+<img src="media/home-files.gif" width="100%" />
+]]
+.column.split-10.center[
+.row[.content.font0-85[
+Most content of a website lives in the home page
+]]
+.row.split-four[
+.row[.content.v10.color-main4[
+It is easier to identify different parts of your website when each has its own personality or .amber[design]
+]]
+.row[.content.font_medium[
+Different ways of presenting content are called .amber[widgets]
+]]
+.row[.content.color-main4[
+`r emo::ji("point_left")` &nbsp;
+.font1-5[Each `".md"` file within the folder .amber[content/home/] represents a different widget]
+]]
+.row[.content.v50[
+Go to [Hugo Academic's documentation](https://sourcethemes.com/academic/docs/page-builder/) for more details on widgets
+]]
+]
+]

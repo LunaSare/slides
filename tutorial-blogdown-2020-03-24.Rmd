@@ -502,12 +502,11 @@ class: split-20
 # Design the .color-main3[content] of your home page `r emo::ji("house")`
 ]]
 
-.row.split-90[
-.row.split-60.bg-main1[
+.row.bg-main1.split-60[
 .column[.content.nopadding.center.vmiddle[
 <img src="media/home-files.gif" width="100%" />
 ]]
-.column.split-10.center[
+.column.split-10.center.gray[
 .row[.content.font0-85[
 Most content of a website lives in the home page
 ]]
@@ -527,13 +526,11 @@ Go to [Hugo Academic's documentation](https://sourcethemes.com/academic/docs/pag
 ]]
 ]
 ]
-.row[.content[
-]]
-]
 ]
 
+
 ---
-class: split-60 purple
+class: split-60
 
 .column.split-two[
 .row[.content.center.nopadding[
@@ -545,10 +542,10 @@ class: split-60 purple
 ]
 
 .column.split-two[
-.row[.content.center.v30.black[
-# .purple[Adding] or .purple[removing] a widget from home
+.row[.content.center.v30.bg-main1.gray[
+# .color-main3[Adding] or .purple[removing] a widget from home
 ]]
-.row.split-two.slide-in-right[
+.row.split-two.slide-in-right.color-main1[
 .row[.content.center[
 ### &nbsp; `r emo::ji("point_left")` &nbsp; Open up the .amber[.md] file of the widget you want to remove
 ]]
@@ -561,7 +558,7 @@ class: split-60 purple
 
 ---
 
-class: split-60 purple
+class: split-60 
 
 .column.split-two[
 .row[.content.center.nopadding[
@@ -573,10 +570,10 @@ class: split-60 purple
 ]
 
 .column.split-two[
-.row[.content.center.v60.black[
-# .purple[Duplicating] a widget in the home
+.row[.content.center.vmiddle.bg-main1.gray[
+# .color-main3[Duplicating] a widget in the home
 ]]
-.row.split-two.slide-in-right[
+.row.split-two.slide-in-right.color-main1[
 .row[.content.center[
 ### &nbsp; `r emo::ji("point_left")` &nbsp; Select the .amber[.md] file of the widget you want to duplicate
 ]]
@@ -593,8 +590,7 @@ class: split-20
 # Add .purple[products] of your work
 ]]
 
-.row.split-90[
-.row.split-60.bg-main2[
+.row.bg-purple.split-60[
 .column[.content.nopadding.center.vmiddle[
 <img src="media/work-content.gif" width="100%" />
 ]]
@@ -606,10 +602,8 @@ class: split-20
 ### &nbsp; The folders .amber[courses/], .amber[posts/], .amber[projects/], .amber[publications/], .amber[slides/] and .amber[talks/] are preset, but you can add as many sections as you need `r emo::ji("open_file_folder")``r emo::ji("card_file_box")``r emo::ji("file_cabinet")`
 ]]
 ]
-.row[.content[
-]]
 ]
-]
+
 
 ---
 class: split-20
@@ -618,9 +612,8 @@ class: split-20
 # Last but not least: .pink[add a PDF of your CV]
 ]]
 
-.row.split-90[
 .row.split60.bg-pink[
-.row.split-two[
+.row.split-60[
 .column[.content.nopadding.center.vmiddle[
 <img src="media/cv-section.gif" width="100%" />
 ]]
@@ -632,8 +625,6 @@ class: split-20
 ### Go to the the .amber[CV section] of .amber[config/_default/_menus.toml] file and uncomment it (remove the `r emo::ji("hash")` at the beginning of each line)
 ]]
 ]
-]
-.row[]
 ]
 ]
 
