@@ -1,7 +1,7 @@
 ---
 title: Enviro-lunch Leveraging R
 params:
-  event: "Enviro-lunch!"
+  event: "Enviro-lunch Seminar"
   date: "April 23, 2020"
   place: "Merced, California"
   title: "Leveraging R for your research"
@@ -57,7 +57,7 @@ class: split-20
 .row.split-four.white.font_medium[
 .row.split-two.slide-in-left[
 .column.bg-gray[.content.center[
-Insert citations in any format <br/> with .purple.font-mono[citr]
+Insert citations in any format <br/> with .deep-orange.font-mono[citr]
 ]]
 .column.bg-black[.content.center[
 Use paper templates for popular journals <br/> with .green.font-mono[rticles]
@@ -79,7 +79,8 @@ Build and maintain package and usage documentation with .pink.font-mono[pkgdown]
 <img src="https://github.com/rstudio/hex-stickers/raw/master/PNG/pkgdown.png" width="50px">
 ]]
 .column.bg-black[.content.center[
-Organise an analysis project and construct a website for it with .cyan.font-mono[workflowr]
+Organise an analysis project and construct a website for it with .purple.font-mono[workflowr]
+[<img src="https://raw.githubusercontent.com/workflowr/workflowr-assets/master/img/hex-workflowr.png" width="50px">](https://github.com/jdblischak/workflowr)
 ]]
 ]
 .row.split-two.slide-in-right[
@@ -93,3 +94,52 @@ Create slide presentations <br/> with .red.font-mono[xaringan]
 ]]
 ]
 ]
+---
+class: split-20
+
+.row[.content.vmiddle[
+# The potential of R markdown `r emo::ji("raised_hands")`
+]]
+.row.split-four.white.font_medium[
+.row.split-two[
+.column.bg-gray[.content.center[
+Insert citations in any format <br/> with .deep-orange.font-mono[citr]
+]]
+.column.bg-black[.content.center[
+Use paper templates for popular journals <br/> with .green.font-mono[rticles]
+]]
+]
+.row.split-two[
+.column.bg-black[.content.center[
+Generate word docs and de-render them back to R markdown with edits and tracked changes <br/> with .blue.font-mono[redoc]
+]]
+.column.bg-gray[.content.center[
+Create and maintain online books <br/> with .lime.font-mono[bookdown]
+<img src="https://github.com/rstudio/hex-stickers/raw/master/PNG/bookdown.png" width="50px">
+
+]]
+]
+.row.split-two[
+.column.bg-gray[.content.center[
+Build and maintain package and usage documentation with .pink.font-mono[pkgdown]
+<img src="https://github.com/rstudio/hex-stickers/raw/master/PNG/pkgdown.png" width="50px">
+]]
+.column.bg-black[.content.center[
+Organise an analysis project and construct a website for it with .purple.font-mono[workflowr]
+[<img src="https://raw.githubusercontent.com/workflowr/workflowr-assets/master/img/hex-workflowr.png" width="50px">](https://github.com/jdblischak/workflowr)
+]]
+]
+.row.split-two[
+.column.bg-amber.black[.content.center[
+Create and maintain blogs and academic websites <br/> with .white.font-mono[blogdown]
+<img src="https://github.com/rstudio/hex-stickers/raw/master/PNG/blogdown.png" width="50px">
+]]
+.column.bg-gray[.content.center[
+Create slide presentations <br/> with .red.font-mono[xaringan]
+<img src="https://github.com/rstudio/hex-stickers/raw/master/PNG/xaringan.png" width="50px">
+]]
+]
+]
+---
+```{r child='children/tutorial-blogdown-2020-03-24.Rmd'}
+```

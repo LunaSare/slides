@@ -1,0 +1,10 @@
+class: left,  middle
+
+Bonus!
+
+1. Modify the mini-logo on the browser
+
+To 2. add other sharing links or remove the ones that appear on posts or publications, go to `data/page_sharer.toml` and change `enable= true` to `enable= false`, or visceversa, depending on what you want to appear on yur website
+
+
+<br/><br/><br/>
