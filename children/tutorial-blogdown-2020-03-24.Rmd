@@ -219,8 +219,8 @@ class: split-20
 .row.bg-lime[.content.vmiddle[
 ### `r emo::ji("art")` &nbsp; Set the color and font .orange[theme] of the site in any way you want!
 ]]
-.row.bg-light-green[.content.vmiddle[
-### `r emo::ji("speech_balloon")` &nbsp; Configure the site in various .amber[languages] (Example website code [here]())
+.row.bg-gray[.content.vmiddle[
+### Extra: `r emo::ji("speech_balloon")` &nbsp; Configure the site in various .amber[languages] (check out an example [website]() and its [code]())
 ]]
 ]
 ]
@@ -454,7 +454,7 @@ Adding your .white[bio] into .white[content/authors/admin/]
 class: split-20 center
 
 .row[.content.vmiddle[
-# Design the .color-main3[content] presentation of your home page `r emo::ji("house")`
+# Design the .color-main3[content presentation] of your home page `r emo::ji("house")`
 ]]
 
 .row.split-two.bg-main1.gray[
@@ -482,32 +482,30 @@ Go to the [rbind](https://github.com/rbind) project to find more hugo academic w
 class: split-20
 
 .row[.content.vmiddle.center[
-# Design the .color-main3[content] of your home page `r emo::ji("house")`
+# Design the .color-main3[content presentation] of your home page `r emo::ji("house")`
 ]]
 
-.row.bg-main1.split-60[
+.row.bg-main1.split-50[
 .column[.content.nopadding.center.vmiddle[
 <img src="media/home-files.gif" width="100%" />
 ]]
-.column.split-10.center.gray[
+.column.split-five.gray[
 .row[.content.font0-85[
-Most content of a website lives in the home page
+The .amber[home page]: "the introductory page of a website, typically serving as a table of contents for the site."
 ]]
-.row.split-four[
 .row[.content.v10.color-main4[
-It is easier to identify different parts of your website when each has its own personality or .amber[design]
+The .amber[widgets]: "components of an interface allowing users to access services and information on demand."
 ]]
-.row[.content.font_medium[
-Different ways of presenting content are called .amber[widgets]
+.row[.content.font_medium.center[
+.font1-5[`r emo::ji("point_left")` &nbsp; Each `".md"` file within the folder .amber[content/home/] contains the template for a different widget type]
 ]]
 .row[.content.color-main4[
-`r emo::ji("point_left")` &nbsp;
-.font1-5[Each `".md"` file within the folder .amber[content/home/] represents a different widget]
+<br/><br/>Check all widgets in action on my webpage [here](https://www.lunasare.com/all-widgets/),
+and go to [Hugo Academic's documentation](https://sourcethemes.com/academic/docs/page-builder/) for more technical details on the available widgets
 ]]
 .row[.content.v50[
-Go to [Hugo Academic's documentation](https://sourcethemes.com/academic/docs/page-builder/) for more details on widgets
+<br/><br/>Next: how do I use these famous widgets??
 ]]
-]
 ]
 ]
 
