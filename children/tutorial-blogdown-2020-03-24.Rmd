@@ -553,7 +553,7 @@ class: split-20
 ### &nbsp; `r emo::ji("point_left")` &nbsp; You can use any name for your .md file
 ]]
 .row[.content.v20.center[
-### &emsp; &#emo::ji("open_mouth") &nbsp;
+### &emsp; `r emo::ji("open_mouth")` &nbsp;
 ]]
 ]
 ]

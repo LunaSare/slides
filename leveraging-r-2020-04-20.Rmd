@@ -1,10 +1,11 @@
 ---
-title: Enviro-lunch Leveraging R
+title: Leverage your coding skills to get your science out there!
 params:
   event: "Enviro-lunch Seminar"
   date: "April 23, 2020"
   place: "Merced, California"
-  title: "Leveraging R for your research"
+  title: "Leveraging your R skills to get your science out there (even if you do not know that much R)"
+  subtitle: "Create your own website with R!"
   author: "Luna L. Sanchez Reyes"
   institute: "University of California, Merced"
 output:
@@ -32,7 +33,7 @@ class: left, middle
 
 <br/>
 
-## Create your own website (and other things) using R!
+## `r params$subtitle`
 
 <br/><br/><br/><br/>
 
@@ -48,6 +49,27 @@ class: left, middle
 
 Find the code for these slides [`r anicon::faa("github", animate="passing")` here](https://github.com/lunasare/slides/blob/master/leveraging-r-2020-04-20.Rmd).
 
+---
+# R is a widespread tool for research
+
+Widely used for statistical analyses in biology, math, psychology, education, ...
+
+Also other analyses, like phylogenetics, ecological interactions, machine learning
+
+Nice tools for figure and graph generation
+
+---
+# R is also a tool for making your academic life easier ...
+
+Generating reports of great quality
+
+Writing papers
+
+Collaboration
+
+Reproducibility and open Science
+
+## As long as it is paired with a markup language
 ---
 class: split-20
 
@@ -141,5 +163,11 @@ Create slide presentations <br/> with .red.font-mono[xaringan]
 ]
 ]
 ---
+class: center
+
+<img src="https://github.com/rstudio/hex-stickers/raw/master/PNG/blogdown.png" width="500px">
+
+---
+
 ```{r child='children/tutorial-blogdown-2020-03-24.Rmd'}
 ```

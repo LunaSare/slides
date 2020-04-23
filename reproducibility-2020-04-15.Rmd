@@ -701,18 +701,15 @@ background-size: 650px
 ---
 name: internal
 class: split-two
-.column[
+.column[.content.vmiddle[
 ## References
-[The Turing Way](https://the-turing-way.netlify.app/introduction/introduction.html)
-[Anna Krystalli's Reproducible Research Talk](https://annakrystalli.me/talks/r-in-repro-research-dc.html#1)
 
-]
+- [The Turing Way](https://the-turing-way.netlify.app/introduction/introduction.html)
+- [Anna Krystalli's Reproducible Research Talk](https://annakrystalli.me/talks/r-in-repro-research-dc.html#1)
+
+]]
 .column[.content.center[
 ### [Go back](#markdown2) to the markdown crash course `r emo::ji("rocket")`
 
-<img source ="https://media.giphy.com/media/cMF3Fa3ZnLs8jk4xM4/giphy.gif" width = "450px" alt = "working hard"
+<img source ="https://media.giphy.com/media/cMF3Fa3ZnLs8jk4xM4/giphy.gif" width = "450px" alt = "working hard">
 ]]
-
-
-
-
