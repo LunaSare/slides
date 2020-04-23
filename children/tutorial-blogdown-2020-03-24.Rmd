@@ -489,45 +489,44 @@ class: split-20
 .column[.content.nopadding.center.vmiddle[
 <img src="media/home-files.gif" width="100%" />
 ]]
-.column.split-five.gray[
+.column.split-five.color-main4[
 .row[.content.font0-85[
 The .amber[home page]: "the introductory page of a website, typically serving as a table of contents for the site."
 ]]
-.row[.content.v10.color-main4[
+.row[.content.v10.gray[
 The .amber[widgets]: "components of an interface allowing users to access services and information on demand."
 ]]
 .row[.content.font_medium.center[
 .font1-5[`r emo::ji("point_left")` &nbsp; Each `".md"` file within the folder .amber[content/home/] contains the template for a different widget type]
 ]]
-.row[.content.color-main4[
-<br/><br/>Check all widgets in action on my webpage [here](https://www.lunasare.com/all-widgets/),
-and go to [Hugo Academic's documentation](https://sourcethemes.com/academic/docs/page-builder/) for more technical details on the available widgets
+.row[.content.gray[
+<br/><br/> Each .amber[.md] file has detailed explanations on how to set up the widget, so take your time to explore those. I **will** give you some general tips next!
 ]]
 .row[.content.v50[
-<br/><br/>Next: how do I use these famous widgets??
+<br/>Check all widgets in action [here](https://www.lunasare.com/all-widgets/).
+Also, go to [Hugo Academic's documentation](https://sourcethemes.com/academic/docs/page-builder/) on widgets
 ]]
 ]
 ]
 
 
 ---
-class: split-60
+class: split-20
 
-.column.split-two[
-.row[.content.center.nopadding[
-.pull-right[<img src="media/menu-position2.gif" width="100%" />]
+.row.split-60.bg-main1.gray[
+.column[.content[
+# Tips about widget files:
 ]]
-.row[.content.center.nopadding[
-.pull-left[<img src="media/menu-position1.gif" width="100%" />]
-]]
-]
-
-.column.split-two[
-.row[.content.center.v30.bg-main1.gray[
+.column[.content.center.vmiddle[
 # .color-main3[Adding] or .purple[removing] a widget from home
 ]]
-.row.split-two.slide-in-right.color-main1[
-.row[.content.center[
+]
+.row.split-60[
+.column[.content.center.nopadding[
+<img src="media/widgets-activate.gif" width="100%" />
+]]
+.column.split-two.slide-in-right.color-main1[
+.row[.content.center.vmiddle[
 ### &nbsp; `r emo::ji("point_left")` &nbsp; Open up the .amber[.md] file of the widget you want to remove
 ]]
 .row[.content.v20.center[
@@ -538,32 +537,40 @@ class: split-60
 ]
 
 ---
+class: split-20
 
-class: split-60
+.row.bg-main1.gray[.content.vmiddle[
+# More tips about widget files:
+]]
 
-.column.split-two[
-.row[.content.center.nopadding[
-.pull-right[<img src="media/menu-position2.gif" width="100%" />]
+.row.split-two[
+.row.split-40.slide-in-right[
+.column.bg-main1[.content.center.vmiddle[
+# The .color-main3[names]  of the .md files are actually, ehem, irrelevant
 ]]
-.row[.content.center.nopadding[
-.pull-left[<img src="media/menu-position1.gif" width="100%" />]
-]]
-]
-
-.column.split-two[
-.row[.content.center.vmiddle.bg-main1.gray[
-# .color-main3[Duplicating] a widget in the home
-]]
-.row.split-two.slide-in-right.color-main1[
-.row[.content.center[
-### &nbsp; `r emo::ji("point_left")` &nbsp; Select the .amber[.md] file of the widget you want to duplicate
+.column.split-two.color-main1[
+.row[.content.center.vmiddle[
+### &nbsp; `r emo::ji("point_left")` &nbsp; You can use any name for your .md file
 ]]
 .row[.content.v20.center[
-### &emsp; `r emo::ji("dancers")` &nbsp; And simply duplicate the file into the same folder (.amber[content/home/])
+### &emsp; &#emo::ji("open_mouth") &nbsp;
 ]]
 ]
 ]
-
+.row.split-60.slide-in-left[
+.column.split-two.color-main1[
+.row[.content.center.vmiddle[
+### Select the .amber[.md] file of the widget you want to duplicate &nbsp; `r emo::ji("point_right")` &nbsp;
+]]
+.row[.content.v20.center[
+### &emsp; `r emo::ji("dancers")` &nbsp; And simply duplicate the file into the same folder (.amber[content/home/]), using a different name for it
+]]
+]
+.column.bg-main1[.content.center.vmiddle[
+# .color-main3[Duplicating] a widget in the home
+]]
+]
+]
 ---
 class: split-20
 
