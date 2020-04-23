@@ -40,3 +40,22 @@
 .font0-85 {font-size: 0.85em;}
 .font0-90 {font-size: 0.9em;}
 .font0-95 {font-size: 0.95em;}
+
+<!-- Following css was taken from https://tcgriffith.github.io/xaringan_gh/ -->
+<!--## CSS styles-->
+<style>
+.resp-container {
+    position: relative;
+    /* overflow: hidden; #comment out this line to allow a larger embed*/
+    padding-top: 56.25%;
+}
+
+.testiframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+</style>

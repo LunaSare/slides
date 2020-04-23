@@ -262,7 +262,8 @@ class: split-60 teal
 ]
 
 .column.split-two[
-.row[.content.center.v30.black.bg-teal[
+.row[.content.center.black.bg-teal[
+<br/><br/>
 # Modifying the menu's .amber[position]
 ]]
 .row.split-two.slide-in-right[
@@ -288,7 +289,8 @@ class: split-60 teal
 ]
 
 .column.split-two[
-.row[.content.center.vmiddle.black.bg-teal[
+.row[.content.center.black.bg-teal[
+<br/><br/><br/><br/>
 # Modifying the .amber[order] of the menu's elements
 ]]
 .row.split-two.slide-in-right[
@@ -314,7 +316,8 @@ class: split-60 teal
 ]
 
 .column.split-two[
-.row[.content.center.vbottom.black.bg-teal[
+.row[.content.center.black.bg-teal[
+<br/><br/><br/><br/><br/><br/>
 # Modifying the menu's .amber[content]
 ]]
 .row.split-three.slide-in-right[
@@ -445,6 +448,34 @@ Adding your .white[bio] into .white[content/authors/admin/]
 `r emo::ji("handshake")` &nbsp; Add a colleague's bio: Make a new folder into .amber[content/authors/]. Name it whatever you want, but it has to have the files .amber[_index.md] and .amber[avatar.jpg]
 ]]
 ]
+]
+
+---
+class: split-20 center
+
+.row[.content.vmiddle[
+# Design the .color-main3[content] presentation of your home page `r emo::ji("house")`
+]]
+
+.row.split-two.bg-main1.gray[
+.column[.content[
+.font_medium[Home content design [sample A](https://emitanaka.org/#about)]
+<div class="resp-container">
+    <iframe class="testiframe" src="https://emitanaka.org/#about" width="500px" height="400px">
+      A blogdown tutorial.
+    </iframe>
+</div>
+]]
+.column[.content[
+.font_medium[Home content design [sample B](https://desiree.rbind.io/#about)]
+<div class="resp-container">
+    <iframe class="testiframe" src="https://desiree.rbind.io/#about" width="500px" height="400px">
+      A blogdown tutorial.
+    </iframe>
+</div>
+
+Go to the [rbind](https://github.com/rbind) project to find more hugo academic website designs.
+]]
 ]
 
 ---
