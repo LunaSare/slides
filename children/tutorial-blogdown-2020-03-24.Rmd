@@ -619,9 +619,54 @@ class: split-20
 <!-- --- -->
 <!-- ```{r child='tutorial-blogdown-2020-03-24-bonus.Rmd'} -->
 <!-- ``` -->
+
 ---
 class: center
+name: break
+
 .left[## Time for a break and/or questions!]
 
 <br/><br/>
 <img src="https://media1.tenor.com/images/36b890838130e2004a3b9dca9949f2dc/tenor.gif?itemid=8779191" width="450px">
+
+---
+class: split-20 bg-blue-gray
+name: publishing
+
+.row[.content.vmiddle[
+# The very last step... publishing your website!
+]]
+
+.row.split-two[
+.column[.content.center[
+## Option 1
+
+### You already have a hosting service
+
+### Just upload your public file, containing your rendered website!
+
+]]
+.column.split-two[
+.row[.content.center[
+## Option 2
+
+### Use the netlify hosting service, it is free!
+
+### You can transfer your domain if you have one, or get one for free (assigned at random)
+]]
+.row.split-two[
+.column[.content.center[
+### Option 2A
+Upload your website to github
+]]
+.column[.content.center[
+### Option 2A
+Keep your project local
+]]
+]
+
+
+
+]
+]
+]

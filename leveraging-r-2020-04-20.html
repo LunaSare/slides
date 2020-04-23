@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
   <head>
-    <title>Enviro-lunch Leveraging R</title>
+    <title>Leverage your coding skills to get your science out there!</title>
     <meta charset="utf-8" />
     <link href="libs/remark-css/kunoichi.css" rel="stylesheet" />
     <link href="libs/remark-css/ninjutsu.css" rel="stylesheet" />
     <link href="libs/remark-css/metropolis-fonts.css" rel="stylesheet" />
     <link href="libs/font-awesome-animation/font-awesome-animation-emi.css" rel="stylesheet" />
     <script src="libs/fontawesome/js/fontawesome-all.min.js"></script>
+    <link href="libs/font-awesome/css/all.min.css" rel="stylesheet" />
+    <link href="libs/font-awesome/css/v4-shims.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="../ninjutsu-luna-extras.css" type="text/css" />
     <link rel="stylesheet" href="assets/ninpo.css" type="text/css" />
   </head>
@@ -19,11 +21,11 @@
 
 class: left, middle
 
-# **Leveraging R for your research**
+# **Leveraging your R skills to get your science out there (even if you do not know that much R)**
 
 &lt;br/&gt;
 
-## Create your own website (and other things) using R!
+## Create your own website with R!
 
 &lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
 
@@ -38,6 +40,142 @@ April 23, 2020 &amp;#183; Merced, California
 &lt;br/&gt;
 
 Find the code for these slides [<span>&lt;i class="fab  fa-github faa-passing animated "&gt;&lt;/i&gt;</span> here](https://github.com/lunasare/slides/blob/master/leveraging-r-2020-04-20.Rmd).
+
+---
+# R is a widespread tool for research
+
+Widely used for statistical analyses in biology, math, psychology, education, ...
+
+Also other analyses, like phylogenetics, ecological interactions, machine learning
+
+Nice tools for figure and graph generation
+
+---
+# R is also a tool for making your academic life easier ...
+
+Generating reports of great quality
+
+Writing papers
+
+Collaboration
+
+Reproducibility and open Science
+
+## not by itself, but when it is paired with a markup language 🚀
+
+Markup languages are used to generate ***human-readable***, plain-text document that use tags to define elements and give format to documents.
+
+---
+class: split-20 bg-light-blue
+
+.row[.content.vmiddle[
+# &amp;emsp; Markup languages: some examples
+]]
+.row.split-two[
+.row.split-two[
+.column.split-40.bg-gray[
+.column[.content.center.vmiddle[
+## html
+]]
+.column[.content.center.nopadding.vmiddle[
+&lt;img src="https://www.w3.org/Style/Examples/011/snapshot11.png" width="300px"&gt;
+]]
+]
+.column.split-60.bg-black.white[
+.column[.content.center.nopadding.vmiddle[
+&lt;img src="https://upload.wikimedia.org/wikipedia/en/e/ee/RecipeBook_XML_Example.png" width="300px"&gt;
+]]
+.column[.content.center.vmiddle[
+## xml
+]]
+]
+]
+.row.split-two[
+.column.split-40.bg-black.white[
+.column[.content.center.vmiddle[
+## markdown
+]]
+.column[.content.center.nopadding.vmiddle[
+&lt;img src="https://i2.wp.com/en.blog.files.wordpress.com/2013/11/markdown-in-text-editor.png" width="300px"&gt;
+]]
+]
+.column.split-60.bg-gray[
+.column[.content.center.nopadding.vmiddle[
+&lt;img src="https://i0.wp.com/texblog.org/Wordpress/wp-content/uploads/2011/06/latex-example1.png?resize=571%2C351" width="300px"&gt;
+]]
+.column[.content.center.vmiddle[
+## latex
+]]
+]
+]
+]
+
+---
+class: split-20 bg-light-blue
+
+.row[.content.vmiddle[
+# &amp;emsp; Markup languages: some examples
+]]
+.row.split-two[
+.row.split-two[
+.column.split-40.bg-gray[
+.column[.content.center.vmiddle[
+## html
+]]
+.column[.content.center.nopadding.vmiddle[
+&lt;img src="https://www.w3.org/Style/Examples/011/snapshot11.png" width="300px"&gt;
+]]
+]
+.column.split-60.bg-black.white[
+.column[.content.center.nopadding.vmiddle[
+&lt;img src="https://upload.wikimedia.org/wikipedia/en/e/ee/RecipeBook_XML_Example.png" width="300px"&gt;
+]]
+.column[.content.center.vmiddle[
+## xml
+]]
+]
+]
+.row.split-two[
+.column.split-40.bg-amber[
+.column[.content.center.vmiddle[
+## markdown
+]]
+.column[.content.center.nopadding.vmiddle[
+&lt;img src="https://i2.wp.com/en.blog.files.wordpress.com/2013/11/markdown-in-text-editor.png" width="300px"&gt;
+]]
+]
+.column.split-60.bg-gray[
+.column[.content.center.nopadding.vmiddle[
+&lt;img src="https://i0.wp.com/texblog.org/Wordpress/wp-content/uploads/2011/06/latex-example1.png?resize=571%2C351" width="300px"&gt;
+]]
+.column[.content.center.vmiddle[
+## latex
+]]
+]
+]
+]
+
+---
+## <i class="fab fa-r-project"></i> + easy markup language
+
+# = <i class="fab fa-r-project"></i> markdown!
+
+.font2[Why create yet another markup language?]
+
+.left[Effectively *understands* other markup
+languages, i.e., you can add html, css, latex, ...]
+
+.right[Not only ***include*** code, but ***run*** the code]
+
+.left[Change formatting for any journal in seconds]
+
+.right[Include citations and format them]
+
+.left[Automatically include a reference list in any format you need]
+
+.right[Render to different file formats, including word 😜]
+
+.left[And last, but not least: &lt;br/&gt; &amp;emsp; Easily add emojis and icons]
 
 ---
 class: split-20
@@ -132,6 +270,12 @@ Create slide presentations &lt;br/&gt; with .red.font-mono[xaringan]
 ]
 ]
 ---
+class: center
+
+&lt;img src="https://github.com/rstudio/hex-stickers/raw/master/PNG/blogdown.png" width="500px"&gt;
+
+---
+
 
 class: split-two center
 name: steps
@@ -754,12 +898,57 @@ class: split-20
 &lt;!-- --- --&gt;
 &lt;!-- ```{r child='tutorial-blogdown-2020-03-24-bonus.Rmd'} --&gt;
 &lt;!-- ``` --&gt;
+
 ---
 class: center
+name: break
+
 .left[## Time for a break and/or questions!]
 
 &lt;br/&gt;&lt;br/&gt;
 &lt;img src="https://media1.tenor.com/images/36b890838130e2004a3b9dca9949f2dc/tenor.gif?itemid=8779191" width="450px"&gt;
+
+---
+class: split-20 bg-blue-gray
+name: publishing
+
+.row[.content.vmiddle[
+# The very last step... publishing your website!
+]]
+
+.row.split-two[
+.column[.content.center[
+## Option 1
+
+### You already have a hosting service
+
+### Just upload your public file, containing your rendered website!
+
+]]
+.column.split-two[
+.row[.content.center[
+## Option 2
+
+### Use the netlify hosting service, it is free!
+
+### You can transfer your domain if you have one, or get one for free (assigned at random)
+]]
+.row.split-two[
+.column[.content.center[
+### Option 2A
+Upload your website to github
+]]
+.column[.content.center[
+### Option 2A
+Keep your project local
+]]
+]
+
+
+
+]
+]
+]
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>

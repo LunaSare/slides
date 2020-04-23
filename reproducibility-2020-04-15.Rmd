@@ -135,7 +135,7 @@ Or management of changes to documents, computer programs, large web sites, and o
 ## Why?
 
 - Prevent messy file-naming situations
-- Loss of work, resources and time
+- Avoid loss of work, resources and time
 
 
 ## How?
@@ -711,5 +711,5 @@ class: split-two
 .column[.content.center[
 ### [Go back](#markdown2) to the markdown crash course `r emo::ji("rocket")`
 
-<img source ="https://media.giphy.com/media/cMF3Fa3ZnLs8jk4xM4/giphy.gif" width = "450px" alt = "working hard">
+<img src ="https://media.giphy.com/media/cMF3Fa3ZnLs8jk4xM4/giphy.gif" width = "450px" alt="working hard">
 ]]

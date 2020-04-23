@@ -69,7 +69,122 @@ Collaboration
 
 Reproducibility and open Science
 
-## As long as it is paired with a markup language
+## not by itself, but when it is paired with a markup language `r emo::ji("rocket")`
+
+Markup languages are used to generate ***human-readable***, plain-text document that use tags to define elements and give format to documents.
+
+---
+class: split-20 bg-light-blue
+
+.row[.content.vmiddle[
+# &emsp; Markup languages: some examples
+]]
+.row.split-two[
+.row.split-two[
+.column.split-40.bg-gray[
+.column[.content.center.vmiddle[
+## html
+]]
+.column[.content.center.nopadding.vmiddle[
+<img src="https://www.w3.org/Style/Examples/011/snapshot11.png" width="300px">
+]]
+]
+.column.split-60.bg-black.white[
+.column[.content.center.nopadding.vmiddle[
+<img src="https://upload.wikimedia.org/wikipedia/en/e/ee/RecipeBook_XML_Example.png" width="300px">
+]]
+.column[.content.center.vmiddle[
+## xml
+]]
+]
+]
+.row.split-two[
+.column.split-40.bg-black.white[
+.column[.content.center.vmiddle[
+## markdown
+]]
+.column[.content.center.nopadding.vmiddle[
+<img src="https://i2.wp.com/en.blog.files.wordpress.com/2013/11/markdown-in-text-editor.png" width="300px">
+]]
+]
+.column.split-60.bg-gray[
+.column[.content.center.nopadding.vmiddle[
+<img src="https://i0.wp.com/texblog.org/Wordpress/wp-content/uploads/2011/06/latex-example1.png?resize=571%2C351" width="300px">
+]]
+.column[.content.center.vmiddle[
+## latex
+]]
+]
+]
+]
+
+---
+class: split-20 bg-light-blue
+
+.row[.content.vmiddle[
+# &emsp; Markup languages: some examples
+]]
+.row.split-two[
+.row.split-two[
+.column.split-40.bg-gray[
+.column[.content.center.vmiddle[
+## html
+]]
+.column[.content.center.nopadding.vmiddle[
+<img src="https://www.w3.org/Style/Examples/011/snapshot11.png" width="300px">
+]]
+]
+.column.split-60.bg-black.white[
+.column[.content.center.nopadding.vmiddle[
+<img src="https://upload.wikimedia.org/wikipedia/en/e/ee/RecipeBook_XML_Example.png" width="300px">
+]]
+.column[.content.center.vmiddle[
+## xml
+]]
+]
+]
+.row.split-two[
+.column.split-40.bg-amber[
+.column[.content.center.vmiddle[
+## markdown
+]]
+.column[.content.center.nopadding.vmiddle[
+<img src="https://i2.wp.com/en.blog.files.wordpress.com/2013/11/markdown-in-text-editor.png" width="300px">
+]]
+]
+.column.split-60.bg-gray[
+.column[.content.center.nopadding.vmiddle[
+<img src="https://i0.wp.com/texblog.org/Wordpress/wp-content/uploads/2011/06/latex-example1.png?resize=571%2C351" width="300px">
+]]
+.column[.content.center.vmiddle[
+## latex
+]]
+]
+]
+]
+
+---
+## `r shiny::icon("r-project")` + easy markup language
+
+# = `r shiny::icon("r-project")` markdown!
+
+.font2[Why create yet another markup language?]
+
+.left[Effectively *understands* other markup
+languages, i.e., you can add html, css, latex, ...]
+
+.right[Not only ***include*** code, but ***run*** the code]
+
+.left[Change formatting for any journal in seconds]
+
+.right[Include citations and format them]
+
+.left[Automatically include a reference list in any format you need]
+
+.right[Render to different file formats, including word `r emo::ji("stuck_out_tongue_winking_eye")`]
+
+.left[And last, but not least: <br/> &emsp; Easily add emojis and icons]
+
 ---
 class: split-20
 
