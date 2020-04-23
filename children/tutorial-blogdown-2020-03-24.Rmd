@@ -620,6 +620,88 @@ class: split-20
 <!-- ```{r child='tutorial-blogdown-2020-03-24-bonus.Rmd'} -->
 <!-- ``` -->
 
+
+
+---
+class: split-20
+name: publishing
+
+.row[.content.vmiddle[
+# I lied, the very last step is... publishing your website!
+]]
+
+.row.split-two.bg-black.white[
+.column[.content.center.vmiddle[
+## Option 1:
+
+### You already have a hosting service
+<br/>
+### Just upload your .amber[public] folder, containing your rendered website!
+
+]]
+.column.split-two.bg-gray.black[
+.row[.content.center[
+## Option 2:
+
+### Use the [netlify](https://www.netlify.com/) hosting service, it is free!
+<br/>
+### You can transfer your domain if you have one, or get one for free -- assigned at random `r emo::ji("ghost")`
+]]
+.row.split-two[
+.column[.content.center[
+<br/><br/>
+## Option 2A
+### Upload your website to [Github](https://github.com/) `r anicon::faa("github", animate="vertical")`
+]]
+.column[.content.center[
+<br/><br/>
+## Option 2A
+### Keep your project local
+]]
+]
+]
+]
+
+---
+class: split-20
+name: publishing
+
+.row[.content.vmiddle[
+# I lied, the very last step is... publishing your website!
+]]
+
+.row.split-two.bg-black.white[
+.column[.content.center.vmiddle[
+## Option 1:
+
+### You already have a hosting service
+<br/>
+### Just upload your .amber[public] folder, containing your rendered website!
+
+]]
+.column.split-two.bg-gray.black[
+.row[.content.center[
+## Option 2:
+
+### Use the [netlify](https://www.netlify.com/) hosting service, it is free!
+<br/>
+### You can transfer your domain if you have one, or get one for free -- assigned at random `r emo::ji("ghost")`
+]]
+.row.split-two[
+.column.bg-amber.indigo[.content.center[
+<br/><br/>
+## Option 2A
+### Upload your website to [Github](https://github.com/) `r anicon::faa("github", animate="vertical")`
+]]
+.column[.content.center[
+<br/><br/>
+## Option 2A
+### Keep your project local
+]]
+]
+]
+]
+
 ---
 class: center
 name: break
@@ -627,46 +709,4 @@ name: break
 .left[## Time for a break and/or questions!]
 
 <br/><br/>
-<img src="https://media1.tenor.com/images/36b890838130e2004a3b9dca9949f2dc/tenor.gif?itemid=8779191" width="450px">
-
----
-class: split-20 bg-blue-gray
-name: publishing
-
-.row[.content.vmiddle[
-# The very last step... publishing your website!
-]]
-
-.row.split-two[
-.column[.content.center[
-## Option 1
-
-### You already have a hosting service
-
-### Just upload your public file, containing your rendered website!
-
-]]
-.column.split-two[
-.row[.content.center[
-## Option 2
-
-### Use the netlify hosting service, it is free!
-
-### You can transfer your domain if you have one, or get one for free (assigned at random)
-]]
-.row.split-two[
-.column[.content.center[
-### Option 2A
-Upload your website to github
-]]
-.column[.content.center[
-### Option 2A
-Keep your project local
-]]
-]
-
-
-
-]
-]
-]
+<img src="https://media1.tenor.com/images/36b890838130e2004a3b9dca9949f2dc/tenor.gif?itemid=8779191" width="450px"/>

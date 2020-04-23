@@ -4,7 +4,7 @@ params:
   event: "Enviro-lunch Seminar"
   date: "April 23, 2020"
   place: "Merced, California"
-  title: "Leveraging your R skills to get your science out there (even if you do not know that much R)"
+  title: "Leveraging your R skills to get your science out there <br/> (even if you do not know that much R)"
   subtitle: "Create your own website with R!"
   author: "Luna L. Sanchez Reyes"
   institute: "University of California, Merced"
@@ -35,7 +35,7 @@ class: left, middle
 
 ## `r params$subtitle`
 
-<br/><br/><br/><br/>
+<br/><br/>
 
 ### **`r params$author`**
 ### `r params$institute`
@@ -45,36 +45,53 @@ class: left, middle
 
 `r params$date` &#183; `r params$place`
 
-<br/>
 
 Find the code for these slides [`r anicon::faa("github", animate="passing")` here](https://github.com/lunasare/slides/blob/master/leveraging-r-2020-04-20.Rmd).
 
 ---
-# R is a widespread tool for research
+class: split-20 bg-blue
+.row[.content.vmiddle[
+# `r shiny::icon("r-project")` is a widespread tool for doing research
+]]
+.row[.content.center.font2[
+<br/>
+&emsp; &#183; Widely used for statistical analyses in .indigo[biology, math, psychology, education, ...]
 
-Widely used for statistical analyses in biology, math, psychology, education, ...
+&emsp; &#183; Also other analyses, like .purple[phylogenetics, ecological interactions, machine learning]
 
-Also other analyses, like phylogenetics, ecological interactions, machine learning
+&emsp; &#183; Has great tools for .amber[figure and graph generation]
+]]
 
-Nice tools for figure and graph generation
 
 ---
-# R is also a tool for making your academic life easier ...
+class: split-20 bg-teal
+.row[.content.vmiddle[
+# `r shiny::icon("r-project")` is ***also*** a tool for making your academic life easier ...
+]]
+.row.split-two[
+.row.split-two[
+.column[.content.font_medium.right[
+&#183; Generating reports of great quality
 
-Generating reports of great quality
+&#183; Writing papers
 
-Writing papers
+&#183; Collaboration
 
-Collaboration
+&#183; Reproducibility and open Science
+]]
+.column[.content[
+<img src="https://github.com/annakrystalli/talks/raw/master/assets/science-cat.jpg" width="300px">
+]]
+]
 
-Reproducibility and open Science
-
-## not by itself, but when it is paired with a markup language `r emo::ji("rocket")`
+.row[.content.vmiddle[
+## not by itself, but when it is paired with a .amber[markup language] `r emo::ji("rocket")`
 
 Markup languages are used to generate ***human-readable***, plain-text document that use tags to define elements and give format to documents.
-
+]]
+]
 ---
-class: split-20 bg-light-blue
+class: split-20
 
 .row[.content.vmiddle[
 # &emsp; Markup languages: some examples
@@ -119,7 +136,7 @@ class: split-20 bg-light-blue
 ]
 
 ---
-class: split-20 bg-light-blue
+class: split-20
 
 .row[.content.vmiddle[
 # &emsp; Markup languages: some examples
@@ -164,26 +181,31 @@ class: split-20 bg-light-blue
 ]
 
 ---
-## `r shiny::icon("r-project")` + easy markup language
+class: split-20 bg-amber
 
-# = `r shiny::icon("r-project")` markdown!
+.row[.content.vmiddle[
+# `r shiny::icon("r-project")` + easy markup language = `r shiny::icon("r-project")` markdown!
+]]
 
-.font2[Why create yet another markup language?]
+.row[.content[
+## .indigo[Why create yet another markup language?]
+<br/>
+.center.font_medium[
+Effectively *understands* other markup languages, i.e., you can add html, css, latex, ...
 
-.left[Effectively *understands* other markup
-languages, i.e., you can add html, css, latex, ...]
+&emsp; Not only ***include*** code, but ***run*** the code
 
-.right[Not only ***include*** code, but ***run*** the code]
+Change formatting for any journal in seconds
 
-.left[Change formatting for any journal in seconds]
+&emsp; Include citations and format them
 
-.right[Include citations and format them]
+Automatically include a reference list in any format you need
 
-.left[Automatically include a reference list in any format you need]
+&emsp;  Render to different file formats, including word `r emo::ji("stuck_out_tongue_winking_eye")`
 
-.right[Render to different file formats, including word `r emo::ji("stuck_out_tongue_winking_eye")`]
-
-.left[And last, but not least: <br/> &emsp; Easily add emojis and icons]
+And last but most importantly, easily add emojis and icons
+]
+]]
 
 ---
 class: split-20
