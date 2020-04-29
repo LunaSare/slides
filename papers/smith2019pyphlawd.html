@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <title>Smith &amp; Walker 2019</title>
+    <meta charset="utf-8" />
+    <link href="libs/remark-css/kunoichi.css" rel="stylesheet" />
+    <link href="libs/remark-css/ninjutsu.css" rel="stylesheet" />
+    <link href="libs/remark-css/metropolis-fonts.css" rel="stylesheet" />
+    <link href="libs/font-awesome-animation/font-awesome-animation-emi.css" rel="stylesheet" />
+    <script src="libs/fontawesome/js/fontawesome-all.min.js"></script>
+    <script src="libs/htmlwidgets/htmlwidgets.js"></script>
+    <script src="libs/jquery/jquery.min.js"></script>
+    <link href="libs/datatables-css/datatables-crosstalk.css" rel="stylesheet" />
+    <script src="libs/datatables-binding/datatables.js"></script>
+    <link href="libs/dt-core/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <link href="libs/dt-core/css/jquery.dataTables.extra.css" rel="stylesheet" />
+    <script src="libs/dt-core/js/jquery.dataTables.min.js"></script>
+    <link href="libs/crosstalk/css/crosstalk.css" rel="stylesheet" />
+    <script src="libs/crosstalk/js/crosstalk.min.js"></script>
+    <link rel="stylesheet" href="assets/ninpo.css" type="text/css" />
+    <link rel="stylesheet" href="ninjutsu-luna-extras.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+background-image: url(https://github.com/LunaSare/PyPHLAWD/raw/master/pyphlawd_log.png)
+background-position: 80% 75%
+background-size: 350px
+
+
+
+class: center, middle, blue-gray
+
+.font3.gray[**PyPHLAWD: A python tool for phylogenetic dataset construction**.]
+.font2[[Smith &amp; Walker (2019). Methods in Ecology and Evolution, 10(1):104–108](https://besjournals.onlinelibrary.wiley.com/doi/abs/10.1111/2041-210X.13096) .gray[paper discussion.]]
+
+.left[
+&lt;br/&gt;
+### **Luna L. Sanchez Reyes**
+### University of California, Merced
+&lt;br/&gt;&lt;br/&gt;
+Blois-McTavish Lab Joint Meeting
+
+April 28, 2020 &amp;#183; Merced, CA, USA
+
+Last updated on  2020-04-28. Find the code for these slides [<span>&lt;i class="fab  fa-github faa-passing animated "&gt;&lt;/i&gt;</span> here](https://github.com/lunasare/papers/blob/master/smith2019pyphlawd.Rmd).
+]
+---
+class: split-20
+
+.row.gray[.content.left.vmiddle[
+# Introduction
+]]
+
+.row.split-40[
+.row.split-two[
+.column[.content.center.vmiddle[
+## Phylogenies are important &lt;br/&gt; and we need them!
+]]
+
+.column[.content.center.vmiddle[
+## In particular, large phylogenies, &lt;br/&gt; why?
+]]
+]
+
+.row.light-blue[
+]
+]
+
+---
+class: split-20
+
+.row.gray[.content.left.vmiddle[
+# Introduction
+]]
+
+.row.split-40[
+.row.split-two[
+.column[.content.center.vmiddle[
+## Phylogenies are important &lt;br/&gt; and we need them!
+]]
+
+.column[.content.center.vmiddle[
+## In particular, large phylogenies, &lt;br/&gt; why?
+]]
+]
+
+.row.light-blue[.content.center.font2[
+Large phylogenies .indigo[=] well sampled phylogenies .indigo[≈] 
+
+phylogenies containing all species within a clade 
+
+.indigo[Which are ideal for downstream analyses, **so we want these!**]
+]]
+]
+
+---
+class: split-20
+
+.row[.content.vmiddle[
+# .amber[**Problem!**] Generating large phylogenies is hard, costly, and takes time...
+]]
+
+.row[
+]
+
+---
+class: split-20
+
+.row[.content.vmiddle[
+# .amber[**Problem!**] Generating large phylogenies is hard, costly, and takes time...
+]]
+
+.row.split-two[
+.column[.content.center[
+&lt;br/&gt;&lt;br/&gt;
+# .teal[A solution] &lt;br/&gt;&lt;br/&gt; .purple[*Automatized*] processing of &lt;br/&gt;vast amounts of already *publicly &lt;br/&gt; available* molecular data &lt;br/&gt;(GenBank).
+]]
+.column[.content.center.font_medium[
+&lt;br/&gt;&lt;br/&gt;
+Tools currently available for that:
+
+• [SUPERSMART](http://www.supersmart-project.org/) go to [paper](https://academic.oup.com/sysbio/article/66/2/152/2418028)
+
+• [PHLAWD](https://github.com/blackrim/phlawd) go to [paper](https://bmcevolbiol.biomedcentral.com/articles/10.1186/1471-2148-9-37)
+
+• [Phylota](http://ceiba.biosci.arizona.edu/pb/) go to [paper](https://academic.oup.com/sysbio/article/57/3/335/1661098)
+
+• [Phylogenerator](https://willpearse.github.io/phyloGenerator/index.html) go to [paper](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.12055)
+
+]]
+]
+
+---
+class: split-50
+
+.column[.content.center[
+&lt;br/&gt; &lt;br/&gt; 
+# .deep-orange[Next problem!] &lt;br/&gt;&lt;br/&gt; Full automation is not ideal. &lt;br/&gt;&lt;br/&gt;  Human intervention improves the quality of the phylogenetic reconstruction...
+]]
+
+.column[
+
+]
+
+
+---
+class: split-50
+
+.column[.content.center[
+&lt;br/&gt; &lt;br/&gt; 
+# .deep-orange[Next problem!] &lt;br/&gt;&lt;br/&gt; Full automation is not ideal. &lt;br/&gt;&lt;br/&gt;  Human intervention improves the quality of the phylogenetic reconstruction...
+]]
+
+.column[.content.center[
+&lt;br/&gt;&lt;br/&gt;
+# .lime[A solution:] PyPHLAWD
+&lt;img src="https://github.com/LunaSare/PyPHLAWD/raw/master/pyphlawd_log.png" width="300px"/&gt;
+&lt;img src="https://github.com/LunaSare/PyPHLAWD/raw/master/docs/assets/img/logo.gif" width="850px"/&gt;
+]]
+
+
+???
+The authors use the term phylogenetic datasets often: "process [...] data in order to create phylogenetic datasets" I think they are referring to molecular data alignments that can be used for phylogenetic reconstruction.
+
+Image credit: [Steven Smith](https://github.com/FePhyFoFum/PyPHLAWD/blob/master/docs/assets/img/logo.gif)
+
+---
+class: bg-black, left, white, split-10
+
+.row[.content[
+# The PyPHLAWD workflow
+]]
+.row.split-two[
+.column.split-1-2-1[
+.row.bg-gray.black[.content[
+- (1) A preassembled database of DNA sequences, which can be generated in two different ways:
+  - assembled locally with .amber[phlawd_db_maker] script available from its [github repo](https://github.com/blackrim/phlawd_db_maker). 
+  - downloaded from PyPHLAWD's [website](http://141.211.236.35:10998/).
+]]
+.row[.content.vmiddle[
+- (2) Two types of analyses for sequence searching can be performed:
+  - .cyan[baited]: the user provides bait sequence
+files for each single gene, containing full length sequences
+for several species (e.g., 10–20) across the clade of interest, that will be used to filter sequences from the DNA database.
+  - .color-main3[clustered]: all-by-all BLAST analyses along with markov clustering analyses (MCL) are conducted to identify clusters.
+]]
+.row.bg-gray.black[.content[
+- (3) Once gene regions are identified, the sequences are saved in independent files within folders corresponding to the taxonomy of the sequence.
+  - .lime[Whole genomes are set aside] in an independent folder and are excluded from further analyses.
+]]
+]
+.column.split-1-2-1[
+.row[.content[
+- (4) .pink[Sequence similarity analyses] are then performed, starting at the tips of the taxonomy.
+  - what kind of sequence similarity analyses?
+]]
+.row.bg-gray.black[.content.vmiddle[
+- (5) A configuration file allows customizing different elements of the workflow, such as:
+  - .yellow[Excluding from gene search] misidentified taxa, sequences with "bad" patterns, and/or sequences smaller than a certain minimum size.
+  - Customizing options for the .indigo[BLAST analysis].
+]]
+.row[.content[
+- (6) To perform a phylogenetic reconstruction using a supermatrix (i.e., concatenated gene regions), clusters with .teal[at least 20% taxon sampling and at least 20 taxa] are selected as good clusters for a concatenated analysis.
+]]
+]
+]
+---
+class: split-20 
+
+.row[.content.vmiddle[
+# A PyPHLAWD workflow real life example: .color-main3[the Dipsacales]
+]]
+
+.row.split-two.bg-main1.center[
+.column[.content[
+.font_medium[General info from [Wikipedia](https://en.wikipedia.org/wiki/Dipsacales)]
+&lt;div class="resp-container"&gt;
+    &lt;iframe class="testiframe" src="https://en.wikipedia.org/wiki/Dipsacales" width="500px" height="400px"&gt;
+      A wikipedia page
+    &lt;/iframe&gt;
+&lt;/div&gt;
+]]
+.column[.content[
+.font_medium[Some phylogenetic data from [tolweb](http://tolweb.org/Dipsacales)]
+&lt;div class="resp-container"&gt;
+    &lt;iframe class="testiframe" src="http://tolweb.org/Dipsacales" width="500px" height="400px"&gt;
+      A tolweb page
+    &lt;/iframe&gt;
+&lt;/div&gt;
+]]
+]
+---
+background-image: url(smith2019pyphlawd_files/original-paper-figs/fig1.png)
+background-position: 50% 75%
+background-size: 900px
+
+.content[
+# A PyPHLAWD workflow real life example: .color-main3[the Dipsacales]
+]
+
+&lt;!-- &lt;img src="smith2019pyphlawd_files/original-paper-figs/fig1.png" width="900px"/&gt; --&gt;
+
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+.center[Parameters used: .blue[smallest_size = 400], .lime[length_limit = 0.55], and .purple[perc_identity = 20]]
+
+???
+Original figure from MEE published paper. Hosted in this repo.
+
+---
+# A PyPHLAWD workflow real life example: .blue[Results]
+&lt;br/&gt;
+.font_medium[As of 04/11/18, there are 33,178 sequences available in GenBank representing 864 taxa for the Dipsacales.]
+&lt;br/&gt;&lt;br/&gt;
+
+<div id="htmlwidget-27650cfd761f621f43be" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-27650cfd761f621f43be">{"x":{"filter":"none","editable":{"target":"cell","disable":{"columns":null}},"data":[["1- PyPHLAWD baited","2- PyPHLAWD clustered","3- Phylota","4- PHLAWD","5- SUPERSMART","6- Phylogenerator"],["52s","316s (5min 16s)","?","16-40s","240s (4min)","1920-4800s (32min-1.3hrs)"],["4","617","several clusters","4","4","4"],["299","299","242","295","na","298"],["333","334","354","349","na","325"],["553","559","536","659","na","566"],["322","333","330","329","na","347"],["?","684","?","?","na","?"],["641","673","581","731","na","627"],["?","?","?","","?","na"],["173","173","155","201","147","na"]],"container":"<table class=\"order-column hover compact row-border\">\n  <thead>\n    <tr>\n      <th>Software<\/th>\n      <th>Runtime<\/th>\n      <th># of gene clusters<\/th>\n      <th>rbcL<\/th>\n      <th>trnL-trnF<\/th>\n      <th>ITS<\/th>\n      <th>matK<\/th>\n      <th>Total taxa<\/th>\n      <th>concat.<\/th>\n      <th>Adoxaceae taxa<\/th>\n      <th>concat.<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data) {\nvar value=data[0]; $(this.api().cell(row, 0).node()).css({'font-weight':'bold','color':'black','background-color':'white','auto-width':'TRUE'});\n}"}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+---
+class: bg-cyan
+# Questions for discussion:&lt;br/&gt;
+
+.font2[
+Why are there differences in results between software?
+
+How often are these tools used? 
+
+Would you use them? 
+
+Which one would you use?
+
+What do you think about the sequence searching process?
+]
+
+---
+class: center, middle
+
+# References
+
+Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan).
+
+The chakra comes from [remark.js](https://remarkjs.com), [**knitr**](http://yihui.name/knitr), and [R Markdown](https://rmarkdown.rstudio.com).
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"ratio": "16:9",
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

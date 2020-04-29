@@ -1,0 +1,7 @@
+﻿Software,Runtime,number of gene clusters,rbcL,trnL-trnF,ITS,matK,total number of taxa,total taxa for phylogenetic analyses,total taxa in Adoxaceae,Adoxaceae taxa for phylogenetic analyses
+1- PyPHLAWD baited,52s,4,299,333,553,322,?,641,?,173
+2- PyPHLAWD clustered,316s (5min 16s),617,299,334,559,333,684,673,?,173
+3- Phylota,?,several clusters,242,354,536,330,?,581,?,155
+4- PHLAWD,16-40s,4,295,349,659,329,?,731,,201
+5- SUPERSMART,240s (4min),4,na,na,na,na,na,na,?,147
+6- Phylogenerator,1920-4800s (32min-1.3hrs),4,298,325,566,347,?,627,na,na
