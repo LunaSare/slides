@@ -54,7 +54,213 @@ Slides last updated on  `r format(Sys.Date(), format = "%B %d, %Y")` .red[&#183;
 .red[*] Speaker contact [@LunaSare](https://www.lunasare.com/) on [Github `r anicon::faa("github", animate="float")`](https://github.com/LunaSare) and [Twitter `r anicon::faa("twitter", animate="float")`](https://twitter.com/LunaSare)
 ---
 
+background-image: url("bg/past-future1.png")
+background-position: center
+background-size: contain
 
+???
+
+# To understand our future you need to understand where you come from.
+
+---
+background-image: url("bg/diversity1.png")
+background-position: center
+background-size: contain
+
+# As biologists, we want to understand how all living things are connected evolutionarily
+
+---
+background-image: url("bg/diversity2.png")
+background-position: center
+background-size: contain
+
+# There are a gazillion species living, and many more so extinct
+
+# How many species are there?
+
+Estimates range between 3 000 000 and 100 000 000 living species
+
+---
+background-image: url("bg/tree-of-life.png")
+background-position: center
+background-size: contain
+
+class: split-two
+
+.column.split-20[
+.column[.content[
+]]
+.column.split-three[
+.row[.content.vmiddle[
+# Phylogenetic trees
+]]
+.row[.content[
+### A graphical representation of a hypothesis of ancestor-descendant relationships among living and extinct species
+]]
+.row[.content[
+### The most important item for the study of biology and all related fields!
+]]
+]
+]
+.column[.content[
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/>
+<p style="font-size:0.55em"> 
+<a href="https://i.redd.it/2jh0nmkx4hu11.jpg">
+&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; https://i.redd.it/2jh0nmkx4hu11.jpg 
+</a> </p>
+]]
+
+---
+
+# Use of phylogenies in science
+
+
+Images of modern phylogenies
+
+Conclusion: phylogenies are very important
+
+---
+# Because they are important, there are a lot of phylogenies
+
+Graphs of accumulation of phylogenies through time
+
+---
+
+# Hoy do you produce them?
+
+
+Conclusion: They are hard to make and it is a very artisanal endeavor.
+
+---
+
+# How do you get them?
+
+Main: Reuse of phylogenies is important
+
+Conclusion: Phylogenies are usually not shared but DNA data is
+
+---
+
+# Molecular data repositories
+
+
+NCBI - 1989
+
+EMBL - 
+
+---
+
+<div class="resp-container">
+    <iframe class="testiframe" src="https://www.ncbi.nlm.nih.gov/nucleotide/" height="600px">
+    </iframe>
+</div>
+
+---
+
+# Pipelines for using data from molecular databases
+
+Efforts to make sense of this data: massive data pipelines
+
+
+Phylota - 2008
+
+
+---
+
+# Phylogenetic pipelines not fully relied by community
+
+Main idea: manual curation always makes better phylogenies
+
+Conclusion: All these efforts contributed to start making the field a little bit more reproducible
+
+---
+
+# Phylogenetic data repositories
+
+In parallel, efforts to store actual trees and the alignments that produced them.
+
+TreeBASE and Open Tree of Life
+
+Conclusion: this effort is making the practice of phylogenetics more open.
+
+---
+background-image: url("bg/linux-1994.png")
+background-position: center
+background-size: 300px
+
+# Phylogenetic data repositories
+
+## TreeBASE
+
+
+https://www.linuxjournal.com/content/party-its-1994
+---
+
+<div class="resp-container">
+    <iframe class="testiframe" src="https://treebase.org/treebase-web/home.html" width="500px" height="600px">
+    </iframe>
+</div>
+
+---
+
+background-image: url("bg/treebase1.png")
+background-position: center
+background-size: contain
+
+---
+
+background-image: url("bg/treebase-search1.png")
+background-position: center
+background-size: contain
+
+---
+
+background-image: url("bg/treebase-search2.png")
+background-position: center
+background-size: contain
+
+---
+class: split-two
+
+<img align="right" width="350" src="bg/treebase-wget-2.gif">
+
+.column[.content[
+```
+wget "http://purl.org/phylo/treebase/phylows/matrix/TB2:M4382?format=nexus"
+```
+]]
+
+
+---
+# Phylogenetic data repositories
+
+## The Open Tree of Life project 
+
+### <https://tree.opentreeoflife.org/opentree/argus/opentree12.3@ott93302>
+
+---
+background-image: url("https://github.com/OpenTreeOfLife/opentree/raw/master/webapp/static/images/logo.png")
+background-position: center
+background-size: 500px
+
+class: middle, center
+
+<div class="resp-container">
+    <iframe class="testiframe" src="https://tree.opentreeoflife.org/opentree/argus/opentree12.3@ott93302" width="500px" height="600px">
+    </iframe>
+</div>
+
+---
+
+# Examples of the otol APIs and the type of data structure they return
+
+Conclusion: we need python!
+
+---
+
+# Physcraper
 
 ---
 class: right, middle, blue-gray
@@ -74,6 +280,34 @@ class: right, middle, blue-gray
 Post an issue on our `r anicon::faa("github", animate="pulse")` Github repo  at <a href="https://github.com/McTavishLab/physcraper/issues">  https://github.com/McTavishLab/physcraper/issues </a> </p> 
 ]
 ---
-class: right, middle, blue-gray
+class: split-80, blue-gray
 
+
+.column[.content.center.vmiddle[
+
+```{r, load_refs, echo=FALSE}
+library(RefManageR)
+bib <- ReadBib("./assets/my_bib.bib", check = FALSE)
+ui <- "- "
+```
+
+```{r, print_refs, results='asis', echo=FALSE, warning=FALSE, message=FALSE}
+# writeLines(ui)
+print(bib[key = "mayr2010tropical"], 
+  .opts = list(check.entries = FALSE, 
+               style = "html", 
+               bib.style = "authoryear"))
+print(bib[key = "mora2011how"], 
+  .opts = list(check.entries = FALSE, 
+               style = "html", 
+               bib.style = "authoryear"))
+```
+
+]]
+.column[.content.vmiddle.center[
 # References
+]]
+
+???
+
+code from https://github.com/yihui/xaringan/issues/26

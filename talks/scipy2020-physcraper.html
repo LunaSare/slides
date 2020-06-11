@@ -13,7 +13,7 @@
   <body>
     <textarea id="source">
 
-background-image: url("_bg/2-blue-sky.png")
+background-image: url("bg/2-blue-sky.png")
 background-position: center
 background-size: contain
 
@@ -37,12 +37,218 @@ class: left, middle, blue-gray
 
 SciPy2020 Conference .red[&amp;#183;] July 6-12, 2020 .red[&amp;#183;] The Internet
 
-Slides last updated on  June 10, 2020 .red[&amp;#183;] Find the code for them in [<span>&lt;i class="fab  fa-github faa-passing animated "&gt;&lt;/i&gt;</span>  here]()
+Slides last updated on  June 11, 2020 .red[&amp;#183;] Find the code for them in [<span>&lt;i class="fab  fa-github faa-passing animated "&gt;&lt;/i&gt;</span>  here]()
 
 .red[*] Speaker contact [@LunaSare](https://www.lunasare.com/) on [Github <span>&lt;i class="fab  fa-github faa-float animated "&gt;&lt;/i&gt;</span>](https://github.com/LunaSare) and [Twitter <span>&lt;i class="fab  fa-twitter faa-float animated "&gt;&lt;/i&gt;</span>](https://twitter.com/LunaSare)
 ---
 
+background-image: url("bg/past-future1.png")
+background-position: center
+background-size: contain
 
+???
+
+# To understand our future you need to understand where you come from.
+
+---
+background-image: url("bg/diversity1.png")
+background-position: center
+background-size: contain
+
+# As biologists, we want to understand how all living things are connected evolutionarily
+
+---
+background-image: url("bg/diversity2.png")
+background-position: center
+background-size: contain
+
+# There are a gazillion species living, and many more so extinct
+
+# How many species are there?
+
+Estimates range between 3 000 000 and 100 000 000 living species
+
+---
+background-image: url("bg/tree-of-life.png")
+background-position: center
+background-size: contain
+
+class: split-two
+
+.column.split-20[
+.column[.content[
+]]
+.column.split-three[
+.row[.content.vmiddle[
+# Phylogenetic trees
+]]
+.row[.content[
+### A graphical representation of a hypothesis of ancestor-descendant relationships among living and extinct species
+]]
+.row[.content[
+### The most important item for the study of biology and all related fields!
+]]
+]
+]
+.column[.content[
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+&lt;p style="font-size:0.55em"&gt; 
+&lt;a href="https://i.redd.it/2jh0nmkx4hu11.jpg"&gt;
+&amp;emsp; &amp;emsp; &amp;emsp; &amp;emsp; &amp;emsp; &amp;emsp; https://i.redd.it/2jh0nmkx4hu11.jpg 
+&lt;/a&gt; &lt;/p&gt;
+]]
+
+---
+
+# Use of phylogenies in science
+
+
+Images of modern phylogenies
+
+Conclusion: phylogenies are very important
+
+---
+# Because they are important, there are a lot of phylogenies
+
+Graphs of accumulation of phylogenies through time
+
+---
+
+# Hoy do you produce them?
+
+
+Conclusion: They are hard to make and it is a very artisanal endeavor.
+
+---
+
+# How do you get them?
+
+Main: Reuse of phylogenies is important
+
+Conclusion: Phylogenies are usually not shared but DNA data is
+
+---
+
+# Molecular data repositories
+
+
+NCBI - 1989
+
+EMBL - 
+
+---
+
+&lt;div class="resp-container"&gt;
+    &lt;iframe class="testiframe" src="https://www.ncbi.nlm.nih.gov/nucleotide/" height="600px"&gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
+
+---
+
+# Pipelines for using data from molecular databases
+
+Efforts to make sense of this data: massive data pipelines
+
+
+Phylota - 2008
+
+
+---
+
+# Phylogenetic pipelines not fully relied by community
+
+Main idea: manual curation always makes better phylogenies
+
+Conclusion: All these efforts contributed to start making the field a little bit more reproducible
+
+---
+
+# Phylogenetic data repositories
+
+In parallel, efforts to store actual trees and the alignments that produced them.
+
+TreeBASE and Open Tree of Life
+
+Conclusion: this effort is making the practice of phylogenetics more open.
+
+---
+background-image: url("bg/linux-1994.png")
+background-position: center
+background-size: 300px
+
+# Phylogenetic data repositories
+
+## TreeBASE
+
+
+https://www.linuxjournal.com/content/party-its-1994
+---
+
+&lt;div class="resp-container"&gt;
+    &lt;iframe class="testiframe" src="https://treebase.org/treebase-web/home.html" width="500px" height="600px"&gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
+
+---
+
+background-image: url("bg/treebase1.png")
+background-position: center
+background-size: contain
+
+---
+
+background-image: url("bg/treebase-search1.png")
+background-position: center
+background-size: contain
+
+---
+
+background-image: url("bg/treebase-search2.png")
+background-position: center
+background-size: contain
+
+---
+class: split-two
+
+&lt;img align="right" width="350" src="bg/treebase-wget-2.gif"&gt;
+
+.column[.content[
+```
+wget "http://purl.org/phylo/treebase/phylows/matrix/TB2:M4382?format=nexus"
+```
+]]
+
+
+---
+# Phylogenetic data repositories
+
+## The Open Tree of Life project 
+
+### &lt;https://tree.opentreeoflife.org/opentree/argus/opentree12.3@ott93302&gt;
+
+---
+background-image: url("https://github.com/OpenTreeOfLife/opentree/raw/master/webapp/static/images/logo.png")
+background-position: center
+background-size: 500px
+
+class: middle, center
+
+&lt;div class="resp-container"&gt;
+    &lt;iframe class="testiframe" src="https://tree.opentreeoflife.org/opentree/argus/opentree12.3@ott93302" width="500px" height="600px"&gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
+
+---
+
+# Examples of the otol APIs and the type of data structure they return
+
+Conclusion: we need python!
+
+---
+
+# Physcraper
 
 ---
 class: right, middle, blue-gray
@@ -62,9 +268,38 @@ class: right, middle, blue-gray
 Post an issue on our <span>&lt;i class="fab  fa-github faa-pulse animated "&gt;&lt;/i&gt;</span> Github repo  at &lt;a href="https://github.com/McTavishLab/physcraper/issues"&gt;  https://github.com/McTavishLab/physcraper/issues &lt;/a&gt; &lt;/p&gt; 
 ]
 ---
-class: right, middle, blue-gray
+class: split-80, blue-gray
 
+
+.column[.content.center.vmiddle[
+
+
+
+&lt;p&gt;&lt;cite&gt;Wickham, H. and G. Grolemund
+(2016).
+&lt;em&gt;R for Data Science: Import, Tidy, Transform, Visualize, and Model Data&lt;/em&gt;.
+O'Reilly Media.&lt;/cite&gt;&lt;/p&gt;
+&lt;p&gt;&lt;cite&gt;Mayr, R. M.
+(2010).
+&amp;ldquo;Tropical Arthropod Species, More or Less?&amp;rdquo;.
+In: &lt;em&gt;Science&lt;/em&gt; 329.July, pp. 41&amp;ndash;42.
+URL: &lt;a href="http://science.sciencemag.org/content/329/5987/41/tab-pdf"&gt;http://science.sciencemag.org/content/329/5987/41/tab-pdf&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
+&lt;p&gt;&lt;cite&gt;Mora, C., D. P. Tittensor, S. Adl, et al.
+(2011).
+&amp;ldquo;How many species are there on earth and in the ocean?&amp;rdquo;.
+In: &lt;em&gt;PLoS Biology&lt;/em&gt; 9.8, pp. 1&amp;ndash;8.
+ISSN: 15449173.
+DOI: &lt;a href="https://doi.org/10.1371/journal.pbio.1001127"&gt;10.1371/journal.pbio.1001127&lt;/a&gt;.
+eprint: NIHMS150003.&lt;/cite&gt;&lt;/p&gt;
+
+]]
+.column[.content.vmiddle.center[
 # References
+]]
+
+???
+
+code from https://github.com/yihui/xaringan/issues/26
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
