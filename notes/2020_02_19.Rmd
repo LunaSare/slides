@@ -1,0 +1,51 @@
+
+# Cool widgets from Mark and Emily Jane:
+
+http://phylo.bio.ku.edu/mephytis/
+
+# Lab on ML phylogenetics on the Merced cluster
+Exercises from <https://mctavishlab.github.io/GradPhylo/MLsearchLab.html>
+
+## garli run
+
+```
+rsync username@merced.ucmerced.edu:MLSearchLab/garli_run1.best.tre .
+```
+
+Tree from first Garli run on labs/2020_gradphylo/garli_run1.best.tre
+
+doing `cat garli_run1.best.tre` reveals that output tree is in nexus format.
+
+```
+garli_run1 <- ape::read.nexus("garli_run1.best.tre")
+plot(ape::ladderize(garli_run1))
+mtext("Garli run 1", font = 2)
+```
+
+## raxml run
+
+```
+raxmlHPC -m GTRGAMMAI -p 1234 -# 2 -s datafiles/murphy29.rag1rag2.fasta -n rax01
+```
+
+download tree from cluster
+```
+rsync username@merced.ucmerced.edu:MLSearchLab/RAxML_bestTree.rax01 .
+```
+
+Cat shows us that it is fasta format
+
+```
+raxml_run1 <- ape::read.tree("RAxML_bestTree.rax01")
+plot(ape::ladderize(raxml_run1))
+mtext("RAxML run1", font = 2)
+```
+
+## Comparing the two trees
+
+```
+source /courses/ejmctavish/qsb244/venv-244/bin/activate
+python treecompare.py RAxML_bestTree.rax01 newick garli_run1.best.tre nexus
+```
+
+The RobinsonFoulds distance between these trees is 1 and the weighted RF is 0.00173373180154

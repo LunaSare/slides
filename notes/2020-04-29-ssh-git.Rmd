@@ -1,0 +1,105 @@
+---
+title: "Tips for doing git through ssh"
+subtitle: ""
+author: "Luna L. Sanchez Reyes"
+institute: "University of California, Merced"
+date: "2020/04/29 (updated: `r Sys.Date()`)"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+Once I had ssh-ed into the Merced cluster, I did
+
+```
+ssh -vT git@github.com
+```
+And got: 
+
+```
+OpenSSH_7.4p1, OpenSSL 1.0.2k-fips  26 Jan 2017
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: /etc/ssh/ssh_config line 58: Applying options for *
+debug1: Connecting to github.com [192.30.255.112] port 22.
+debug1: Connection established.
+debug1: identity file /home/lsanchezreyes2/.ssh/id_rsa type 1
+debug1: key_load_public: No such file or directory
+debug1: identity file /home/lsanchezreyes2/.ssh/id_rsa-cert type -1
+debug1: key_load_public: No such file or directory
+debug1: identity file /home/lsanchezreyes2/.ssh/id_dsa type -1
+debug1: key_load_public: No such file or directory
+debug1: identity file /home/lsanchezreyes2/.ssh/id_dsa-cert type -1
+debug1: key_load_public: No such file or directory
+debug1: identity file /home/lsanchezreyes2/.ssh/id_ecdsa type -1
+debug1: key_load_public: No such file or directory
+debug1: identity file /home/lsanchezreyes2/.ssh/id_ecdsa-cert type -1
+debug1: key_load_public: No such file or directory
+debug1: identity file /home/lsanchezreyes2/.ssh/id_ed25519 type -1
+debug1: key_load_public: No such file or directory
+debug1: identity file /home/lsanchezreyes2/.ssh/id_ed25519-cert type -1
+debug1: Enabling compatibility mode for protocol 2.0
+debug1: Local version string SSH-2.0-OpenSSH_7.4
+debug1: Remote protocol version 2.0, remote software version babeld-d45c1532
+debug1: no match: babeld-d45c1532
+debug1: Authenticating to github.com:22 as 'git'
+debug1: SSH2_MSG_KEXINIT sent
+debug1: SSH2_MSG_KEXINIT received
+debug1: kex: algorithm: curve25519-sha256
+debug1: kex: host key algorithm: rsa-sha2-512
+debug1: kex: server->client cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: none
+debug1: kex: client->server cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: none
+debug1: kex: curve25519-sha256 need=64 dh_need=64
+debug1: kex: curve25519-sha256 need=64 dh_need=64
+debug1: expecting SSH2_MSG_KEX_ECDH_REPLY
+debug1: Server host key: ssh-rsa SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8
+debug1: Host 'github.com' is known and matches the RSA host key.
+debug1: Found key in /home/lsanchezreyes2/.ssh/known_hosts:1
+debug1: rekey after 134217728 blocks
+debug1: SSH2_MSG_NEWKEYS sent
+debug1: expecting SSH2_MSG_NEWKEYS
+debug1: SSH2_MSG_NEWKEYS received
+debug1: rekey after 134217728 blocks
+debug1: SSH2_MSG_EXT_INFO received
+debug1: kex_input_ext_info: server-sig-algs=<ssh-ed25519,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,ssh-rsa,rsa-sha2-512,rsa-sha2-256,ssh-dss>
+debug1: SSH2_MSG_SERVICE_ACCEPT received
+debug1: Authentications that can continue: publickey
+debug1: Next authentication method: publickey
+debug1: Offering RSA public key: /home/lsanchezreyes2/.ssh/id_rsa
+debug1: Authentications that can continue: publickey
+debug1: Trying private key: /home/lsanchezreyes2/.ssh/id_dsa
+debug1: Trying private key: /home/lsanchezreyes2/.ssh/id_ecdsa
+debug1: Trying private key: /home/lsanchezreyes2/.ssh/id_ed25519
+debug1: No more authentication methods to try.
+Permission denied (publickey).
+```
+
+--
+
+Then, following [Mathew Hagemann's post][https://medium.com/@mhagemann/how-to-fix-ssh-permission-denied-with-git-clone-f669b65f90ac], I did:
+
+```
+ssh-keygen
+```
+And just hit return for everything.
+
+Then downloaded to my computer the file `id_rsa.pub` that contains the new key, doing:
+
+```
+rsync username@merced.ucmerced.edu:.ssh/id_rsa.pub .
+```
+
+Copied all the contents of the `id_rsa.pub` file, 
+went to my github account >> settings >> ssh >> add a new ssh key, paste those into the window that popped up >> clicked add, and gladly saw that I had a new ssh key there.
+
+Then, went back to my ssh session and did:
+
+```
+ssh -T git@github.com
+Hi LunaSare! You've successfully authenticated, but GitHub does not provide shell access.
+```
+
+Then I was finally able to `git clone` into my home on the cluster, yay!!!

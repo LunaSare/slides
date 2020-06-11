@@ -1,0 +1,75 @@
+---
+title: "SciPy 2020"
+params:
+  subtitle: "Paper discussion"
+  authorA: "Luna L. Sanchez Reyes"
+  authorB: "Martha Kandziora"
+  authorC: "Emily Jane McTavish"
+  institute: "University of California, Merced"
+  place: "The Internet"
+  date: "July 6-12, 2020"
+  event: "SciPy2020 Conference"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: ["kunoichi", "ninjutsu", "metropolis-fonts", "ninjutsu-luna-extras.css"]
+    seal: false
+    self_contained: false
+    nature:
+      ratio: "16:9"
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+class: left, middle, blue-gray
+
+<img align="left" width="250" src="https://cdn.rawgit.com/snacktavish/physcraper/master/docs/physcraper.svg">
+
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(echo = FALSE)
+options(knitr.duplicate.label = 'allow')
+```
+
+.font3[**Physcraper**]
+
+.font2[Continual .red[updating] of evolutionary estimates in the Open Tree of Life]
+
+<br/>
+### `r params$authorA`.red[<sup>*</sup>] .red[&#183;]  `r params$authorB` .red[&#183;] `r params$authorC`
+<br/>
+### `r params$institute`
+<br/>
+
+
+`r params$event` .red[&#183;] `r params$date` .red[&#183;] `r params$place`
+
+Slides last updated on  `r format(Sys.Date(), format = "%B %d, %Y")` .red[&#183;] Find the code for them in [`r anicon::faa("github", animate="passing")`  here]()
+
+.red[*] Speaker contact [@LunaSare](https://www.lunasare.com/) on [Github `r anicon::faa("github", animate="float")`](https://github.com/LunaSare) and [Twitter `r anicon::faa("twitter", animate="float")`](https://twitter.com/LunaSare)
+---
+
+
+
+---
+class: right, middle, blue-gray
+
+<img align="right" width="250" src="https://cdn.rawgit.com/snacktavish/physcraper/master/docs/physcraper.svg">
+
+.font3[**Questions?**]
+
+.font2[See you on Thursday .red[July 9], from .red[2:45]pm to .red[3:45]pm (CDT) at SciPy2020's [Biology and Bioinformatics Q&A and Moderated Discussion](https://www.scipy2020.scipy.org/schedule) live session!] 
+
+<br/>
+
+.font2[**Tried physcraper and have suggestions?** ]
+.center[
+<p style="font-size:1.55em"> Contact `r anicon::faa("envelope", animate="pulse")` us at <a href="https://mctavishlab.github.io/contact/"> ejmctavish@ucmerced.edu </a> <br/>
+.red[&#183; &#183; &#183;] <br/>
+Post an issue on our `r anicon::faa("github", animate="pulse")` Github repo  at <a href="https://github.com/McTavishLab/physcraper/issues">  https://github.com/McTavishLab/physcraper/issues </a> </p> 
+]
+---
+class: right, middle, blue-gray
+
+# References

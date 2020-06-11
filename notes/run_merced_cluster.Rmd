@@ -1,0 +1,117 @@
+#Running a job on the cluster
+## If you are outside UC Merced network, turn your VPN on!
+
+You can only ssh into the cluster from within UC Merced's network
+
+## ssh into the cluster
+```
+ssh username@merced.ucmerced.edu
+```
+## Create a job submission script.
+
+There is one already in /home/help/sample.sub
+It looks like this:
+
+```
+# copy that in your home folder and remove THIS first line
+#! /bin/bash -l
+
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=1
+#SBATCH --mem-per-cpu=1G
+#
+#SBATCH --partition fast.q
+#SBATCH --time=0-00:15:00     # 0days 15 minutes
+#
+#SBATCH --output=myjob_%j.stdout
+#
+#SBATCH --job-name=test
+#SBATCH --export=ALL
+
+# This submission file will run a simple set of commands. All stdout will be
+# captured in mmyjob_XXXX.stdout (as specified in the Slurm command above).
+# This job file uses a shared-memory parallel environment and requests 1 cores
+# on a single node.This script loads PGI compiler module named "pgi"
+
+whoami
+module load pgi
+```
+
+## Submit the job
+
+```
+sbatch sample.sub
+```
+## Check your queue
+
+```
+squeue -u username
+```
+
+## Check the state of the cluster real time
+
+Use the tool called ganglia! Find it at https://merced.ucmerced.edu/ganglia/
+
+## Find results of your job
+
+```
+cat myjob_jobidnumber.stdout
+```
+
+## Use screen to leave work on the background
+
+```
+screen
+screen -aD
+```
+
+## Change your PATH to run software
+Open `.bash_profile`
+```
+nano .bash_profile
+```
+Modify it.
+
+```
+```
+Save and write it put.
+Source it.
+```
+source .bash_profile
+```
+
+Show place that software is looked for
+```
+echo $PATH
+```
+
+## To finish the ssh connection just press Ctrl + d
+
+
+## Copy a file from the server back to your computer
+
+From your own computer, do:
+
+```
+rsync username@merced.ucmerced.edu:path/to/file/on/cluster/name .
+```
+
+## Run on mercedhead
+
+ssh as you regularly do, and then do:
+
+```
+ssh mercedhead
+```
+
+It will ask for your password and you will be connected to that
+
+## Create a temporary connection to a node on the cluster
+
+```
+srun -p long.q --pty /bin/bash
+ssh mrcd21
+```
+
+Do ctrl + d to go back to your previous login!
