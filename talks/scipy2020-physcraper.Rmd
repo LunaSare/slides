@@ -21,6 +21,10 @@ output:
       highlightLines: true
       countIncrementalSlides: false
 ---
+background-image: url("bg/2-blue-sky.png")
+background-position: center
+background-size: contain
+
 class: left, middle, blue-gray
 
 <img align="left" width="250" src="https://cdn.rawgit.com/snacktavish/physcraper/master/docs/physcraper.svg">
@@ -37,7 +41,7 @@ options(knitr.duplicate.label = 'allow')
 .font2[Continual .red[updating] of evolutionary estimates in the Open Tree of Life]
 
 <br/>
-### `r params$authorA`.red[<sup>*</sup>] .red[&#183;]  `r params$authorB` .red[&#183;] `r params$authorC`
+### .red[<sup>*</sup>] `r params$authorA` .red[&#183;]  `r params$authorB` .red[&#183;] `r params$authorC`
 <br/>
 ### `r params$institute`
 <br/>
