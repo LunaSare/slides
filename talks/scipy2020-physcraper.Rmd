@@ -67,6 +67,8 @@ background-image: url("bg/diversity1.png")
 background-position: center
 background-size: contain
 
+???
+
 # As biologists, we want to understand how all living things are connected evolutionarily
 
 ---
@@ -74,14 +76,36 @@ background-image: url("bg/diversity2.png")
 background-position: center
 background-size: contain
 
+class: split-20, center
+
+.row[.content[
+# Let's talk scale... how many organisms are there?
+
+]]
+.row.split-two[
+.column[.content.center[
+<br/><br/><br/>
+### &emsp; &emsp; &emsp;  Estimates range between 
+## &emsp; &emsp; &emsp; .orange[3 million] .font_small.gray[(Mayr 2010)]
+### &emsp; &emsp; &emsp;  and 
+## &emsp; &emsp; &emsp; .blue[100 million] .font_small.gray[(Mora et al. 2011)]
+### &emsp; &emsp; &emsp; living species
+]]
+
+.column[.content.center[
+<br/><br/><br/>
+### How many more have existed &emsp; &emsp; 
+### in the past??? &emsp; 
+<br/>
+.font4[`r emo::ji("scream")` &emsp; ]
+]]
+]
+
+???
 # There are a gazillion species living, and many more so extinct
-
-# How many species are there?
-
-Estimates range between 3 000 000 and 100 000 000 living species
-
+# It is a problem for big data managment and analysis
 ---
-background-image: url("bg/tree-of-life.png")
+background-image: url("bg/tree-of-life-red.png")
 background-position: center
 background-size: contain
 
@@ -90,16 +114,23 @@ class: split-two
 .column.split-20[
 .column[.content[
 ]]
-.column.split-three[
-.row[.content.vmiddle[
-# Phylogenetic trees
+.column.split-20[
+.row[.content[
+# How do we do it?
+]]
+.row.split-20[
+.row[.content[
+## Phylogenetic .red[trees]
+]]
+.row.split-two[
+.row[.content[
+### - A graphical representation of a hypothesis of .red[ancestor-descendant] relationships among living and extinct species
 ]]
 .row[.content[
-### A graphical representation of a hypothesis of ancestor-descendant relationships among living and extinct species
+### - The most important item for the study of biology and all related fields!
 ]]
-.row[.content[
-### The most important item for the study of biology and all related fields!
-]]
+]
+]
 ]
 ]
 .column[.content[
@@ -112,35 +143,70 @@ class: split-two
 </a> </p>
 ]]
 
+???
+
+This is an artistic representation of evolutionary relationships between organisms. Although there is some information in there.
 ---
 
+## Phylogenies in the wild
+
+---
+class: split-20
 # Use of phylogenies in science
 
 
 Images of modern phylogenies
 
-Conclusion: phylogenies are very important
+???
 
----
-# Because they are important, there are a lot of phylogenies
-
-Graphs of accumulation of phylogenies through time
+Conclusion: phylogenies are very important for our survival
 
 ---
 
 # Hoy do you produce them?
 
 
-Conclusion: They are hard to make and it is a very artisanal endeavor.
+???
+
+Conclusion: They are hard to make and it is a very artisanal endeavor. So you would think that scientists would make an effort to make them available.
 
 ---
+background-image: url("bg/data-sharing1.png")
+background-position: center
+background-size: contain
 
-# How do you get them?
+# Because they are important, there are a lot of phylogenies
 
-Main: Reuse of phylogenies is important
+???
+
+Graphs of accumulation of phylogenies through time
+
+---
+background-image: url("bg/2-gray.png")
+background-position: center
+background-size: contain
+
+# How do you get them? Part1
+
+Data repositories: Supplementary Data in Journal
+
+Figures
+
+Original files
+
+---
+background-image: url("bg/data-sharing2.png")
+background-position: center
+background-size: contain
+
+# How do you get them? Part2
+
+Main: Sharing is key for reuse of phylogenies; and reuse is key for advancement of science.
+
+???
 
 Conclusion: Phylogenies are usually not shared but DNA data is
-
+(Drew et al. 2013).
 ---
 
 # Molecular data repositories
@@ -149,6 +215,10 @@ Conclusion: Phylogenies are usually not shared but DNA data is
 NCBI - 1989
 
 EMBL - 
+
+???
+
+More effort is goinf to share the raw molecular data
 
 ---
 
@@ -224,12 +294,13 @@ background-size: contain
 ---
 class: split-two
 
-<img align="right" width="350" src="bg/treebase-wget-2.gif">
-
 .column[.content[
 ```
 wget "http://purl.org/phylo/treebase/phylows/matrix/TB2:M4382?format=nexus"
 ```
+]]
+.column[.content[
+<img align="right" width="550" src="bg/treebase-wget-2.gif">
 ]]
 
 
@@ -298,6 +369,14 @@ print(bib[key = "mayr2010tropical"],
                style = "html", 
                bib.style = "authoryear"))
 print(bib[key = "mora2011how"], 
+  .opts = list(check.entries = FALSE, 
+               style = "html", 
+               bib.style = "authoryear"))
+print(bib[key = "drew2013lost"], 
+  .opts = list(check.entries = FALSE, 
+               style = "html", 
+               bib.style = "authoryear"))
+print(bib[key = "magee2014dawn"], 
   .opts = list(check.entries = FALSE, 
                style = "html", 
                bib.style = "authoryear"))

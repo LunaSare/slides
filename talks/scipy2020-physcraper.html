@@ -55,6 +55,8 @@ background-image: url("bg/diversity1.png")
 background-position: center
 background-size: contain
 
+???
+
 # As biologists, we want to understand how all living things are connected evolutionarily
 
 ---
@@ -62,14 +64,36 @@ background-image: url("bg/diversity2.png")
 background-position: center
 background-size: contain
 
+class: split-20, center
+
+.row[.content[
+# Let's talk scale... how many organisms are there?
+
+]]
+.row.split-two[
+.column[.content.center[
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+### &amp;emsp; &amp;emsp; &amp;emsp;  Estimates range between 
+## &amp;emsp; &amp;emsp; &amp;emsp; .orange[3 million] .font_small.gray[(Mayr 2010)]
+### &amp;emsp; &amp;emsp; &amp;emsp;  and 
+## &amp;emsp; &amp;emsp; &amp;emsp; .blue[100 million] .font_small.gray[(Mora et al. 2011)]
+### &amp;emsp; &amp;emsp; &amp;emsp; living species
+]]
+
+.column[.content.center[
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+### How many more have existed &amp;emsp; &amp;emsp; 
+### in the past??? &amp;emsp; 
+&lt;br/&gt;
+.font4[😱 &amp;emsp; ]
+]]
+]
+
+???
 # There are a gazillion species living, and many more so extinct
-
-# How many species are there?
-
-Estimates range between 3 000 000 and 100 000 000 living species
-
+# It is a problem for big data managment and analysis
 ---
-background-image: url("bg/tree-of-life.png")
+background-image: url("bg/tree-of-life-red.png")
 background-position: center
 background-size: contain
 
@@ -78,16 +102,23 @@ class: split-two
 .column.split-20[
 .column[.content[
 ]]
-.column.split-three[
-.row[.content.vmiddle[
-# Phylogenetic trees
+.column.split-20[
+.row[.content[
+# How do we do it?
+]]
+.row.split-20[
+.row[.content[
+## Phylogenetic .red[trees]
+]]
+.row.split-two[
+.row[.content[
+### - A graphical representation of a hypothesis of .red[ancestor-descendant] relationships among living and extinct species
 ]]
 .row[.content[
-### A graphical representation of a hypothesis of ancestor-descendant relationships among living and extinct species
+### - The most important item for the study of biology and all related fields!
 ]]
-.row[.content[
-### The most important item for the study of biology and all related fields!
-]]
+]
+]
 ]
 ]
 .column[.content[
@@ -100,35 +131,70 @@ class: split-two
 &lt;/a&gt; &lt;/p&gt;
 ]]
 
+???
+
+This is an artistic representation of evolutionary relationships between organisms. Although there is some information in there.
 ---
 
+## Phylogenies in the wild
+
+---
+class: split-20
 # Use of phylogenies in science
 
 
 Images of modern phylogenies
 
-Conclusion: phylogenies are very important
+???
 
----
-# Because they are important, there are a lot of phylogenies
-
-Graphs of accumulation of phylogenies through time
+Conclusion: phylogenies are very important for our survival
 
 ---
 
 # Hoy do you produce them?
 
 
-Conclusion: They are hard to make and it is a very artisanal endeavor.
+???
+
+Conclusion: They are hard to make and it is a very artisanal endeavor. So you would think that scientists would make an effort to make them available.
 
 ---
+background-image: url("bg/data-sharing1.png")
+background-position: center
+background-size: contain
 
-# How do you get them?
+# Because they are important, there are a lot of phylogenies
 
-Main: Reuse of phylogenies is important
+???
+
+Graphs of accumulation of phylogenies through time
+
+---
+background-image: url("bg/2-gray.png")
+background-position: center
+background-size: contain
+
+# How do you get them? Part1
+
+Data repositories: Supplementary Data in Journal
+
+Figures
+
+Original files
+
+---
+background-image: url("bg/data-sharing2.png")
+background-position: center
+background-size: contain
+
+# How do you get them? Part2
+
+Main: Sharing is key for reuse of phylogenies; and reuse is key for advancement of science.
+
+???
 
 Conclusion: Phylogenies are usually not shared but DNA data is
-
+(Drew et al. 2013).
 ---
 
 # Molecular data repositories
@@ -137,6 +203,10 @@ Conclusion: Phylogenies are usually not shared but DNA data is
 NCBI - 1989
 
 EMBL - 
+
+???
+
+More effort is goinf to share the raw molecular data
 
 ---
 
@@ -212,12 +282,13 @@ background-size: contain
 ---
 class: split-two
 
-&lt;img align="right" width="350" src="bg/treebase-wget-2.gif"&gt;
-
 .column[.content[
 ```
 wget "http://purl.org/phylo/treebase/phylows/matrix/TB2:M4382?format=nexus"
 ```
+]]
+.column[.content[
+&lt;img align="right" width="550" src="bg/treebase-wget-2.gif"&gt;
 ]]
 
 
@@ -275,10 +346,6 @@ class: split-80, blue-gray
 
 
 
-&lt;p&gt;&lt;cite&gt;Wickham, H. and G. Grolemund
-(2016).
-&lt;em&gt;R for Data Science: Import, Tidy, Transform, Visualize, and Model Data&lt;/em&gt;.
-O'Reilly Media.&lt;/cite&gt;&lt;/p&gt;
 &lt;p&gt;&lt;cite&gt;Mayr, R. M.
 (2010).
 &amp;ldquo;Tropical Arthropod Species, More or Less?&amp;rdquo;.
@@ -291,6 +358,16 @@ In: &lt;em&gt;PLoS Biology&lt;/em&gt; 9.8, pp. 1&amp;ndash;8.
 ISSN: 15449173.
 DOI: &lt;a href="https://doi.org/10.1371/journal.pbio.1001127"&gt;10.1371/journal.pbio.1001127&lt;/a&gt;.
 eprint: NIHMS150003.&lt;/cite&gt;&lt;/p&gt;
+&lt;p&gt;&lt;cite&gt;Drew, B. T., R. Gazis, P. Cabezas, et al.
+(2013).
+&amp;ldquo;Lost branches on the tree of life&amp;rdquo;.
+In: &lt;em&gt;PLoS biology&lt;/em&gt; 11.9.
+DOI: &lt;a href="https://doi.org/10.1371/journal.pbio.1001636"&gt;10.1371/journal.pbio.1001636&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
+&lt;p&gt;&lt;cite&gt;Magee, A. F., M. R. May, and B. R. Moore
+(2014).
+&amp;ldquo;The dawn of open access to phylogenetic data&amp;rdquo;.
+In: &lt;em&gt;PLoS One&lt;/em&gt; 9.10.
+DOI: &lt;a href="https://doi.org/10.1371/journal.pone.0110268"&gt;10.1371/journal.pone.0110268&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
 
 ]]
 .column[.content.vmiddle.center[
