@@ -147,39 +147,48 @@ class: split-two
 
 This is an artistic representation of evolutionary relationships between organisms. Although there is some information in there.
 ---
+background-image: url("bg/6-wild.png")
+background-position: center
+background-size: contain
 
 ## Phylogenies in the wild
 
 ---
-class: split-20
-# Use of phylogenies in science
+exclude: true
 
+## A newick string
 
-Images of modern phylogenies
+---
+background-image: url("bg/7-use.png")
+background-position: center
+background-size: contain
+
+# What are phylogenies useful for?
+
 
 ???
 
 Conclusion: phylogenies are very important for our survival
 
 ---
+background-image: url("bg/9-data-sharing1.png")
+background-position: center
+background-size: contain
 
-# Hoy do you produce them?
+# Number of published phylogenies is around the 10K's 
+
+???
+
+Graphs of accumulation of phylogenies through time
+
+---
+
+# Hoy do you generate a phylogeny?
 
 
 ???
 
 Conclusion: They are hard to make and it is a very artisanal endeavor. So you would think that scientists would make an effort to make them available.
-
----
-background-image: url("bg/data-sharing1.png")
-background-position: center
-background-size: contain
-
-# Because they are important, there are a lot of phylogenies
-
-???
-
-Graphs of accumulation of phylogenies through time
 
 ---
 background-image: url("bg/2-gray.png")
@@ -188,11 +197,13 @@ background-size: contain
 
 # How do you get them? Part1
 
-Data repositories: Supplementary Data in Journal
+## General data repositories: Supplementary Data in Journal
 
-Figures
+## Figures on paper
 
-Original files
+## Asking the authors
+
+## Reanalyze raw data
 
 ---
 background-image: url("bg/data-sharing2.png")
@@ -201,27 +212,57 @@ background-size: contain
 
 # How do you get them? Part2
 
-Main: Sharing is key for reuse of phylogenies; and reuse is key for advancement of science.
-
 ???
+
+Main: Sharing is key for reuse of phylogenies; and reuse is key for advancement of science.
 
 Conclusion: Phylogenies are usually not shared but DNA data is
 (Drew et al. 2013).
 ---
+background-image: url("bg/12-molecular.png")
+background-position: center
+background-size: contain
 
-# Molecular data repositories
+class: split-10
 
+.column[
 
-NCBI - 1989
+]
+.column.split-70[
+.column[.content[
+# Getting the raw data: Molecular sequence repositories
+<br/>
+## .gray.center[The International Nucleotide Sequence Database Collaboration (INSDC)]
 
-EMBL - 
+<br/>
+
+### &emsp; GenBank at NCBI - Released 1989 https://www.ncbi.nlm.nih.gov/genbank/
+
+<br/>
+
+### &emsp; DNA DataBank of Japan (DDBJ) - Released 1986 https://www.ddbj.nig.ac.jp/index-e.html
+
+<br/>
+
+### &emsp; European Nucleotide Archive (ENA; former EMBL) - Released 1982  https://www.ebi.ac.uk/ena  
+]]
+]
+.column[
+
+]
+
 
 ???
 
-More effort is goinf to share the raw molecular data
+More effort is going to share the raw molecular data
+https://www.ddbj.nig.ac.jp/stats/release-e.html#total_data
+---
+<div class="resp-container">
+    <iframe class="testiframe" src="https://www.ddbj.nig.ac.jp/stats/release-e.html#total_data" height="600px">
+    </iframe>
+</div>
 
 ---
-
 <div class="resp-container">
     <iframe class="testiframe" src="https://www.ncbi.nlm.nih.gov/nucleotide/" height="600px">
     </iframe>
@@ -274,18 +315,21 @@ https://www.linuxjournal.com/content/party-its-1994
 </div>
 
 ---
+exclude: true
 
 background-image: url("bg/treebase1.png")
 background-position: center
 background-size: contain
 
 ---
+exclude: true
 
 background-image: url("bg/treebase-search1.png")
 background-position: center
 background-size: contain
 
 ---
+exclude: true
 
 background-image: url("bg/treebase-search2.png")
 background-position: center
@@ -295,12 +339,16 @@ background-size: contain
 class: split-two
 
 .column[.content[
-```
-wget "http://purl.org/phylo/treebase/phylows/matrix/TB2:M4382?format=nexus"
-```
+
+<img align="center" width="550" src="bg/treebase-wget-2.gif">
+
+
+````
+    wget "http://purl.org/phylo/treebase/phylows/
+          matrix/TB2:M4382?format=nexus"
+````
 ]]
 .column[.content[
-<img align="right" width="550" src="bg/treebase-wget-2.gif">
 ]]
 
 
@@ -351,10 +399,10 @@ class: right, middle, blue-gray
 Post an issue on our `r anicon::faa("github", animate="pulse")` Github repo  at <a href="https://github.com/McTavishLab/physcraper/issues">  https://github.com/McTavishLab/physcraper/issues </a> </p> 
 ]
 ---
-class: split-80, blue-gray
+class: split-two, blue-gray
 
 
-.column[.content.center.vmiddle[
+.column[.content.center.vmiddle.font_small[
 
 ```{r, load_refs, echo=FALSE}
 library(RefManageR)
@@ -377,6 +425,34 @@ print(bib[key = "drew2013lost"],
                style = "html", 
                bib.style = "authoryear"))
 print(bib[key = "magee2014dawn"], 
+  .opts = list(check.entries = FALSE, 
+               style = "html", 
+               bib.style = "authoryear"))
+print(bib[key = "stenz2015exploring"], 
+  .opts = list(check.entries = FALSE, 
+               style = "html", 
+               bib.style = "authoryear"))
+print(bib[key = "sanmartin2007west"], 
+  .opts = list(check.entries = FALSE, 
+               style = "html", 
+               bib.style = "authoryear"))
+print(bib[key = "redelings2017supertree"], 
+  .opts = list(check.entries = FALSE, 
+               style = "html", 
+               bib.style = "authoryear"))
+print(bib[key = "magallon2019thirty"], 
+  .opts = list(check.entries = FALSE, 
+               style = "html", 
+               bib.style = "authoryear"))
+print(bib[key = "sakamoto2016dinosaurs"], 
+  .opts = list(check.entries = FALSE, 
+               style = "html", 
+               bib.style = "authoryear"))
+print(bib[key = "gaunt2001phylogenies"], 
+  .opts = list(check.entries = FALSE, 
+               style = "html", 
+               bib.style = "authoryear"))
+print(bib[key = "de2018recent"], 
   .opts = list(check.entries = FALSE, 
                style = "html", 
                bib.style = "authoryear"))

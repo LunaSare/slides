@@ -37,7 +37,7 @@ class: left, middle, blue-gray
 
 SciPy2020 Conference .red[&amp;#183;] July 6-12, 2020 .red[&amp;#183;] The Internet
 
-Slides last updated on  June 11, 2020 .red[&amp;#183;] Find the code for them in [<span>&lt;i class="fab  fa-github faa-passing animated "&gt;&lt;/i&gt;</span>  here]()
+Slides last updated on  June 12, 2020 .red[&amp;#183;] Find the code for them in [<span>&lt;i class="fab  fa-github faa-passing animated "&gt;&lt;/i&gt;</span>  here]()
 
 .red[*] Speaker contact [@LunaSare](https://www.lunasare.com/) on [Github <span>&lt;i class="fab  fa-github faa-float animated "&gt;&lt;/i&gt;</span>](https://github.com/LunaSare) and [Twitter <span>&lt;i class="fab  fa-twitter faa-float animated "&gt;&lt;/i&gt;</span>](https://twitter.com/LunaSare)
 ---
@@ -135,39 +135,48 @@ class: split-two
 
 This is an artistic representation of evolutionary relationships between organisms. Although there is some information in there.
 ---
+background-image: url("bg/6-wild.png")
+background-position: center
+background-size: contain
 
 ## Phylogenies in the wild
 
 ---
-class: split-20
-# Use of phylogenies in science
+exclude: true
 
+## A newick string
 
-Images of modern phylogenies
+---
+background-image: url("bg/7-use.png")
+background-position: center
+background-size: contain
+
+# What are phylogenies useful for?
+
 
 ???
 
 Conclusion: phylogenies are very important for our survival
 
 ---
+background-image: url("bg/9-data-sharing1.png")
+background-position: center
+background-size: contain
 
-# Hoy do you produce them?
+# Number of published phylogenies is around the 10K's 
+
+???
+
+Graphs of accumulation of phylogenies through time
+
+---
+
+# Hoy do you generate a phylogeny?
 
 
 ???
 
 Conclusion: They are hard to make and it is a very artisanal endeavor. So you would think that scientists would make an effort to make them available.
-
----
-background-image: url("bg/data-sharing1.png")
-background-position: center
-background-size: contain
-
-# Because they are important, there are a lot of phylogenies
-
-???
-
-Graphs of accumulation of phylogenies through time
 
 ---
 background-image: url("bg/2-gray.png")
@@ -176,11 +185,13 @@ background-size: contain
 
 # How do you get them? Part1
 
-Data repositories: Supplementary Data in Journal
+## General data repositories: Supplementary Data in Journal
 
-Figures
+## Figures on paper
 
-Original files
+## Asking the authors
+
+## Reanalyze raw data
 
 ---
 background-image: url("bg/data-sharing2.png")
@@ -189,27 +200,57 @@ background-size: contain
 
 # How do you get them? Part2
 
-Main: Sharing is key for reuse of phylogenies; and reuse is key for advancement of science.
-
 ???
+
+Main: Sharing is key for reuse of phylogenies; and reuse is key for advancement of science.
 
 Conclusion: Phylogenies are usually not shared but DNA data is
 (Drew et al. 2013).
 ---
+background-image: url("bg/12-molecular.png")
+background-position: center
+background-size: contain
 
-# Molecular data repositories
+class: split-10
 
+.column[
 
-NCBI - 1989
+]
+.column.split-70[
+.column[.content[
+# Getting the raw data: Molecular sequences repositories
+&lt;br/&gt;
+## .gray.center[The International Nucleotide Sequence Database Collaboration (INSDC)]
 
-EMBL - 
+&lt;br/&gt;
+
+### &amp;emsp; GenBank at NCBI - Released 1989 https://www.ncbi.nlm.nih.gov/genbank/
+
+&lt;br/&gt;
+
+### &amp;emsp; DNA DataBank of Japan (DDBJ) - Released 1986 https://www.ddbj.nig.ac.jp/index-e.html
+
+&lt;br/&gt;
+
+### &amp;emsp; European Nucleotide Archive (ENA; former EMBL) - Released 1982  https://www.ebi.ac.uk/ena  
+]]
+]
+.column[
+
+]
+
 
 ???
 
-More effort is goinf to share the raw molecular data
+More effort is going to share the raw molecular data
+https://www.ddbj.nig.ac.jp/stats/release-e.html#total_data
+---
+&lt;div class="resp-container"&gt;
+    &lt;iframe class="testiframe" src="https://www.ddbj.nig.ac.jp/stats/release-e.html#total_data" height="600px"&gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
 
 ---
-
 &lt;div class="resp-container"&gt;
     &lt;iframe class="testiframe" src="https://www.ncbi.nlm.nih.gov/nucleotide/" height="600px"&gt;
     &lt;/iframe&gt;
@@ -262,18 +303,21 @@ https://www.linuxjournal.com/content/party-its-1994
 &lt;/div&gt;
 
 ---
+exclude: true
 
 background-image: url("bg/treebase1.png")
 background-position: center
 background-size: contain
 
 ---
+exclude: true
 
 background-image: url("bg/treebase-search1.png")
 background-position: center
 background-size: contain
 
 ---
+exclude: true
 
 background-image: url("bg/treebase-search2.png")
 background-position: center
@@ -283,12 +327,16 @@ background-size: contain
 class: split-two
 
 .column[.content[
-```
-wget "http://purl.org/phylo/treebase/phylows/matrix/TB2:M4382?format=nexus"
-```
+
+&lt;img align="center" width="550" src="bg/treebase-wget-2.gif"&gt;
+
+
+````
+    wget "http://purl.org/phylo/treebase/phylows/
+          matrix/TB2:M4382?format=nexus"
+````
 ]]
 .column[.content[
-&lt;img align="right" width="550" src="bg/treebase-wget-2.gif"&gt;
 ]]
 
 
@@ -339,10 +387,10 @@ class: right, middle, blue-gray
 Post an issue on our <span>&lt;i class="fab  fa-github faa-pulse animated "&gt;&lt;/i&gt;</span> Github repo  at &lt;a href="https://github.com/McTavishLab/physcraper/issues"&gt;  https://github.com/McTavishLab/physcraper/issues &lt;/a&gt; &lt;/p&gt; 
 ]
 ---
-class: split-80, blue-gray
+class: split-two, blue-gray
 
 
-.column[.content.center.vmiddle[
+.column[.content.center.vmiddle.font_small[
 
 
 
@@ -368,6 +416,40 @@ DOI: &lt;a href="https://doi.org/10.1371/journal.pbio.1001636"&gt;10.1371/journa
 &amp;ldquo;The dawn of open access to phylogenetic data&amp;rdquo;.
 In: &lt;em&gt;PLoS One&lt;/em&gt; 9.10.
 DOI: &lt;a href="https://doi.org/10.1371/journal.pone.0110268"&gt;10.1371/journal.pone.0110268&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
+&lt;p&gt;&lt;cite&gt;Stenz, N. W., B. Larget, D. A. Baum, et al.
+(2015).
+&amp;ldquo;Exploring tree-like and non-tree-like patterns using genome sequences: an example using the inbreeding plant species Arabidopsis thaliana (L.) Heynh&amp;rdquo;.
+In: &lt;em&gt;Systematic biology&lt;/em&gt; 64.5, pp. 809&amp;ndash;823.
+DOI: &lt;a href="https://doi.org/10.1093/sysbio/syv039"&gt;10.1093/sysbio/syv039&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
+&lt;p&gt;&lt;cite&gt;Sanmartín, I., L. Wanntorp, and R. C. Winkworth
+(2007).
+&amp;ldquo;West Wind Drift revisited: testing for directional dispersal in the Southern Hemisphere using event-based tree fitting&amp;rdquo;.
+In: &lt;em&gt;Journal of Biogeography&lt;/em&gt; 34.3, pp. 398&amp;ndash;416.
+DOI: &lt;a href="https://doi.org/10.1111/j.1365-2699.2006.01655.x"&gt;10.1111/j.1365-2699.2006.01655.x&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
+&lt;p&gt;&lt;cite&gt;Redelings, B. D. and M. T. Holder
+(2017).
+&amp;ldquo;A supertree pipeline for summarizing phylogenetic and taxonomic information for millions of species&amp;rdquo;.
+In: &lt;em&gt;PeerJ&lt;/em&gt; 5, p. e3058.
+DOI: &lt;a href="https://doi.org/10.7717/peerj.3058"&gt;10.7717/peerj.3058&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
+&lt;p&gt;&lt;cite&gt;Magallón, S., L. L. Sánchez-Reyes, and S. L. Gómez-Acevedo
+(2019).
+&amp;ldquo;Thirty clues to the exceptional diversification of flowering plants&amp;rdquo;.
+In: &lt;em&gt;Annals of botany&lt;/em&gt; 123.3, pp. 491&amp;ndash;503.
+DOI: &lt;a href="https://doi.org/10.1093/aob/mcy182"&gt;10.1093/aob/mcy182&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
+&lt;p&gt;&lt;cite&gt;Sakamoto, M., M. J. Benton, and C. Venditti
+(2016).
+&amp;ldquo;Dinosaurs in decline tens of millions of years before their final extinction&amp;rdquo;.
+In: &lt;em&gt;Proceedings of the National Academy of Sciences&lt;/em&gt; 113.18, pp. 5036&amp;ndash;5040.&lt;/cite&gt;&lt;/p&gt;
+&lt;p&gt;&lt;cite&gt;Gaunt, M., S. Turner, L. Rigottier-Gois, et al.
+(2001).
+&amp;ldquo;Phylogenies of atpD and recA support the small subunit rRNA-based classification of rhizobia.&amp;rdquo;
+In: &lt;em&gt;International journal of systematic and evolutionary microbiology&lt;/em&gt; 51.6, pp. 2037&amp;ndash;2048.
+DOI: &lt;a href="https://doi.org/10.1099/00207713-51-6-2037"&gt;10.1099/00207713-51-6-2037&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
+&lt;p&gt;&lt;cite&gt;De-Nova, J. A., L. L. Sánchez-Reyes, L. E. Eguiarte, et al.
+(2018).
+&amp;ldquo;Recent radiation and dispersal of an ancient lineage: The case of Fouquieria (Fouquiericeae, Ericales) in North American deserts&amp;rdquo;.
+In: &lt;em&gt;Molecular phylogenetics and evolution&lt;/em&gt; 126, pp. 92&amp;ndash;104.
+DOI: &lt;a href="https://doi.org/10.1016/j.ympev.2018.03.026"&gt;10.1016/j.ympev.2018.03.026&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
 
 ]]
 .column[.content.vmiddle.center[
