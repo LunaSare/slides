@@ -21,7 +21,7 @@ output:
       highlightLines: true
       countIncrementalSlides: false
 ---
-background-image: url("bg/2-blue-sky.png")
+background-image: url("bg/1-blue.png")
 background-position: center
 background-size: contain
 
@@ -54,7 +54,7 @@ Slides last updated on  `r format(Sys.Date(), format = "%B %d, %Y")` .red[&#183;
 .red[*] Speaker contact [@LunaSare](https://www.lunasare.com/) on [Github `r anicon::faa("github", animate="float")`](https://github.com/LunaSare) and [Twitter `r anicon::faa("twitter", animate="float")`](https://twitter.com/LunaSare)
 ---
 
-background-image: url("bg/past-future1.png")
+background-image: url("bg/2-past-future1.png")
 background-position: center
 background-size: contain
 
@@ -63,7 +63,7 @@ background-size: contain
 # To understand our future you need to understand where you come from.
 
 ---
-background-image: url("bg/diversity1.png")
+background-image: url("bg/3-diversity1.png")
 background-position: center
 background-size: contain
 
@@ -72,7 +72,7 @@ background-size: contain
 # As biologists, we want to understand how all living things are connected evolutionarily
 
 ---
-background-image: url("bg/diversity2.png")
+background-image: url("bg/4-diversity2.png")
 background-position: center
 background-size: contain
 
@@ -105,7 +105,7 @@ class: split-20, center
 # There are a gazillion species living, and many more so extinct
 # It is a problem for big data managment and analysis
 ---
-background-image: url("bg/tree-of-life-red.png")
+background-image: url("bg/5-tree-of-life-red.png")
 background-position: center
 background-size: contain
 
@@ -120,7 +120,7 @@ class: split-two
 ]]
 .row.split-20[
 .row[.content[
-## Phylogenetic .red[trees]
+## *Phylogenetic .red[trees]*
 ]]
 .row.split-two[
 .row[.content[
@@ -154,7 +154,6 @@ background-size: contain
 ## Phylogenies in the wild
 
 ---
-exclude: true
 
 ## A newick string
 
@@ -171,11 +170,23 @@ background-size: contain
 Conclusion: phylogenies are very important for our survival
 
 ---
-background-image: url("bg/9-data-sharing1.png")
+background-image: url("bg/8-data-sharing.png")
 background-position: center
 background-size: contain
 
-# Number of published phylogenies is around the 10K's 
+class: split-10
+.column[
+]
+.column.split-40[
+.column[.content.left[
+<br/><br/><br/>
+# Number of published 
+# phylogenies is around 
+# the .red[10K's] 
+]]
+.column[
+]
+]
 
 ???
 
@@ -191,12 +202,12 @@ Graphs of accumulation of phylogenies through time
 Conclusion: They are hard to make and it is a very artisanal endeavor. So you would think that scientists would make an effort to make them available.
 
 ---
-background-image: url("bg/2-gray.png")
+background-image: url("bg/1-gray.png")
 background-position: center
 background-size: contain
 
-# How do you get them? Part1
-
+# How do you get a published phylogeny? 
+<br/><br/><br/>
 ## General data repositories: Supplementary Data in Journal
 
 ## Figures on paper
@@ -206,11 +217,11 @@ background-size: contain
 ## Reanalyze raw data
 
 ---
-background-image: url("bg/data-sharing2.png")
+background-image: url("bg/11-data-sharing2.png")
 background-position: center
 background-size: contain
 
-# How do you get them? Part2
+## We might have some [data] sharing issues...
 
 ???
 
@@ -223,33 +234,26 @@ background-image: url("bg/12-molecular.png")
 background-position: center
 background-size: contain
 
-class: split-10
-
-.column[
-
-]
-.column.split-70[
-.column[.content[
-# Getting the raw data: Molecular sequence repositories
-<br/>
-## .gray.center[The International Nucleotide Sequence Database Collaboration (INSDC)]
+# Getting the raw data
+## *Molecular sequence repositories*
+### The International Nucleotide Sequence Database Collaboration (INSDC)
 
 <br/>
 
-### &emsp; GenBank at NCBI - Released 1989 https://www.ncbi.nlm.nih.gov/genbank/
+### &emsp; &#183; .indigo[GenBank] at the National Center for Biotechnology 
+### Information (NCBI) - Released .indigo[ 1989]
+### https://www.ncbi.nlm.nih.gov/genbank/
 
 <br/>
 
-### &emsp; DNA DataBank of Japan (DDBJ) - Released 1986 https://www.ddbj.nig.ac.jp/index-e.html
+### &emsp; &#183; DNA DataBank of Japan (.orange[DDBJ]) - Released .orange[1986] 
+### https://www.ddbj.nig.ac.jp/index-e.html
 
 <br/>
 
-### &emsp; European Nucleotide Archive (ENA; former EMBL) - Released 1982  https://www.ebi.ac.uk/ena  
-]]
-]
-.column[
+### &emsp; &#183; European Nucleotide Archive (.green[ENA]) - Released .green[1982]
+### https://www.ebi.ac.uk/ena  
 
-]
 
 
 ???
@@ -257,36 +261,117 @@ class: split-10
 More effort is going to share the raw molecular data
 https://www.ddbj.nig.ac.jp/stats/release-e.html#total_data
 ---
-<div class="resp-container">
-    <iframe class="testiframe" src="https://www.ddbj.nig.ac.jp/stats/release-e.html#total_data" height="600px">
-    </iframe>
-</div>
+background-image: url("bg/13-compare.png")
+background-position: center
+background-size: contain
+
+## Public molecular data is in the order of .red[trillions]
+#### Figure from https://www.ddbj.nig.ac.jp/stats/release-e.html#total_data
 
 ---
-<div class="resp-container">
-    <iframe class="testiframe" src="https://www.ncbi.nlm.nih.gov/nucleotide/" height="600px">
-    </iframe>
-</div>
+background-image: url("bg/1-blue.png")
+background-position: center
+background-size: contain
+
+## Let's zoom in into the GenBank database
+#### &emsp; &emsp; &emsp; &emsp; Figure from https://www.nlm.nih.gov/about/2021CJ.html
+
+<a href="https://www.nlm.nih.gov/about/2021CJ.html">
+<img src="bg/14-ncbi-2019.png" width="75%" align="left" alt="ncbi logo"/>
+</a>
+
+<a href="https://www.ncbi.nlm.nih.gov/nucleotide/">
+<img src="bg/12-ncbi-logo-white-bg.png" 
+   style="position:fixed; right:8%; top:10%; border:none;"
+   width="15%" alt="ncbi logo"/>
+</a>
 
 ---
+background-image: url("bg/1-blue.png")
+background-position: center
+background-size: contain
 
-# Pipelines for using data from molecular databases
+class: split-50 center
+<img src="https://i.redd.it/ez4zn3esgyw41.png" 
+   style="position:fixed; left:8%; bottom:20%; border:none;"
+   width="40%" alt="ncbi logo"/>
+   
+.column[.content.vmiddle[
+# How do we go about this massive amount of raw data?
+]]
+.column[.content[
+# The dawn of the phylogenetic .blue[pipeline] 
+
+Phylota - Sanderson et al. 2008
+
+Amphora - Wu et al. 2008
+
+PHLAWD - Smith et al. 2009
+
+PUmPER - Izquierdo et al. 2014
+
+DarwinTree - Meng et al. 2014
+
+NCBIminer - Xu et al. 2015
+
+SUMAC - Freyman et al. 2015
+
+STBase - McMahon et al. 2015
+
+BIR - Kumar et al. 2015
+
+SUPERSMART - Antonelli et al. 2017
+
+SOPHI - Chesters et al. 2017
+
+PhyloSkeleton - Guy et al. 2017
+
+OneTwoTree - Drori et al. 2018
+
+PhylotaR - Bennett et al. 2018
+
+pyPHLAWD - Smith et al. 2019
+
+Phylotol - Ceron et al. 2019
+]]
+
+
+???
+Pipelines for using data from molecular databases
 
 Efforts to make sense of this data: massive data pipelines
 
+https://i.redd.it/hk7eo05svd351.jpg cats
+https://i.redd.it/ez4zn3esgyw41.png brains
+---
+background-image: url("bg/1-red.png")
+background-position: center
+background-size: contain
 
-Phylota - 2008
+class: split-50 center
+
+.column[.content[
+# The good
+
+### They have contributed to fill holes on our phylogenetic knowledge of the tree of life and to maybe fix some branches.
+
+### All these efforts contributed to start making the field a little bit more reproducible
+
+]]
+.column[.content[
+# The bad
+
+### Phylogenetic pipelines are not fully relied by community
+
+### Manual curation always makes for better phylogenies
+
+]]
 
 
 ---
-
-# Phylogenetic pipelines not fully relied by community
-
-Main idea: manual curation always makes better phylogenies
-
-Conclusion: All these efforts contributed to start making the field a little bit more reproducible
-
----
+background-image: url("bg/1-blue.png")
+background-position: center
+background-size: contain
 
 # Phylogenetic data repositories
 
@@ -302,7 +387,6 @@ background-position: center
 background-size: 300px
 
 # Phylogenetic data repositories
-
 ## TreeBASE
 
 
@@ -398,6 +482,19 @@ class: right, middle, blue-gray
 .red[&#183; &#183; &#183;] <br/>
 Post an issue on our `r anicon::faa("github", animate="pulse")` Github repo  at <a href="https://github.com/McTavishLab/physcraper/issues">  https://github.com/McTavishLab/physcraper/issues </a> </p> 
 ]
+---
+class: split-60, blue-gray
+
+.column[.content.vmiddle[
+
+The University of California, Merced cluster, MERCED (Multi-Environment Research Computer for Exploration and Discovery) supported by the National Science Foundation (Grant No. ACI-1429783).
+
+]]
+
+.column[.content.vmiddle[
+# Acknowledgements
+]]
+
 ---
 class: split-two, blue-gray
 
