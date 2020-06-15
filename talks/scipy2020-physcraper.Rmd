@@ -151,7 +151,7 @@ background-image: url("bg/6-wild.png")
 background-position: center
 background-size: contain
 
-## Phylogenies in the .orange[wild]
+# Phylogenies in the .orange[wild]
 
 ---
 class: split-two
@@ -217,10 +217,17 @@ Graphs of accumulation of phylogenies through time
 
 class: split-10 center
 
-.row[.content.vmiddle.center[
+.row.split-1-2-1.bg-gray[
+.column[
+
+]
+.column.bg-white[.content.vmiddle.center[
 # How do we .orange[generate] a phylogeny?
 ]]
+.column[
 
+]
+]
 .row.split-five[
 .column.split-20[
 .row[.content.vmiddle[
@@ -244,7 +251,7 @@ class: split-10 center
 ]
 .column.split-40[
 .row[.content.vmiddle[
-(2) Assemble a hypothesis of homology. If you chose molecular characters, align the sequences!
+(2) Assemble a hypothesis of homology. If you choose molecular characters, align the sequences!
 
 ]]
 .row[.content[
@@ -285,19 +292,47 @@ extract their DNA, and sequence it, or skip all that and get the DNA from an onl
 
 phylogenetic relationships among the organisms you collected.
 ---
-background-image: url("bg/1-gray.png")
-background-position: center
-background-size: contain
 
-# Can we get an already published phylogeny?
-<br/><br/><br/>
+class: split-10 center
+
+.row.split-60.bg-gray[
+.column.bg-white[.content.vmiddle.center[
+# How can we get a .orange[published] phylogeny?
+]]
+.column[
+]
+]
+.row.split-two[
+.row.split-four[
+.column[.content.vmiddle[
 ## General data repositories: Supplementary Data in Journal
+]]
+.column[.content.vmiddle[
+<img src="bg/11-suppl-files-1614223_1920.jpg" width="100%" align="center" alt="a paper archive"/>
 
+]]
+.column[.content.vmiddle[
+<img src="bg/6-de2018recent-fig4c.png" width="100%" align="center" alt="Fouquieria diversification rates"/>
+
+.font_small.gray[Figure 4c from De Nova et al. 2018]
+
+.blue[A pdf file]
+]]
+.column[.content.vmiddle[
 ## Figures on paper
-
+]]
+]
+.row.split-two[
+.column[.content.vmiddle[
 ## Asking the authors
-
-## Reanalyze raw data
+<img src="http://www.phdcomics.com/comics/archive/phd072508s.gif" width="100%" alt = "wikipedia protein alignment"/>
+]]
+.column[.content.vmiddle[
+## Reanalyzing the raw data
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/79/RPLP0_90_ClustalW_aln.gif" width="60%" alt = "wikipedia protein alignment"/>
+]]
+]
+]
 
 ---
 background-image: url("bg/11-data-sharing2.png")
@@ -439,38 +474,66 @@ Efforts to make sense of this data: massive data pipelines
 https://i.redd.it/hk7eo05svd351.jpg cats
 https://i.redd.it/ez4zn3esgyw41.png brains
 ---
-background-image: url("bg/1-red.png")
+background-image: url("bg/1-blue.png")
 background-position: center
 background-size: contain
 
-class: split-50 center
+class: split-10 center
 
-.column[.content[
-# The good
+.column.bg-blue[
 
+]
+.column.split-20[
+.row[.content.vmiddle[
+# The phylogenetic .blue[pipeline]
+]]
+.row.split-two[
+.column[.content.vmiddle[
+# The good `r emo::ji("+1")`
+<br/>
 ### They have contributed to fill holes on our phylogenetic knowledge of the tree of life and to maybe fix some branches.
-
+<br/>
 ### All these efforts contributed to start making the field a little bit more reproducible
 
 ]]
-.column[.content[
-# The bad
-
+.column[.content.vmiddle[
+# The bad `r emo::ji("-1")`
+<br/>
 ### Phylogenetic pipelines are not fully relied by community
-
+<br/>
 ### Manual curation always makes for better phylogenies
 
 ]]
-
-
+]
+]
 ---
 background-image: url("bg/1-blue.png")
 background-position: center
 background-size: contain
 
+# Getting the tree in computer readable format
+## *Phylogenetic tree data repositories*
+
+<br/>
+
+### &emsp; &#183; TreeBASE - Released .indigo[1994]
+### https://treebase.org/treebase-web/home.html
+### If the TreeBASE webpage is lagging, go [here]() for a demo.
+
+<br/>
+
+### &emsp; &#183; The  .orange[Open Treeof Life] - Released .orange[2010]
+### <https://tree.opentreeoflife.org/opentree/argus/opentree12.3@ott93302>
+
+
+
+
+???
+
 # Phylogenetic data repositories
 
-In parallel, efforts to store actual trees and the alignments that produced them.
+Efforts to store actual trees and the alignments that produced them.
+These efforts happened in parallel to the development of pipelines.
 
 TreeBASE and Open Tree of Life
 
@@ -486,12 +549,7 @@ background-size: 300px
 
 
 https://www.linuxjournal.com/content/party-its-1994
----
 
-<div class="resp-container">
-    <iframe class="testiframe" src="https://treebase.org/treebase-web/home.html" width="500px" height="600px">
-    </iframe>
-</div>
 
 ---
 exclude: true
@@ -529,26 +587,6 @@ class: split-two
 ]]
 .column[.content[
 ]]
-
-
----
-# Phylogenetic data repositories
-
-## The Open Tree of Life project
-
-### <https://tree.opentreeoflife.org/opentree/argus/opentree12.3@ott93302>
-
----
-background-image: url("https://github.com/OpenTreeOfLife/opentree/raw/master/webapp/static/images/logo.png")
-background-position: center
-background-size: 500px
-
-class: middle, center
-
-<div class="resp-container">
-    <iframe class="testiframe" src="https://tree.opentreeoflife.org/opentree/argus/opentree12.3@ott93302" width="500px" height="600px">
-    </iframe>
-</div>
 
 ---
 
