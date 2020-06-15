@@ -511,19 +511,37 @@ background-image: url("bg/1-blue.png")
 background-position: center
 background-size: contain
 
+class: split-30 center
+
+.row[.content.vmiddle.center[
 # Getting the tree in computer readable format
 ## *Phylogenetic tree data repositories*
+]]
 
-<br/>
-
+.row.split-two[
+.row.split-70[
+.column[.content[
 ### &emsp; &#183; TreeBASE - Released .indigo[1994]
 ### https://treebase.org/treebase-web/home.html
 ### If the TreeBASE webpage is lagging, go [here]() for a demo.
-
-<br/>
+]]
+.column[.content[
+<img src="bg/linux-1994.png" width="75%" align="left" alt="treebase logo"/>
+.font_small[https://www.linuxjournal.com/content/party-its-1994]
+]]
+]
+.row.split-70[
+.column[.content[
 
 ### &emsp; &#183; The  .orange[Open Treeof Life] - Released .orange[2010]
 ### <https://tree.opentreeoflife.org/opentree/argus/opentree12.3@ott93302>
+]]
+.column[.content[
+<img src="" width="75%" align="left" alt="opentree logo"/>
+
+]]
+]
+]
 
 
 
@@ -538,18 +556,6 @@ These efforts happened in parallel to the development of pipelines.
 TreeBASE and Open Tree of Life
 
 Conclusion: this effort is making the practice of phylogenetics more open.
-
----
-background-image: url("bg/linux-1994.png")
-background-position: center
-background-size: 300px
-
-# Phylogenetic data repositories
-## TreeBASE
-
-
-https://www.linuxjournal.com/content/party-its-1994
-
 
 ---
 exclude: true
