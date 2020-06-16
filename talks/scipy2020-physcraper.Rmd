@@ -167,7 +167,7 @@ class: split-two
 .font2.blue[A pdf file]
 
 ]]
-.column[.content.center[
+.column.bg-black.white[.content.center[
 # What a .lime[computer] sees...
 
 <p style="font-size:0.70em">
@@ -178,6 +178,8 @@ TREE * STATE_6680000 = [&R] ((2:23.9912476,1:23.9912476):67.64363987,(((((((((13
 
 ]]
 
+???
+Newick string from file Fouquieria_30May17_v1_1000.trees. First tree of the series.
 ---
 background-image: url("bg/7-use2.png")
 background-position: center
@@ -231,7 +233,7 @@ class: split-10 center
 .row.split-five[
 .column.split-20[
 .row[.content.vmiddle[
-(0) Get some money.
+(1) Get some money.
 ]]
 .row[.content[
 <img src="bg/10-money-virus-4970581_1920.jpg" width="100%" alt = "money from academia"/>
@@ -242,7 +244,7 @@ class: split-10 center
 ]
 .column.split-30[
 .row[.content.vmiddle[
-(1) Get some raw data: catch some organisms, or get them from a museum; get some characters to analyze, preferably DNA.
+(2) Get some raw data: catch some organisms, or get them from a museum; get some characters to analyze, preferably DNA.
 ]]
 .row[.content[
 <img src="bg/10-dna-mgid_arc_content_nickelodeon.com.jpeg" width="100%" alt = "Spongebob catching jellyfish"/>
@@ -251,7 +253,7 @@ class: split-10 center
 ]
 .column.split-40[
 .row[.content.vmiddle[
-(2) Assemble a hypothesis of homology. If you choose molecular characters, align the sequences!
+(3) Assemble a hypothesis of homology. If you choose molecular characters, align the sequences!
 
 ]]
 .row[.content[
@@ -262,7 +264,7 @@ class: split-10 center
 ]
 .column.split-30[
 .row[.content.vmiddle[
-(3) Analyse this hypothesis of homology to create a hypothesis of phylogenetic relationships. There are different philosophies!
+(4) Analyse this hypothesis of homology to create a hypothesis of phylogenetic relationships. There are different philosophies!
 ]]
 .row[.content[
 <img src="bg/10-tree-budha-sri-lanka-1024347_1920.jpg" width="100%" alt = "budhism"/>
@@ -271,9 +273,9 @@ class: split-10 center
 ]]
 
 ]
-.column.split-20[
+.column.split-30[
 .row[.content.vmiddle[
-(4) Compare and discuss the inferred relationships in the context of previous hypothesis.
+(5) Compare and discuss the inferred relationships in the context of previous hypothesis.
 ]]
 .row[.content[
 <img src="bg/10-discuss-giraffes-627031_1920.jpg" width="100%" alt = "giraffes discussing"/>
@@ -329,7 +331,8 @@ class: split-10 center
 ]]
 .column[.content.vmiddle[
 ## Reanalyzing the raw data
-<img src="https://upload.wikimedia.org/wikipedia/commons/7/79/RPLP0_90_ClustalW_aln.gif" width="60%" alt = "wikipedia protein alignment"/>
+<img src="bg/10-align-laptop-3087585_1920.jpg" width="50%" alt = ""/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/79/RPLP0_90_ClustalW_aln.gif" width="40%" alt = "wikipedia protein alignment"/>
 ]]
 ]
 ]
