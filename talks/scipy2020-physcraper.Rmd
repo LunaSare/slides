@@ -21,11 +21,11 @@ output:
       highlightLines: true
       countIncrementalSlides: false
 ---
-background-image: url("bg/1-blue.png")
+background-image: url("bg/1-night-sky.png")
 background-position: center
 background-size: contain
 
-class: left, middle, blue-gray
+class: left, middle, black
 
 <img align="left" width="250" src="https://cdn.rawgit.com/snacktavish/physcraper/master/docs/physcraper.svg">
 
@@ -147,7 +147,7 @@ class: split-two
 
 This is an artistic representation of evolutionary relationships between organisms. Although there is some information in there.
 ---
-background-image: url("bg/6-wild.png")
+background-image: url("bg/6-wild-orange.png")
 background-position: center
 background-size: contain
 
@@ -164,7 +164,7 @@ class: split-two
 .font_small.gray[Figure 4c from De Nova et al. 2018]
 
 <br/><br/>
-.font2.blue[A pdf/jpg/png file]
+.font2[A .blue[pdf]/.blue[jpg]/.blue[png] file]
 
 ]]
 .column.bg-black.white[.content.center[
@@ -174,7 +174,7 @@ class: split-two
 TREE * STATE_6680000 = [&R] ((2:23.9912476,1:23.9912476):67.64363987,(((((((((13:0.4486448057,18:0.4486448057):0.419000619,12:0.8676454246):0.1015486898,11:0.9691941144):0.03970804765,15:1.008901162):0.4621950546,(21:0.5368201226,14:0.5368191226):0.9342770941):1.047882735,((19:0.9651292965,(16:0.9169158264,17:0.9169148264):0.04821447015):1.162235908,20:2.127366205):0.3916137472):3.896603157,(9:3.020538176,10:3.020538176):3.395044933):10.55399955,(((((((((55:0.8502407373,58:0.8502407373):0.3679373142,(53:0.4864845726,56:0.4864845726):0.731693479):0.3563793329,54:1.574557384):0.09035613592,57:1.66491352):1.88446994,(49:0.8161479593,45:0.8161479593):2.733234501):0.4760065168,(46:2.107086476,(47:0.9224473608,48:0.9224473608):1.184639116):1.918302501):1.583903154,((3:1.071332259,28:1.071332259):3.013986475,(23:4.030250514,((((24:0.765467551,22:0.765466551):0.9079596426,25:1.673426194):1.323739158,((4:1.813102509,(6:0.6164327737,(7:0.3945867261,8:0.3945867261):0.2218450476):1.196669735):0.628500496,(26:1.575611873,5:1.575611873):0.8659911318):0.5555633466):0.282086233,27:3.279251584):0.7509989298):0.05506722029):1.523974397):1.046228415,((((78:1.001185246,79:1.001185246):1.6203738,(77:1.912610336,(80:1.126503072,81:1.126503072):0.7861072638):0.7089487102):0.9192230645,(74:1.580125802,((73:0.9320116249,76:0.9320116249):0.4249115549,75:1.35692418):0.2232026218):1.960657309):1.751839439,(51:1.304268197,(52:0.9244796054,50:0.9244796054):0.3797885921):3.988354352):1.362898998):3.327530237,(43:4.486855597,44:4.486855597):5.496195188):6.986530871):1.541020887,(((((42:0.3927064654,40:0.3927064654):1.216825565,29:1.609532031):0.3505658459,((33:0.05906297464,41:0.05906297464):1.012591397,30:1.071654371):0.8884435051):0.8794856624,(31:0.7769783382,(39:0.6041099539,32:0.6041099539):0.1728683843):2.062605201):4.0079666,(((35:3.024986853,38:3.024986853):0.3694745008,(36:0.7769265764,(37:0.60170545,34:0.60170545):0.1752211264):2.617534778):2.437537487,(71:3.496481764,(((69:0.6822085102,68:0.6822085102):0.2919955037,70:0.9742040138):2.491583884,(((64:2.639693826,(60:1.924607493,67:1.924607493):0.7150863324):0.1614034831,((63:1.369885952,66:1.369885952):0.7113535387,(61:0.7383880773,65:0.7383880773):1.342851413):0.7198578182):0.4360311418,((72:1.070412672,59:1.070412672):1.754535535,62:2.824948207):0.4121802435):0.2286584466):0.03069486699):2.335517077):1.015550298):11.6630534):73.12428394);
 </p>
 
-.font2.lime[A newick string]
+.font2[A .lime[newick] string]
 
 ]]
 
@@ -185,7 +185,7 @@ background-image: url("bg/7-use2.png")
 background-position: center
 background-size: contain
 
-# What are .gray[phylogenies useful] for?
+# What are .purple[phylogenies useful] for?
 
 
 ???
@@ -217,10 +217,10 @@ Graphs of accumulation of phylogenies through time
 
 ---
 
-class: split-20 center
+class: split-10 center white
 
-.row[.content.vmiddle.center[
-# How do we .blue[generate] a phylogeny?
+.row.black.bg-gray[.content.vmiddle.left[
+# How do we .pink[generate] a phylogeny?
 ]]
 .row.split-five[
 .column.bg-gray.split-10[
@@ -234,7 +234,7 @@ class: split-20 center
 
 ]]
 ]
-.column.bg-white.split-30[
+.column.bg-white.black.split-30[
 .row[.content.vmiddle[
 (2) Get some raw data: catch some organisms, or get them from a museum; get some characters to analyze, preferably DNA.
 ]]
@@ -254,7 +254,7 @@ class: split-20 center
 
 ]]
 ]
-.column.bg-white.split-30[
+.column.bg-white.black.split-30[
 .row[.content.vmiddle[
 (4) Analyse this hypothesis of homology to create a hypothesis of phylogenetic relationships. There are different philosophies!
 ]]
@@ -289,8 +289,8 @@ phylogenetic relationships among the organisms you collected.
 
 class: split-10 center
 
-.row[.content.vmiddle.left[
-# How can we get a .orange[published] phylogeny?
+.row.bg-black.white[.content.vmiddle.left[
+# How can we get a .yellow[published] phylogeny?
 ]]
 .row.split-two[
 .row.split-four[
@@ -327,7 +327,7 @@ class: split-10 center
 ]
 
 ---
-background-image: url("bg/11-data-sharing2.png")
+background-image: url("bg/11-data-sharing-orange.png")
 background-position: center
 background-size: contain
 
@@ -340,11 +340,11 @@ Main: Sharing is key for reuse of phylogenies; and reuse is key for advancement 
 Conclusion: Phylogenies are usually not shared but DNA data is
 (Drew et al. 2013).
 ---
-background-image: url("bg/12-molecular.png")
+background-image: url("bg/12-molecular-gray.png")
 background-position: center
 background-size: contain
 
-# Getting the raw data
+# Getting the .gray[**raw data**]
 ## *Molecular sequence repositories*
 ### The International Nucleotide Sequence Database Collaboration (INSDC)
 
@@ -356,7 +356,7 @@ background-size: contain
 
 <br/>
 
-### &emsp; &#183; DNA DataBank of Japan (.orange[DDBJ]) - Released .orange[1986]
+### &emsp; &#183; DNA DataBank of Japan (.amber[DDBJ]) - Released .amber[1986]
 ### https://www.ddbj.nig.ac.jp/index-e.html
 
 <br/>
@@ -371,19 +371,19 @@ background-size: contain
 More effort is going to share the raw molecular data
 https://www.ddbj.nig.ac.jp/stats/release-e.html#total_data
 ---
-background-image: url("bg/13-compare.png")
+background-image: url("bg/13-compare-gray.png")
 background-position: center
 background-size: contain
 
-## Public molecular data is in the order of .red[trillions]
+# Public .gray[**molecular data**] is in the order of .red[**trillions**]
 #### Figure from https://www.ddbj.nig.ac.jp/stats/release-e.html#total_data
 
 ---
-background-image: url("bg/1-blue.png")
-background-position: center
-background-size: contain
+background-image: url("bg/1-gray.png")
+background-position: 50% 0%
+background-size: 100%
 
-## Let's zoom in into the GenBank database
+# Let's *zoom in* into the .gray[**GenBank database**]
 #### &emsp; &emsp; &emsp; &emsp; Figure from https://www.nlm.nih.gov/about/2021CJ.html
 
 <a href="https://www.nlm.nih.gov/about/2021CJ.html">
@@ -397,7 +397,7 @@ background-size: contain
 </a>
 
 ---
-background-image: url("bg/1-gray2.png")
+background-image: url("bg/1-gradient.png")
 background-position: center
 background-size: contain
 
@@ -405,11 +405,11 @@ class: center
 
 <br/><br/><br/><br/>
 .font3[How do we go about
-this .blue[massive] amount of raw .red[data]?]
+this .blue[massive] amount of raw .orange[data]?]
 
 
 ---
-background-image: url("bg/1-blue-cerulean.png")
+background-image: url("bg/1-gradient.png")
 background-position: center
 background-size: contain
 
@@ -469,7 +469,7 @@ Efforts to make sense of this data: massive data pipelines
 https://i.redd.it/hk7eo05svd351.jpg cats
 https://i.redd.it/ez4zn3esgyw41.png brains
 ---
-background-image: url("bg/1-blue-cerulean2.png")
+background-image: url("bg/1-gradient.png")
 background-position: center
 background-size: contain
 
@@ -485,7 +485,7 @@ class: split-20 center
 .column[.content.vmiddle[
 # The good `r emo::ji("+1")`
 <br/>
-### They have contributed to fill holes on our phylogenetic knowledge of the tree of life and to maybe fix some branches.
+### They have contributed to fill holes on our phylogenetic knowledge on the tree of life and also potentially to "fix" knowledge on some branches.
 <br/>
 ### All these efforts contributed to start making the field a little bit more reproducible
 ]]
@@ -500,21 +500,21 @@ class: split-20 center
 ]]
 ]
 ---
-background-image: url("bg/1-blue.png")
+background-image: url("bg/1-gray.png")
 background-position: center
 background-size: contain
 
 class: split-20
 
 .row[.content.vmiddle[
-# &emsp; Getting the published tree .gray[in computer readable format]
+# &emsp; Getting the .gray[**published tree**] (in computer readable format)
 ## &emsp; &emsp; *Phylogenetic tree data repositories*
 ]]
 
 .row.split-two[
 .row.split-60[
 .column[.content.vmiddle[
-### &emsp; &emsp; &emsp; &#183; TreeBASE - Released .indigo[1994]
+### &emsp; &emsp; &emsp; &#183; .indigo[TreeBASE] - Released .indigo[1994]
 ### &emsp; &emsp; https://treebase.org/treebase-web/home.html
 ### &emsp; &emsp; If the TreeBASE webpage is lagging, go [here]() for a demo.
 ]]
@@ -577,30 +577,28 @@ background-size: contain
 ---
 class: split-two
 
-.column.split-20[
+.column.split-30[
 .row[.content[
 # The .indigo[TreeBASE] repository
 ]]
-.row[.content.vmiddle[
-
+.row[.content[
 ````
     wget "http://purl.org/phylo/treebase/phylows/
           tree/TB2:Tr109483?format=nexus"
 ````
 ]]
 ]
-
 .column[.content[
-<img align="center" width="100%" src="bg/20-treebase-wget-2.gif">
+<img align="center" width="100%" src="bg/20-treebase-wget-1.gif">
 ]]
 ---
 class: split-two
 
-.column.split-20[
+.column.split-30[
 .row[.content[
 # The .orange[Open Tree of Life] API
 ]]
-.row[.content.vmiddle[
+.row[.content[
 
 ````
     curl https://api.opentreeoflife.org/v3/study/
@@ -615,10 +613,26 @@ class: split-two
 ???
 
 Conclusion: we need python!
+---
+background-image: url("bg/1-dusk.png")
+background-position: center
+background-size: contain
+
+class: center
+
+<br/><br/><br/><br/>
+.font3[How do we go take advantage of
+the .orange[published] phylogenies and the raw .red[data]?]
+
 
 ---
+background-image: url("bg/1-dusk.png")
+background-position: center
+background-size: contain
 
-# Physcraper
+<img align="right" width="250" src="https://cdn.rawgit.com/snacktavish/physcraper/master/docs/physcraper.svg">
+
+# Physcraper!
 
 ---
 class: right, middle, blue-gray
@@ -638,23 +652,74 @@ class: right, middle, blue-gray
 Post an issue on our `r anicon::faa("github", animate="pulse")` Github repo  at <a href="https://github.com/McTavishLab/physcraper/issues">  https://github.com/McTavishLab/physcraper/issues </a> </p>
 ]
 ---
-class: split-60, blue-gray
+class: split-two, blue-gray
 
 .column[.content.vmiddle[
-
-The University of California, Merced cluster, MERCED (Multi-Environment Research Computer for Exploration and Discovery) supported by the National Science Foundation (Grant No. ACI-1429783).
 
 ]]
 
 .column[.content.vmiddle[
 # Acknowledgements
-]]
+<br/><br/>
+The University of California, Merced cluster, [MERCED (Multi-Environment Research Computer for Exploration and Discovery)](https://research.ucmerced.edu/node/721) supported by the National Science Foundation (Grant No. ACI-1429783).
 
+]]
 ---
 class: split-two, blue-gray
 
+.column[.content.vmiddle[
 
-.column[.content.center.vmiddle.font_small[
+]]
+
+.column[.content.vmiddle.font_small[
+# Image attributions
+<br/>
+
+Dusk Image by <a href="https://pixabay.com/es/users/RitaE-19628/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3104413">RitaE</a> on <a href="https://pixabay.com/es/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3104413">Pixabay</a>
+
+Image by <a href="https://pixabay.com/photos/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1023340">Free-Photos</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1023340">Pixabay</a>
+
+Image by <a href="https://pixabay.com/users/12019-12019/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2361247">David Mark</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2361247">Pixabay</a>
+
+Image by <a href="https://pixabay.com/users/272447-272447/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3848290">272447</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3848290">Pixabay</a>
+
+Image by <a href="https://pixabay.com/users/WikiImages-1897/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=62993">WikiImages</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=62993">Pixabay</a>
+
+Image by <a href="https://pixabay.com/users/MarcelloRabozzi-2003568/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1446738">Marcello Rabozzi</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1446738">Pixabay</a>
+
+Image by <a href="https://pixabay.com/photos/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1030885">Free-Photos</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1030885">Pixabay</a>
+
+Image by <a href="https://pixabay.com/users/steinchen-21981/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=243890">Gaby Stein</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=243890">Pixabay</a>
+
+Perfect Magnolia Image by <a href="https://pixabay.com/users/kalasoft-11695/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1455709">Ed Hathaway</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1455709">Pixabay</a>
+
+Cerura vinula moth face Image by <a href="https://pixabay.com/users/DreamyArt-512893/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=814568">Selling of my photos with StockAgencies is not permitted</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=814568">Pixabay</a>
+
+Barn owl Image by <a href="https://pixabay.com/users/dannymoore1973-1813225/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1107397">danny moore</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1107397">Pixabay</a>
+
+Dwarf flying squirrel image from https://critter.science/the-adorable-japanese-dwarf-flying-squirrel/
+
+Treefrog Image by <a href="https://pixabay.com/users/41330-41330/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=765123">41330</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=765123">Pixabay</a>
+
+Allosaurus Image by <a href="https://pixabay.com/users/WikiImages-1897/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=60588">WikiImages</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=60588">Pixabay</a>
+
+Mammoth wooly Image by <a href="https://pixabay.com/users/tony241969-5126938/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2722882">tony241969</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2722882">Pixabay</a>
+
+Anomalocaris Image by <a href="https://pixabay.com/users/Goodfreephotos_com-10388/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=347259">Yinan Chen</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=347259">Pixabay</a>
+
+Dodo Skull By FunkMonk (Michael B. H.) - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=19794759
+
+Rhynia stem By Plantsurfer - Own work, CC BY-SA 2.0 uk, https://commons.wikimedia.org/w/index.php?curid=3823922
+]]
+
+---
+class: split-10, blue-gray
+
+.column[
+
+]
+.column.split-two[
+.column[.content.vmiddle.font_small[
 
 ```{r, load_refs, echo=FALSE}
 library(RefManageR)
@@ -711,9 +776,10 @@ print(bib[key = "de2018recent"],
 ```
 
 ]]
-.column[.content.vmiddle.center[
+.column[.content.vmiddle[
 # References
 ]]
+]
 
 ???
 
