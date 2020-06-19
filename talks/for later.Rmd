@@ -1,0 +1,8 @@
+<!--<br/>
+
+**Is .amber[pip] installable**
+
+```
+pip install -r requirements.txt
+```
+-->

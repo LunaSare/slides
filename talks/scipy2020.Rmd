@@ -21,7 +21,7 @@ output:
       highlightLines: true
       countIncrementalSlides: false
 ---
-background-image: url("bg/1-.png")
+background-image: url("bg/1-gradient1.png")
 background-position: center
 background-size: contain
 
@@ -53,14 +53,27 @@ Slides last updated on  `r format(Sys.Date(), format = "%B %d, %Y")` .red[&#183;
 
 .red[*] Speaker contact [@LunaSare](https://www.lunasare.com/) on [Github `r anicon::faa("github", animate="float")`](https://github.com/LunaSare) and [Twitter `r anicon::faa("twitter", animate="float")`](https://twitter.com/LunaSare)
 ---
-
-background-image: url("bg/2-past-future1.png")
+background-image: url("bg/1-gradient.png")
 background-position: center
 background-size: contain
 
-???
+class: center
 
-# To understand our future you need to understand where you come from.
+<br/><br/><br/><br/>
+.font3[So, we have a problem ...]
+
+
+---
+background-image: url("bg/1-gradient.png")
+background-position: center
+background-size: contain
+
+class: center
+
+<br/><br/><br/><br/>
+.font3[How can we stay up to date with the .blue[massive] amount of new .orange[data],
+while taking advantage of the already existing .gray[knowledge]?]
+
 
 ---
 background-image: url("bg/3-diversity1.png")
@@ -93,10 +106,13 @@ class: split-20, center
 ]]
 
 .column[.content.center[
-<br/><br/><br/>
-### How many more have existed &emsp; &emsp;
-### in the past??? &emsp;
+<br/><br/>
+### 99.9% of species that have ever &emsp; &emsp;
+### existed have gone extinct &emsp; &emsp;
+## .font_small.gray[(Mayr 1997)] &emsp; &emsp;
 <br/>
+### How many more species have  &emsp; &emsp;
+### existed in the past??? &emsp;
 .font4[`r emo::ji("scream")` &emsp; ]
 ]]
 ]
@@ -794,6 +810,10 @@ ui <- "- "
 
 ```{r, print_refs, results='asis', echo=FALSE, warning=FALSE, message=FALSE}
 # writeLines(ui)
+print(bib[key = "mayr1997biology"],
+  .opts = list(check.entries = FALSE,
+               style = "html",
+               bib.style = "authoryear"))
 print(bib[key = "mayr2010tropical"],
   .opts = list(check.entries = FALSE,
                style = "html",
