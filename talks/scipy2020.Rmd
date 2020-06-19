@@ -53,14 +53,23 @@ Slides last updated on  `r format(Sys.Date(), format = "%B %d, %Y")` .red[&#183;
 
 .red[*] Speaker contact [@LunaSare](https://www.lunasare.com/) on [Github `r anicon::faa("github", animate="float")`](https://github.com/LunaSare) and [Twitter `r anicon::faa("twitter", animate="float")`](https://twitter.com/LunaSare)
 ---
-background-image: url("bg/1-gradient.png")
+background-image: url("assets/2-data-2723105_1920.jpg")
 background-position: center
-background-size: contain
+background-size: cover
 
-class: center
+class: center white
 
 <br/><br/><br/><br/>
 .font3[So, we have a problem ...]
+--
+<img src="assets/2-cloud-imgbin.png"
+style="position:fixed; left:10%; top:50%; border:none;"
+width="20%" alt="Databases all around the world"/>
+
+--
+<img src="https://media2.giphy.com/media/ule4vhcY1xEKQ/giphy.gif"
+style="position:fixed; right:10%; top:50%; border:none;"
+width="20%" alt="Cats typing"/>
 
 
 ---
@@ -72,11 +81,11 @@ class: center
 
 <br/><br/><br/><br/>
 .font3[How can we stay up to date with the .blue[massive] amount of new .orange[data],
-while taking advantage of the already existing .gray[knowledge]?]
+while taking advantage of the already existing .orange[knowledge]?]
 
 
 ---
-background-image: url("bg/3-diversity1.png")
+background-image: url("assets/4-diversity1.png")
 background-position: center
 background-size: contain
 
@@ -691,7 +700,9 @@ class: split-two, blue-gray
 # Image attributions
 <br/>
 
-Dusk Image by <a href="https://pixabay.com/es/users/RitaE-19628/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3104413">RitaE</a> on <a href="https://pixabay.com/es/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3104413">Pixabay</a>
+Data Image by <a href="https://pixabay.com/es/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2723105">Gerd Altmann</a> on <a href="https://pixabay.com/es/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2723105">Pixabay</a>
+
+Cloud Image by <a href="https://imgbin.com/user/aymenmalekrejeb">aymenmalekrejeb</a> on <a href="https://imgbin.com/download-png/bqeUeAnj">imgbin</a>
 
 Image by <a href="https://pixabay.com/photos/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1023340">Free-Photos</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1023340">Pixabay</a>
 

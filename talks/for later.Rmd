@@ -1,8 +1,10 @@
-<!--<br/>
 
 **Is .amber[pip] installable**
 
 ```
 pip install -r requirements.txt
 ```
--->
+
+<img src="assets/2-data-2723105_1920.jpg"
+style="position:fixed; right:5%; top:0%; border:none;"
+width="49%" alt="big data era"/>
