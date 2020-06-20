@@ -1,3 +1,18 @@
+Outputs
+
+the csv file - talk about the vocabulary
+
+
+Integrates the Open Tree of Life API responses with:
+
+NCBI (molecular databases)
+
+treebase and supertreebase (other tree and alignment repositories)
+
+Basic software needed for phylogenetics analysis
+
+Uses other tools from the open tree of life to analyse the data.
+
 
 **Is .amber[pip] installable**
 

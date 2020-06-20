@@ -390,20 +390,20 @@ class: split-20 center
 .column[
 ]
 .column[.content.vmiddle[
-# The good `r emo::ji("+1")`
+# The good `r emo::ji("raised_hands")`
 <br/>
 ### They have contributed to fill holes on our phylogenetic knowledge on the tree of life and also potentially to "fix" knowledge on some branches.
 <br/>
-### All these efforts contributed to start making the field a little bit more reproducible
+### All these efforts contributed to start making the field much more reproducible.
 ]]
 ]
 .column[.content.vmiddle[
-# The bad `r emo::ji("-1")`
+# The bad `r emo::ji("fearful")`
 <br/>
-### Phylogenetic pipelines are not fully relied by community
+### Phylogenetic pipelines are not fully relied by community.
 <br/>
 ### Manual curation always makes
-### for better phylogenies
+### for better phylogenies!
 ]]
 ]
 ---
@@ -414,16 +414,16 @@ background-size: contain
 class: split-20
 
 .row[.content.vmiddle[
-# &emsp; Getting the .gray[**published tree**] (in computer readable format)
-## &emsp; &emsp; *Phylogenetic tree data repositories*
+# &emsp; Getting the .blue[**curated molecular data**] (in reusable format)
+## &emsp; &emsp; *Curated molecular data for phylogenetic analyses repository*
 ]]
 
 .row.split-two[
 .row.split-60[
 .column[.content.vmiddle[
 ### &emsp; &emsp; &emsp; &#183; .indigo[TreeBASE] - Released .indigo[1994]
-### &emsp; &emsp; https://treebase.org/treebase-web/home.html
-### &emsp; &emsp; If the TreeBASE webpage is lagging, go [here]() for a demo.
+### &emsp; &emsp; [https://treebase.org/treebase-web/home.html](https://treebase.org/treebase-web/home.html)
+### &emsp; &emsp; If the TreeBASE webpage is lagging, go [here](https://treebase.org/treebase-web/home.html) for a demo.
 ]]
 .column[.content[
 <br/><br/><br/><br/><br/><br/><br/><br/>
@@ -433,14 +433,9 @@ class: split-20
 </a> </p>
 ]]
 ]
-.row[.content.vmiddle[
-### &emsp; &emsp; &emsp; &#183; The  .orange[Open Tree of Life] project- Released .orange[2010]
-### &emsp; &emsp; [https://tree.opentreeoflife.org/opentree12.3@ott93302](https://tree.opentreeoflife.org/opentree/argus/opentree12.3@ott93302)
-]]
+.row[]
 ]
-<img src="https://opentreeoflife.github.io/assets/img/opentreelogo.svg"
-style="position:fixed; right:5%; top:65%; border:none;"
-width="30%" alt="opentree logo"/>
+
 <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEBMSEhEWFRUWGRUbGBcXGRgVFxUYFxcXFxUVFxUYHSggHRslHRUVITEiJSkrLi4uFx8zODMsNygtLisBCgoKDg0OGxAQGy0lHyItLS0wLy0tLS0tLS0tLSstLS01LS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0rKy0tLS0tK//AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAwEBAQEBAAAAAAAAAAAABQYHBAEDAgj/xAA8EAABAwIDBQUFBgYCAwAAAAABAAIDBBEFBiESMUFRYQcTIjJxQlJigbEUcpGhweEWIzRUktE1ghUksv/EABoBAQADAQEBAAAAAAAAAAAAAAABAwQCBQb/xAAqEQACAgEEAQQBAwUAAAAAAAAAAQIDEQQSITETIkFCUWEyM3EUIyQ0of/aAAwDAQACEQMRAD8AgERF9CeSEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREUEhXnI2TDMRPUNtGPKw+31PReZGyaZiJ5xaMatYfa6notOqqiOGMveQxjBv3AAcFg1Op+MTTVT8pEHjmTqeeItawMcPK4C1isgxTDpKeQxSts4fg4cwtdyxnSCse9jbscD4Q7228COu/RdWacuR1kRaRZ48ruIP8ApU03yre2ZZZUprMTDUXXimHSU8pilFnDdycOYXIvVTTWUYmsBERSQEREAREQBERAEREAREQBERAEREAREQBERAERFACvGRcnGYionaRGPK0+1yJHJMi5NMxE87bRjVrT7XU9Fp1VUxwxl7yGMYNTuAAWDU6n4RNVNPykKmojhiLnuDGMG/cABwWMZwzS+ufsi7adp8Ld23bc53TomcM0vrn2bdtO0+Fvv29pygFOm02PVIi67Ppiexvc1zXscWubq1zdCD0Wv5FzeKtvdSaTtGtho4D2gsnw+hknkEcbbuP5dVs2U8sx0kfAyEeJ36Domt2Jc9k6fdn8H1zTlyOsis4APHldxB/0sXxTDpKeV0UrSHA/Jw4ELeTicPfCDvG94RfYvrZR2acuR1kRa7R48ruIPL0WfT3uviXRZbUpcrswxF1Yph0l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"
 style="position:fixed; right:3%; top:30%; border:none;"
 width="15%" alt="treebase logo"/>
@@ -496,14 +491,14 @@ class: split-two
 ]]
 ]
 .column[.content[
-<img align="center" width="100%" src="bg/20-treebase-wget-1.gif">
+<img align="center" width="100%" src="bg/20-treebase-wget-infinite.gif">
 ]]
 ---
 class: split-two
 
 .column.split-30[
 .row[.content[
-# The .orange[Open Tree of Life] API
+# The .green[Open Tree of Life] API
 ]]
 .row[.content[
 
@@ -521,18 +516,19 @@ class: split-two
 
 Conclusion: we need python!
 ---
-background-image: url("bg/1-dusk.png")
+background-image: url("bg/1-gradient.png")
 background-position: center
 background-size: contain
 
 class: center
 
+<br/><br/><br/>
+.font2[If we want to update our knowledge...]
 <br/><br/><br/><br/>
-.font3[How do we take .blue[advantage] of
-the .orange[published] phylogenies and the raw .red[data]?]
+.font3[We need to .blue[link] the different types of .orange[information] in public .gray[databases]]
 
 ---
-background-image: url("bg/1-dusk.png")
+background-image: url("bg/1-gradient1.png")
 background-position: center
 background-size: contain
 
@@ -545,9 +541,33 @@ class: split-60
 .column[.content.center[
 <img align="center" width="270" src="https://cdn.rawgit.com/snacktavish/physcraper/master/docs/physcraper.svg">
 ]]
+---
+background-image: url("assets/21-cartoon.png")
+background-position: center
+background-size: contain
+class:split-10
+.row[.content[
+# &emsp; &emsp; What does physcraper do?
+]]
+---
+background-image: url("assets/22-integrate.png")
+background-position: center
+background-size: contain
+class:split-10
+.row[.content[
+# &emsp; &emsp; Integrated data can be easily reanalyzed
+]]
+---
+background-image: url("assets/23-update.png")
+background-position: center
+background-size: contain
+class:split-10
+.row[.content[
+# &emsp; Updated knowledge!
+]]
 
 ---
-background-image: url("bg/1-dusk.png")
+background-image: url("bg/1-gradient1.png")
 background-position: center
 background-size: contain
 class: split-70
@@ -595,17 +615,18 @@ http://opentreeoflife.github.io/jupyter-venv**
 ]]
 
 ---
+background-image: url("bg/1-gradient1.png")
+background-position: center
+background-size: contain
 
-Integrates the Open Tree of Life API responses with:
-
-NCBI (molecular databases)
-
-treebase and supertreebase (other tree and algnment repositories)
-
-Basic software needed for phylogenetics analysis
-
-Uses other tools from the
-
+<br/><br/>
+##  https://github.com/McTavishLab/physcraper
+<br/><br/>
+## https://github.com/McTavishLab/physcraperex
+<br/><br/>
+## [csv files](https://github.com/McTavishLab/physcraperex/raw/master/data/pg_55/inputs_pg_55tree5864_ndhf/otu_info_pg_55tree5864_ndhf.csv) contain the vocabulary that connects the data
+<br/><br/>
+## Illustrated examples [here](file://localhost/private/var/folders/ss/2tpkp325521_kfgn59g44vd80000gn/T/RtmpB9QIo1/preview-a8f7690f9e49.dir/malvaceae.html)
 ---
 class: right, middle, blue-gray
 
@@ -619,7 +640,7 @@ class: right, middle, blue-gray
 
 .font2[**Tried physcraper and have suggestions?** ]
 .center[
-<p style="font-size:1.55em"> Contact `r anicon::faa("envelope", animate="pulse")` us at <a href="https://mctavishlab.github.io/contact/"> ejmctavish@ucmerced.edu </a> <br/>
+<p style="font-size:1.55em"> Contact `r anicon::faa("envelope", animate="pulse")` us at <a href="https://mctavishlab.github.io/contact/"> lsanchezreyes2@ucmerced.edu </a> <br/>
 .red[&#183; &#183; &#183;] <br/>
 Post an issue on our `r anicon::faa("github", animate="pulse")` Github repo  at <a href="https://github.com/McTavishLab/physcraper/issues">  https://github.com/McTavishLab/physcraper/issues </a> </p>
 ]
