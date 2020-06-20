@@ -527,7 +527,7 @@ class: split-20
 ]]
 ]
 .row[.content.vmiddle[
-### &emsp; &emsp; &emsp; &#183; The  .orange[Open Tree of Life] project- Released .orange[2010]
+### &emsp; &emsp; &emsp; &#183; The  .orange[Open Tree of Life] project- Released .orange[2012]
 ### &emsp; &emsp; [https://tree.opentreeoflife.org/opentree12.3@ott93302](https://tree.opentreeoflife.org/opentree/argus/opentree12.3@ott93302)
 ]]
 ]
