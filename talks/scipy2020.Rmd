@@ -654,9 +654,9 @@ at <a href="https://mctavishlab.github.io/contact/"> ejmctavish@ucmerced.edu </a
 <img align="center" width="240" src="assets/0-physcraper.svg">
 ]]
 ---
-class: split-two, blue-gray, center
+class: split-two, blue-gray,
 
-.column[.content[
+.row[.content[
 <br/>
 # Acknowledgements
 <br/>
@@ -666,8 +666,8 @@ Multi-Environment Research Computer for Exploration and Discovery ([MERCED](http
 
 ]]
 
-.column[.content.font_small[
-<br/><br/>
+.row[.content.font_small[
+<br/>
 ## Image attributions
 <br/>
 
