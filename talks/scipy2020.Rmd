@@ -547,7 +547,7 @@ background-position: center
 background-size: contain
 class:split-10
 .row[.content[
-# &emsp; &emsp; What does physcraper do?
+## &emsp; What does physcraper do? **A cartoon example**
 ]]
 ---
 background-image: url("assets/22-integrate.png")
@@ -555,7 +555,7 @@ background-position: center
 background-size: contain
 class:split-10
 .row[.content[
-# &emsp; &emsp; Integrated data can be easily reanalyzed
+# &emsp; Integrated data can be easily reanalyzed!
 ]]
 ---
 background-image: url("assets/23-update-red.png")
@@ -563,7 +563,7 @@ background-position: center
 background-size: contain
 class:split-10
 .row[.content[
-# &emsp; Updated knowledge!
+# &emsp; To get updated knowledge!
 ]]
 
 ---
