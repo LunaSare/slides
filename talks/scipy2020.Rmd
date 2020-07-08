@@ -27,7 +27,7 @@ background-size: contain
 
 class: left, middle, black
 
-<img align="left" width="250" src="https://cdn.rawgit.com/snacktavish/physcraper/master/docs/physcraper.svg">
+<img align="left" width="250" src="assets/0-physcraper.svg">
 
 
 ```{r setup, include=FALSE}
@@ -558,7 +558,7 @@ class:split-10
 # &emsp; &emsp; Integrated data can be easily reanalyzed
 ]]
 ---
-background-image: url("assets/23-update.png")
+background-image: url("assets/23-update-red.png")
 background-position: center
 background-size: contain
 class:split-10
