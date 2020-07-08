@@ -654,27 +654,21 @@ at <a href="https://mctavishlab.github.io/contact/"> ejmctavish@ucmerced.edu </a
 <img align="center" width="240" src="assets/0-physcraper.svg">
 ]]
 ---
-class: split-two, blue-gray
+class: split-two, blue-gray, center
 
-.column[.content.vmiddle[
-
-]]
-
-.column[.content.vmiddle[
+.column[.content[
+<br/>
 # Acknowledgements
+<br/>
+"Sustaining the Open Tree of Life" National Science Foundation (NSF) Grant ABI No. 1759838
+
+Multi-Environment Research Computer for Exploration and Discovery ([MERCED](https://research.ucmerced.edu/node/721)) cluster from the University of California, Merced, supported by the NSF Grant No. ACI-1429783.
+
+]]
+
+.column[.content.font_small[
 <br/><br/>
-The University of California, Merced cluster, [MERCED (Multi-Environment Research Computer for Exploration and Discovery)](https://research.ucmerced.edu/node/721) supported by the National Science Foundation (Grant No. ACI-1429783).
-
-]]
----
-class: split-two, blue-gray
-
-.column[.content.vmiddle[
-
-]]
-
-.column[.content.vmiddle.font_small[
-# Image attributions
+## Image attributions
 <br/>
 
 Data Image by <a href="https://pixabay.com/es/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2723105">Gerd Altmann</a> on <a href="https://pixabay.com/es/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2723105">Pixabay</a>
@@ -699,11 +693,11 @@ Image by <a href="https://pixabay.com/users/steinchen-21981/?utm_source=link-att
 
 Perfect Magnolia Image by <a href="https://pixabay.com/users/kalasoft-11695/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1455709">Ed Hathaway</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1455709">Pixabay</a>
 
-Cerura vinula moth face Image by <a href="https://pixabay.com/users/DreamyArt-512893/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=814568">Selling of my photos with StockAgencies is not permitted</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=814568">Pixabay</a>
+Cerura vinula moth face Image by <a href="https://pixabay.com/users/DreamyArt-512893/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=814568">Selling</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=814568">Pixabay</a>
 
 Barn owl Image by <a href="https://pixabay.com/users/dannymoore1973-1813225/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1107397">danny moore</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1107397">Pixabay</a>
 
-Dwarf flying squirrel image from https://critter.science/the-adorable-japanese-dwarf-flying-squirrel/
+Dwarf flying squirrel image from [https://critter.science](https://critter.science/the-adorable-japanese-dwarf-flying-squirrel/)
 
 Treefrog Image by <a href="https://pixabay.com/users/41330-41330/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=765123">41330</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=765123">Pixabay</a>
 
@@ -713,9 +707,9 @@ Mammoth wooly Image by <a href="https://pixabay.com/users/tony241969-5126938/?ut
 
 Anomalocaris Image by <a href="https://pixabay.com/users/Goodfreephotos_com-10388/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=347259">Yinan Chen</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=347259">Pixabay</a>
 
-Dodo Skull By FunkMonk (Michael B. H.) - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=19794759
+Dodo Skull By FunkMonk (Michael B. H.) - Own work, CC BY-SA 3.0, [commons.wikimedia.org](https://commons.wikimedia.org/w/index.php?curid=19794759)
 
-Rhynia stem By Plantsurfer - Own work, CC BY-SA 2.0 uk, https://commons.wikimedia.org/w/index.php?curid=3823922
+Rhynia stem By Plantsurfer - Own work, CC BY-SA 2.0 uk, [commons.wikimedia.org](https://commons.wikimedia.org/w/index.php?curid=3823922)
 ]]
 
 ---
