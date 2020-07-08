@@ -578,7 +578,7 @@ class: split-70
 .column.split-70[.content[
 .column[.content[
 
-## What does physcraper do? &nbsp; A technical description
+## What does physcraper do? &nbsp; **A technical description**
 
 <br/>
 
@@ -632,22 +632,27 @@ background-size: contain
 <br/><br/>
 ## Illustrated examples [here](file://localhost/private/var/folders/ss/2tpkp325521_kfgn59g44vd80000gn/T/RtmpB9QIo1/preview-a8f7690f9e49.dir/malvaceae.html)
 ---
-class: right, middle, blue-gray
+class: split-70, right, middle, blue-gray
 
-<img align="right" width="250" src="assets/0-physcraper.svg">
-
+.column[.content[
 .font3[**Questions?**]
 
 .font2[See you on Thursday .red[July 9], from .red[2:45]pm to .red[3:45]pm (CDT) at SciPy2020's [Biology and Bioinformatics Q&A and Moderated Discussion](https://www.scipy2020.scipy.org/schedule) live session!]
 
 <br/>
 
-.font2[**Tried physcraper and have suggestions?** ]
+.font2[**Tried Physcraper and have suggestions?** ]
 .center[
-<p style="font-size:1.55em"> Contact `r anicon::faa("envelope", animate="pulse")` us at <a href="https://mctavishlab.github.io/contact/"> lsanchezreyes2@ucmerced.edu </a> <br/>
+<p style="font-size:1.55em"> `r anicon::faa("envelope", animate="pulse")` Contact us at <a href="https://www.lunasare.com/about_and_contact/#5-contact-header"> lsanchezreyes2@ucmerced.edu </a>  or <br/>
+at <a href="https://mctavishlab.github.io/contact/"> ejmctavish@ucmerced.edu </a> <br/>
 .red[&#183; &#183; &#183;] <br/>
-Post an issue on our `r anicon::faa("github", animate="pulse")` Github repo  at <a href="https://github.com/McTavishLab/physcraper/issues">  https://github.com/McTavishLab/physcraper/issues </a> </p>
+`r anicon::faa("github", animate="pulse")` Post an issue on our Github repo  at <a href="github.com/McTavishLab/physcraper/issues">  https://github.com/McTavishLab/physcraper/issues </a> </p>
 ]
+]]
+
+.column[.content.center[
+<img align="center" width="240" src="assets/0-physcraper.svg">
+]]
 ---
 class: split-two, blue-gray
 
