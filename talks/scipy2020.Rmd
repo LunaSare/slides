@@ -198,7 +198,7 @@ background-image: url("bg/11-data-sharing-orange.png")
 background-position: center
 background-size: contain
 
-## There might be some *data* sharing issues...
+## There might be some *data* &nbsp; sharing issues...
 
 ???
 
@@ -656,7 +656,7 @@ at <a href="https://mctavishlab.github.io/contact/"> ejmctavish@ucmerced.edu </a
 ---
 class: blue-gray, center
 
-# Acknowledgements
+# **Acknowledgements**
 <br/>
 ### *Sustaining the Open Tree of Life* &nbsp; National Science Foundation (NSF) Grant ABI No. 1759838
 
@@ -668,7 +668,7 @@ class: blue-gray, center
 
 ### Image attributions
 
-<p style="font-size:0.9em"> 
+<p style="font-size:0.9em">
 Big data Image by <a href="https://pixabay.com/es/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2723105">Gerd Altmann</a> on <a href="https://pixabay.com/es/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2723105">Pixabay</a> .red[&#183;]
 Cloud Image by <a href="https://imgbin.com/user/aymenmalekrejeb">aymenmalekrejeb</a> on <a href="https://imgbin.com/download-png/bqeUeAnj">imgbin</a> .red[&#183;]
 Data file Image by <a href="https://imgbin.com/user/kacieHowell9">Kacie Howell</a> on <a href="https://imgbin.com/download-png/jEiEHH0m">imgbin</a> .red[&#183;]
@@ -692,22 +692,24 @@ Rhynia stem By Plantsurfer - Own work, CC BY-SA 2.0 uk, [commons.wikimedia.org](
 </p>
 
 ---
-class: split-10, blue-gray
+class: split-20, blue-gray
 
+.row[.content.center.vmiddle[
+# **References**
+]]
+
+.row.split-two[
+
+.column.split-10[
 .column[
-
 ]
-.column.split-two[
-.column[.content.vmiddle.font_small[
+.column[.content.font_small[
 
 ```{r, load_refs, echo=FALSE}
 library(RefManageR)
 bib <- ReadBib("./assets/my_bib.bib", check = FALSE)
-ui <- "- "
 ```
-
-```{r, print_refs, results='asis', echo=FALSE, warning=FALSE, message=FALSE}
-# writeLines(ui)
+```{r print_refs1, results='asis', echo=FALSE, warning=FALSE, message=FALSE}
 print(bib[key = "mayr1997biology"],
   .opts = list(check.entries = FALSE,
                style = "html",
@@ -736,6 +738,16 @@ print(bib[key = "stenz2015exploring"],
   .opts = list(check.entries = FALSE,
                style = "html",
                bib.style = "authoryear"))
+```
+
+]]
+]
+
+.column.split-10[
+.column[
+]
+.column.content.font_small[
+```{r print_refs2, results='asis', echo=FALSE, warning=FALSE, message=FALSE}
 print(bib[key = "sanmartin2007west"],
   .opts = list(check.entries = FALSE,
                style = "html",
@@ -761,13 +773,10 @@ print(bib[key = "de2018recent"],
                style = "html",
                bib.style = "authoryear"))
 ```
-
-]]
-.column[.content.vmiddle[
-# References
-]]
+]
 ]
 
+]
 ???
 
 code from https://github.com/yihui/xaringan/issues/26
