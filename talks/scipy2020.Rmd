@@ -27,7 +27,7 @@ background-size: contain
 
 class: left, middle, black
 
-<img align="left" width="250" src="assets/0-physcraper.svg">
+<img align="left" width="250" src="assets/0-physcraper-original.svg">
 
 
 ```{r setup, include=FALSE}
@@ -539,7 +539,7 @@ class: split-60
 .font4[&emsp; &emsp; Physcraper!]
 ]]
 .column[.content.center[
-<img align="center" width="270" src="https://cdn.rawgit.com/snacktavish/physcraper/master/docs/physcraper.svg">
+<img align="center" width="270" src="assets/0-physcraper-original.svg">
 ]]
 ---
 background-image: url("assets/21-cartoon.png")
@@ -575,10 +575,14 @@ class: split-70
 .column.split-10[
 .column[
 ]
-.column.split-60[.content[
+.column.split-70[.content[
 .column[.content[
 
-**A python toolkit that runs in a .red[virtual environment] or .red[conda]**
+## What does physcraper do? &nbsp; A technical description
+
+<br/>
+
+** 🐍 It is a python toolkit that runs in a .red[virtual environment] or .red[conda]**
 
 ```
 virtualenv -p python3 venv-physcraper
@@ -587,7 +591,7 @@ source venv-physcraper/bin/activate
 
 <br/>
 
-**Can be run as a .blue[command line] application**
+** ⌨️ It can be run as a .blue[command line] application**
 
 ```
 physcraper_run.py --help
@@ -603,15 +607,15 @@ usage: physcraper_run.py [-h] [-s STUDY_ID] [-t TREE_ID] [-tl TREE_LINK]
 
 <br/>
 
-**Or using a .orange[jupyter notebook]. Instructions to create your own opentree kernel here:
+** 🗒️ Or using a .orange[jupyter notebook].**
+**Follow instructions to create your own opentree kernel at
 http://opentreeoflife.github.io/jupyter-venv**
 
 ]]
 ]]
 ]
 .column[.content.center[
-# Physcraper!
-<img align="center" width="250" src="https://cdn.rawgit.com/snacktavish/physcraper/master/docs/physcraper.svg">
+<img align="center" width="240" src="assets/0-physcraper.svg">
 ]]
 
 ---
@@ -630,7 +634,7 @@ background-size: contain
 ---
 class: right, middle, blue-gray
 
-<img align="right" width="250" src="https://cdn.rawgit.com/snacktavish/physcraper/master/docs/physcraper.svg">
+<img align="right" width="250" src="assets/0-physcraper.svg">
 
 .font3[**Questions?**]
 
