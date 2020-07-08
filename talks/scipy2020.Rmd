@@ -591,7 +591,7 @@ source venv-physcraper/bin/activate
 
 <br/>
 
-** ⌨️ It can be run as a .blue[command line] application**
+** 🖥️ It can be run as a .blue[command line] application**
 
 ```
 physcraper_run.py --help
@@ -607,8 +607,8 @@ usage: physcraper_run.py [-h] [-s STUDY_ID] [-t TREE_ID] [-tl TREE_LINK]
 
 <br/>
 
-** 🗒️ Or using a .orange[jupyter notebook].**
-**Follow instructions to create your own opentree kernel at
+** 🗒️ Or using a .orange[jupyter notebook]!**
+** Find instructions to create your own opentree kernel at
 http://opentreeoflife.github.io/jupyter-venv**
 
 ]]
