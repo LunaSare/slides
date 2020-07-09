@@ -617,20 +617,71 @@ http://opentreeoflife.github.io/jupyter-venv**
 .column[.content.center[
 <img align="center" width="240" src="assets/0-physcraper.svg">
 ]]
+---
+background-image: url("bg/1-gradient1.png")
+background-position: center
+background-size: contain
+class: split-70
+
+.column.split-10[
+.column[
+]
+.column.split-70[.content[
+.column[.content[
+
+# How does it do it? &nbsp;
+
+<br/>
+
+## ** 📚 Python .green[dictionaries]! **
+
+<br/>
+
+## ** 🗂️ that are stored as [csv files](https://github.com/McTavishLab/physcraperex/raw/master/data/pg_55/inputs_pg_55tree5864_ndhf/otu_info_pg_55tree5864_ndhf.csv)**
+## **containing the vocabulary that connects all types of data**
+
+<br/>
+
+## ** ⚙️ allowing .amber[interoperability] of multiple platforms!**
+
+]]
+]]
+]
+.column[.content.center[
+<img align="center" width="240" src="assets/0-physcraper.svg">
+]]
 
 ---
 background-image: url("bg/1-gradient1.png")
 background-position: center
 background-size: contain
+class: split-70
 
-<br/><br/>
-##  https://github.com/McTavishLab/physcraper
-<br/><br/>
-## https://github.com/McTavishLab/physcraperex
-<br/><br/>
-## [csv files](https://github.com/McTavishLab/physcraperex/raw/master/data/pg_55/inputs_pg_55tree5864_ndhf/otu_info_pg_55tree5864_ndhf.csv) contain the vocabulary that connects the data
-<br/><br/>
-## Illustrated examples [here](file://localhost/private/var/folders/ss/2tpkp325521_kfgn59g44vd80000gn/T/RtmpB9QIo1/preview-a8f7690f9e49.dir/malvaceae.html)
+.column.split-10[
+.column[
+]
+.column.split-two[
+.row[.content.vmiddle[
+
+##  Update!
+<br/>
+## Find all information and illustrated examples on Physcraper's documentation at [Read the docs](https://physcraper.readthedocs.io/en/latest/index.html)
+
+
+]]
+.row[.content.vmiddle[
+## Our code is open source on Github, obvs!
+
+## Check it out over here
+
+## https://github.com/McTavishLab/physcraper
+]]
+]
+]
+.column[.content.center[
+<img align="center" width="240" src="assets/0-physcraper.svg">
+]]
+
 ---
 class: split-70, right, middle, blue-gray
 
@@ -687,8 +738,8 @@ Treefrog Image by <a href="https://pixabay.com/users/41330-41330/?utm_source=lin
 Allosaurus Image by <a href="https://pixabay.com/users/WikiImages-1897/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=60588">WikiImages</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=60588">Pixabay</a> .red[&#183;]
 Mammoth wooly Image by <a href="https://pixabay.com/users/tony241969-5126938/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2722882">tony241969</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2722882">Pixabay</a> .red[&#183;]
 Anomalocaris Image by <a href="https://pixabay.com/users/Goodfreephotos_com-10388/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=347259">Yinan Chen</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=347259">Pixabay</a> .red[&#183;]
-Dodo Skull By FunkMonk (Michael B. H.) - Own work, CC BY-SA 3.0, [commons.wikimedia.org](https://commons.wikimedia.org/w/index.php?curid=19794759) .red[&#183;]
-Rhynia stem By Plantsurfer - Own work, CC BY-SA 2.0 uk, [commons.wikimedia.org](https://commons.wikimedia.org/w/index.php?curid=3823922)
+Dodo Skull By FunkMonk (Michael B. H.) - Own work, CC BY-SA 3.0, <a href="https://commons.wikimedia.org/w/index.php?curid=19794759">commons.wikimedia.org</a> .red[&#183;]
+Rhynia stem By Plantsurfer - Own work, CC BY-SA 2.0 uk, <a href="https://commons.wikimedia.org/w/index.php?curid=3823922">commons.wikimedia.org</a>
 </p>
 
 ---
