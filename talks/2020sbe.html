@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <title>SBE 2020</title>
+    <meta charset="utf-8" />
+    <link href="libs/remark-css/kunoichi.css" rel="stylesheet" />
+    <link href="libs/remark-css/ninjutsu.css" rel="stylesheet" />
+    <link href="libs/remark-css/metropolis-fonts.css" rel="stylesheet" />
+    <link href="libs/font-awesome-animation/font-awesome-animation-emi.css" rel="stylesheet" />
+    <script src="libs/fontawesome/js/fontawesome-all.min.js"></script>
+    <link rel="stylesheet" href="ninjutsu-luna-extras.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+background-image: url("bg/1-gradient1.png")
+background-position: center
+background-size: contain
+
+class: left, middle, black
+
+&lt;img align="left" width="250" src="assets/0-physcraper-original.svg"&gt;
+
+
+
+
+.font3[**Physcraper**]
+
+.font2[Continual .red[updating] of evolutionary estimates in the Open Tree of Life]
+
+&lt;br/&gt;
+### .red[&lt;sup&gt;*&lt;/sup&gt;] Luna L. Sanchez Reyes .red[&amp;#8226;]  Martha Kandziora .red[&amp;#8226;] Emily Jane McTavish
+
+### &amp;nbsp; &amp;nbsp; University of California, Merced
+&lt;br/&gt;
+
+.content.center[
+1st Meeting of Systematics, Biogeography and Evolution (SBE)
+&lt;br/&gt;
+July 28-30, 2020 .red[&amp;#8226;] The Internet
+
+Slides last updated on  July 20, 2020 .red[&amp;#8226;] Find the code for them in [<span>&lt;i class="fab  fa-github faa-passing animated "&gt;&lt;/i&gt;</span>  here]()
+
+.red[*] Speaker contact [@LunaSare](https://www.lunasare.com/) on [Github <span>&lt;i class="fab  fa-github faa-float animated "&gt;&lt;/i&gt;</span>](https://github.com/LunaSare) and [Twitter <span>&lt;i class="fab  fa-twitter faa-float animated "&gt;&lt;/i&gt;</span>](https://twitter.com/LunaSare)
+]
+---
+background-image: url("assets/2-data-2723105_1920.jpg")
+background-position: center
+background-size: cover
+
+class: center white
+
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+.font3[So, we have a problem ...]
+--
+&lt;img src="assets/2-cloud-imgbin.png"
+style="position:fixed; left:10%; top:50%; border:none;"
+width="20%" alt="Databases all around the world"/&gt;
+
+&lt;img src="https://media2.giphy.com/media/ule4vhcY1xEKQ/giphy.gif"
+style="position:fixed; right:10%; top:50%; border:none;"
+width="20%" alt="Cats typing"/&gt;
+
+
+---
+background-image: url("bg/1-gradient.png")
+background-position: center
+background-size: contain
+
+class: center
+
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+.font3[How can we stay up to date with the .blue[massive] amount of new .orange[data],
+while taking advantage of the already existing .orange[knowledge]?]
+
+
+---
+background-image: url("assets/4-diversity1.png")
+background-position: center
+background-size: contain
+
+???
+
+# As biologists, we want to understand how all living things are connected evolutionarily
+
+---
+background-image: url("bg/4-diversity2.png")
+background-position: center
+background-size: contain
+
+class: split-20, center
+
+.row[.content[
+# Let's talk scale... .orange[how many] organisms are there?
+
+]]
+.row.split-two[
+.column[.content.center[
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+### &amp;emsp; &amp;emsp; &amp;emsp;  Estimates range between
+## &amp;emsp; &amp;emsp; &amp;emsp; .orange[3 million] .font_small.gray[(Mayr 2010)]
+### &amp;emsp; &amp;emsp; &amp;emsp;  and
+## &amp;emsp; &amp;emsp; &amp;emsp; .blue[100 million] .font_small.gray[(Mora et al. 2011)]
+### &amp;emsp; &amp;emsp; &amp;emsp; living species
+]]
+
+.column[.content.center[
+&lt;br/&gt;&lt;br/&gt;
+### 99.9% of species that have ever &amp;emsp; &amp;emsp;
+### existed have gone extinct &amp;emsp; &amp;emsp;
+## .font_small.gray[(Mayr 1997)] &amp;emsp; &amp;emsp;
+&lt;br/&gt;
+### How many more species have  &amp;emsp; &amp;emsp;
+### existed in the past??? &amp;emsp;
+.font4[😱 &amp;emsp; ]
+]]
+]
+
+???
+# There are a gazillion species living, and many more so extinct
+# It is a problem for big data managment and analysis
+---
+background-image: url("assets/6-gradient1.png")
+background-position: center
+background-size: contain
+class: split-60
+
+&lt;img src="assets/6-hinchliff2015-fig1c.png"
+style="position:fixed; right:5%; top:0%; border:none;"
+width="46%" alt="Hinchliff Figure 1C"/&gt;
+
+.column.split-two[
+.row[.content[
+&lt;img src="https://opentreeoflife.github.io/assets/img/opentreelogo.svg"
+style="position:fixed; left:5%; top:6%; border:none;"
+width="30%" alt="opentree logo"/&gt;
+]]
+.row[.content.left[
+### &amp;emsp; &amp;emsp; The  .green[Open Tree of Life] project - Released .green[2012]
+### &amp;emsp; &amp;emsp; At [https://tree.opentreeoflife.org](https://tree.opentreeoflife.org/opentree/argus/opentree12.3@ott93302)
+&lt;br/&gt;
+### &amp;emsp; &amp;emsp; Has information from .blue[1216 analyses] - *phylogenies*
+### &amp;emsp; &amp;emsp; Covers almost .amber[90 K species]
+
+]]
+]
+.column[.content.left[
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+.gray[Figure 1C from Hinchliff et al. 2015)]
+]]
+
+---
+background-image: url("assets/6-gradient1.png")
+background-position: center
+background-size: contain
+class: split-10
+
+&lt;img src="bg/8-drew2013lost-fig1.png"
+style="position:fixed; right:5%; top:0%; border:none;"
+width="46%" alt="Drew Figure"/&gt;
+
+.column[
+]
+.column.split-40[
+.column[.content.left[
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+# Total number of
+# published
+# analyses -*phylogenies*
+# is around the .amber[10 K's]
+]]
+.column[.content.left[
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+&amp;emsp; .gray[Figure from Drew et al. 2013]
+]]
+]
+
+???
+
+Graphs of accumulation of phylogenies through time
+
+
+---
+background-image: url("bg/11-data-sharing-orange.png")
+background-position: center
+background-size: contain
+
+## There might be some *data* &amp;nbsp; sharing issues...
+
+???
+
+Main: Sharing is key for reuse of phylogenies; and reuse is key for advancement of science.
+
+Conclusion: Phylogenies are usually not shared but DNA data is
+(Drew et al. 2013).
+---
+
+class: split-10 center
+
+.row.bg-black.white[.content.vmiddle.left[
+# How can we get a .blue[published] phylogeny?
+]]
+.row.split-two[
+.row.split-four[
+.column[.content.vmiddle[
+## Files in reusable data format--
+## Supplementary Data in Journals
+]]
+.column[.content[
+&lt;img src="assets/8-data-files.png" width="90%" align="center" alt="data files"/&gt;
+]]
+.column.bg-black.white[.content[
+&lt;img src="assets/6-hinchliff2015-fig1c.png" width="70%" align="center" alt="Fig 1C Hinchliff et al. 2015"/&gt;
+
+.font_small.gray[Figure 1c from Hinchliff et al. 2015]
+]]
+.column.bg-black.white[.content.vmiddle[
+## Figures on
+## published papers
+.gray[A pdf/jpg/png file]
+]]
+]
+.row.split-two[
+.column.bg-black.white[.content.vmiddle[
+## Asking the authors
+&lt;img src="http://www.phdcomics.com/comics/archive/phd072508s.gif" width="90%" alt = "wikipedia protein alignment"/&gt;
+]]
+.column[.content.vmiddle[
+## Reanalyzing the raw data
+&lt;img src="bg/10-align-laptop-3087585_1920.jpg" width="50%" alt = ""/&gt;
+&lt;img src="assets/2-data-2723105_1920.jpg" width="45%" alt = "raw data"/&gt;
+]]
+]
+]
+
+---
+background-image: url("bg/12-molecular-gray.png")
+background-position: 50% 0%
+background-size: contain
+
+# Getting the .blue[**raw data**]
+## .gray[*Molecular sequence repositories*]
+### The International Nucleotide Sequence Database Collaboration (INSDC)
+
+&lt;br/&gt;
+
+### &amp;emsp; &amp;#183; .gray[GenBank] at the National Center for Biotechnology
+### Information (NCBI) - Released .gray[ 1989]
+### https://www.ncbi.nlm.nih.gov/genbank/
+
+&lt;br/&gt;
+
+### &amp;emsp; &amp;#183; DNA DataBank of Japan (.gray[DDBJ]) - Released .gray[1986]
+### https://www.ddbj.nig.ac.jp/index-e.html
+
+&lt;br/&gt;
+
+### &amp;emsp; &amp;#183; European Nucleotide Archive (.gray[ENA]) - Released .gray[1982]
+### https://www.ebi.ac.uk/ena
+
+
+
+???
+
+More effort is going to share the raw molecular data
+https://www.ddbj.nig.ac.jp/stats/release-e.html#total_data
+---
+background-image: url("bg/13-compare-gray.png")
+background-position: center
+background-size: contain
+
+# Public .blue[**molecular data**] is in the order of .orange[**trillions**]
+#### Figure from https://www.ddbj.nig.ac.jp/stats/release-e.html#total_data
+
+---
+background-image: url("bg/1-gray.png")
+background-position: 50% 0%
+background-size: 100%
+
+# Let's *zoom in* into the .blue[**GenBank database**]
+#### &amp;emsp; &amp;emsp; &amp;emsp; &amp;emsp; Figure from https://www.nlm.nih.gov/about/2021CJ.html
+
+&lt;a href="https://www.nlm.nih.gov/about/2021CJ.html"&gt;
+&lt;img src="bg/14-ncbi-2019.png" width="75%" align="left" alt="ncbi logo"/&gt;
+&lt;/a&gt;
+
+&lt;a href="https://www.ncbi.nlm.nih.gov/nucleotide/"&gt;
+&lt;img src="bg/12-ncbi-logo-white-bg.png"
+   style="position:fixed; right:8%; top:10%; border:none;"
+   width="15%" alt="ncbi logo"/&gt;
+&lt;/a&gt;
+
+---
+background-image: url("bg/1-gradient.png")
+background-position: center
+background-size: contain
+
+class: center
+
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+.font3[How do we go about
+this .blue[massive] amount of raw .orange[data]?]
+
+
+---
+background-image: url("bg/1-gradient.png")
+background-position: center
+background-size: contain
+
+class: split-70 center
+
+.column.split-20[
+.row[.content.vmiddle[
+# The dawn of the phylogenetic .blue[pipeline]
+]]
+.row.split-two[
+.column[.content.vmiddle[
+Phylota - Sanderson et al. 2008
+
+Amphora - Wu et al. 2008
+
+PHLAWD - Smith et al. 2009
+
+PUmPER - Izquierdo et al. 2014
+
+DarwinTree - Meng et al. 2014
+
+NCBIminer - Xu et al. 2015
+
+SUMAC - Freyman et al. 2015
+
+STBase - McMahon et al. 2015
+]]
+.column[.content.vmiddle[
+BIR - Kumar et al. 2015
+
+SUPERSMART - Antonelli et al. 2017
+
+SOPHI - Chesters et al. 2017
+
+PhyloSkeleton - Guy et al. 2017
+
+OneTwoTree - Drori et al. 2018
+
+PhylotaR - Bennett et al. 2018
+
+pyPHLAWD - Smith et al. 2019
+
+Phylotol - Ceron et al. 2019
+]]
+]
+]
+.column.bg-blue[.content.vmiddle[
+&lt;img src="https://i.redd.it/ez4zn3esgyw41.png"
+   width="100%" alt="pipeline meme"/&gt;
+]]
+
+???
+Pipelines for using data from molecular databases
+
+Efforts to make sense of this data: massive data pipelines
+
+https://i.redd.it/hk7eo05svd351.jpg cats
+https://i.redd.it/ez4zn3esgyw41.png brains
+---
+background-image: url("bg/1-gradient.png")
+background-position: center
+background-size: contain
+
+class: split-20 center
+
+.row[.content.vmiddle[
+# The phylogenetic .blue[pipeline]
+]]
+.row.split-two[
+.column.split-10[
+.column[
+]
+.column[.content.vmiddle[
+# The good 🙌
+&lt;br/&gt;
+### They have contributed to fill holes on our phylogenetic knowledge on the tree of life and also potentially to "fix" knowledge on some branches.
+&lt;br/&gt;
+### All these efforts contributed to start making the field much more reproducible.
+]]
+]
+.column[.content.vmiddle[
+# The bad 😨
+&lt;br/&gt;
+### Phylogenetic pipelines are not fully relied by community.
+&lt;br/&gt;
+### Manual curation always makes
+### for better phylogenies!
+]]
+]
+---
+background-image: url("bg/1-gray.png")
+background-position: center
+background-size: contain
+
+class: split-20
+
+.row[.content.vmiddle[
+# &amp;emsp; Getting the .blue[**curated molecular data**] (in reusable format)
+## &amp;emsp; &amp;emsp; *Curated molecular data for phylogenetic analyses repository*
+]]
+
+.row.split-two[
+.row.split-60[
+.column[.content.vmiddle[
+### &amp;emsp; &amp;emsp; &amp;emsp; &amp;#183; .indigo[TreeBASE] - Released .indigo[1994]
+### &amp;emsp; &amp;emsp; [https://treebase.org/treebase-web/home.html](https://treebase.org/treebase-web/home.html)
+### &amp;emsp; &amp;emsp; If the TreeBASE webpage is lagging, go [here](https://treebase.org/treebase-web/home.html) for a demo.
+]]
+.column[.content[
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+&lt;p style="font-size:0.75em; position:relative; right:20%; bottom:2%;"&gt;
+&lt;a href="https://www.linuxjournal.com/content/party-its-1994"&gt;
+&amp;emsp; &amp;emsp; &amp;emsp; &amp;emsp; &amp;emsp; &amp;emsp; www.linuxjournal.com
+&lt;/a&gt; &lt;/p&gt;
+]]
+]
+.row[]
+]
+
+&lt;img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEBMSEhEWFRUWGRUbGBcXGRgVFxUYFxcXFxUVFxUYHSggHRslHRUVITEiJSkrLi4uFx8zODMsNygtLisBCgoKDg0OGxAQGy0lHyItLS0wLy0tLS0tLS0tLSstLS01LS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0rKy0tLS0tK//AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAwEBAQEBAAAAAAAAAAAABQYHBAEDAgj/xAA8EAABAwIDBQUFBgYCAwAAAAABAAIDBBEFBiESMUFRYQcTIjJxQlJigbEUcpGhweEWIzRUktE1ghUksv/EABoBAQADAQEBAAAAAAAAAAAAAAABAwQCBQb/xAAqEQACAgEEAQQBAwUAAAAAAAAAAQIDEQQSITETIkFCUWEyM3EUIyQ0of/aAAwDAQACEQMRAD8AgERF9CeSEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREUEhXnI2TDMRPUNtGPKw+31PReZGyaZiJ5xaMatYfa6notOqqiOGMveQxjBv3AAcFg1Op+MTTVT8pEHjmTqeeItawMcPK4C1isgxTDpKeQxSts4fg4cwtdyxnSCse9jbscD4Q7228COu/RdWacuR1kRaRZ48ruIP8ApU03yre2ZZZUprMTDUXXimHSU8pilFnDdycOYXIvVTTWUYmsBERSQEREAREQBERAEREAREQBERAEREAREQBERAERFACvGRcnGYionaRGPK0+1yJHJMi5NMxE87bRjVrT7XU9Fp1VUxwxl7yGMYNTuAAWDU6n4RNVNPykKmojhiLnuDGMG/cABwWMZwzS+ufsi7adp8Ld23bc53TomcM0vrn2bdtO0+Fvv29pygFOm02PVIi67Ppiexvc1zXscWubq1zdCD0Wv5FzeKtvdSaTtGtho4D2gsnw+hknkEcbbuP5dVs2U8sx0kfAyEeJ36Domt2Jc9k6fdn8H1zTlyOsis4APHldxB/0sXxTDpKeV0UrSHA/Jw4ELeTicPfCDvG94RfYvrZR2acuR1kRa7R48ruIPL0WfT3uviXRZbUpcrswxF1Yph0l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"
+style="position:fixed; right:3%; top:30%; border:none;"
+width="15%" alt="treebase logo"/&gt;
+&lt;img src="bg/19-linux-1994.png"
+style="position:fixed; right:20%; top:35%; border:none;"
+width="18%" alt="linux party 1994"/&gt;
+
+???
+
+# Phylogenetic data repositories
+
+Efforts to store actual trees and the alignments that produced them.
+These efforts happened in parallel to the development of pipelines.
+
+TreeBASE and Open Tree of Life
+
+Conclusion: this effort is making the practice of phylogenetics more open.
+
+https://www.linuxjournal.com/content/party-its-1994
+---
+exclude: true
+
+background-image: url("bg/treebase1.png")
+background-position: center
+background-size: contain
+
+---
+exclude: true
+
+background-image: url("bg/treebase-search1.png")
+background-position: center
+background-size: contain
+
+---
+exclude: true
+
+background-image: url("bg/treebase-search2.png")
+background-position: center
+background-size: contain
+
+---
+class: split-two
+
+.column.split-30[
+.row[.content[
+# The .indigo[TreeBASE] repository
+]]
+.row[.content[
+````
+    wget "http://purl.org/phylo/treebase/phylows/
+          tree/TB2:Tr109483?format=nexus"
+````
+]]
+]
+.column[.content[
+&lt;img align="center" width="100%" src="bg/20-treebase-wget-infinite.gif"&gt;
+]]
+---
+class: split-two
+
+.column.split-30[
+.row[.content[
+# The .green[Open Tree of Life] API
+]]
+.row[.content[
+
+````
+    curl https://api.opentreeoflife.org/v3/study/
+         pg_1144/tree/tree2324
+````
+]]
+]
+.column[.content[
+&lt;img align="center" width="100%" src="bg/21-otol-study-tree-fast.gif"&gt;
+]]
+
+???
+
+Conclusion: we need python!
+---
+background-image: url("bg/1-gradient.png")
+background-position: center
+background-size: contain
+
+class: center
+
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+.font2[If we want to update our knowledge...]
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+.font3[We need to .blue[link] the different types of .orange[information] in public .gray[databases]]
+
+---
+background-image: url("bg/1-gradient1.png")
+background-position: center
+background-size: contain
+
+class: split-60
+
+.column[.content.center[
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+.font4[&amp;emsp; &amp;emsp; Physcraper!]
+]]
+.column[.content.center[
+&lt;img align="center" width="270" src="assets/0-physcraper-original.svg"&gt;
+]]
+---
+background-image: url("assets/21-cartoon.png")
+background-position: center
+background-size: contain
+class:split-10
+.row[.content[
+## &amp;emsp; What does physcraper do? &amp;nbsp; **A cartoon example**
+]]
+---
+background-image: url("assets/22-integrate.png")
+background-position: center
+background-size: contain
+class:split-10
+.row[.content[
+# &amp;emsp; Integrated data can be easily reanalyzed...
+]]
+---
+background-image: url("assets/23-update-red.png")
+background-position: center
+background-size: contain
+class:split-10
+.row[.content[
+# &amp;emsp; to get updated knowledge!
+]]
+
+---
+background-image: url("bg/1-gradient1.png")
+background-position: center
+background-size: contain
+class: split-70
+
+.column.split-10[
+.column[
+]
+.column.split-70[.content[
+.column[.content[
+
+## What does physcraper do? &amp;nbsp; **A technical description**
+
+&lt;br/&gt;
+
+** 🐍 It is a python toolkit that runs in a .red[virtual environment] or .red[conda]**
+
+```
+virtualenv -p python3 venv-physcraper
+source venv-physcraper/bin/activate
+```
+
+&lt;br/&gt;
+
+** 🖥️ It can be run as a .blue[command line] application**
+
+```
+physcraper_run.py --help
+usage: physcraper_run.py [-h] [-s STUDY_ID] [-t TREE_ID] [-tl TREE_LINK]
+                         [-a ALIGNMENT] [-as ALN_SCHEMA] [-db BLAST_DB]
+                         [-o OUTPUT] [-bs BOOTSTRAP_REPS] [-tx TAXONOMY]
+                         [-c CONFIGFILE] [-e EMAIL] [-re RELOAD_FILES] [-r]
+                         [-tag TAG] [-tb] [-no_est] [-ev EVAL]
+                         [-hl HITLIST_LEN] [-tp TRIM_PERC]
+                         [-rl RELATIVE_LENGTH] [-spn SPECIES_NUMBER]
+                         [-nt NUM_THREADS] [-de DELAY] [-st SEARCH_TAXON]
+```
+
+&lt;br/&gt;
+
+** 🗒️ Or using a .orange[jupyter notebook]!**
+** Find instructions to create your own opentree kernel at
+http://opentreeoflife.github.io/jupyter-venv**
+
+]]
+]]
+]
+.column[.content.center[
+&lt;img align="center" width="240" src="assets/0-physcraper.svg"&gt;
+]]
+---
+background-image: url("bg/1-gradient1.png")
+background-position: center
+background-size: contain
+class: split-70
+
+.column.split-10[
+.column[
+]
+.column.split-70[.content[
+.column[.content[
+
+# How does it do it? &amp;nbsp;
+
+&lt;br/&gt;
+
+## ** 📚 Python .green[dictionaries]! **
+
+&lt;br/&gt;
+
+## ** 🗂️ that are stored as [csv files](https://github.com/McTavishLab/physcraperex/raw/master/data/pg_55/inputs_pg_55tree5864_ndhf/otu_info_pg_55tree5864_ndhf.csv)**
+## **containing the vocabulary that connects all types of data**
+
+&lt;br/&gt;
+
+## ** ⚙️ allowing .amber[interoperability] of multiple platforms!**
+
+]]
+]]
+]
+.column[.content.center[
+&lt;img align="center" width="240" src="assets/0-physcraper.svg"&gt;
+]]
+
+---
+background-image: url("bg/1-gradient1.png")
+background-position: center
+background-size: contain
+class: split-70
+
+.column.split-10[
+.column[
+]
+.column.split-two[
+.row[.content.vmiddle[
+
+##  Update!
+&lt;br/&gt;
+## Find all information and illustrated examples on Physcraper's documentation at [Read the docs](https://physcraper.readthedocs.io/en/latest/index.html)
+
+
+]]
+.row[.content.vmiddle[
+## Our code is open source on Github, obvs!
+
+## Check it out over here
+
+## https://github.com/McTavishLab/physcraper
+]]
+]
+]
+.column[.content.center[
+&lt;img align="center" width="240" src="assets/0-physcraper.svg"&gt;
+]]
+
+---
+class: split-70, right, middle, blue-gray
+
+.column[.content[
+.font3[**Questions?**]
+
+&lt;br/&gt;
+
+.font2[**Try Physcraper!** ]
+.center[
+&lt;p style="font-size:1.55em"&gt; <span>&lt;i class="fas  fa-envelope faa-pulse animated "&gt;&lt;/i&gt;</span> Contact us at &lt;a href="https://www.lunasare.com/about_and_contact/#5-contact-header"&gt; lsanchezreyes2@ucmerced.edu &lt;/a&gt;  or &lt;br/&gt;
+at &lt;a href="https://mctavishlab.github.io/contact/"&gt; ejmctavish@ucmerced.edu &lt;/a&gt; &lt;br/&gt;
+.red[&amp;#183; &amp;#183; &amp;#183;] &lt;br/&gt;
+<span>&lt;i class="fab  fa-github faa-pulse animated "&gt;&lt;/i&gt;</span> Post an issue on our Github repo  at &lt;a href="github.com/McTavishLab/physcraper/issues"&gt;  https://github.com/McTavishLab/physcraper/issues &lt;/a&gt; &lt;/p&gt;
+]
+]]
+
+.column[.content.center[
+&lt;img align="center" width="240" src="assets/0-physcraper.svg"&gt;
+]]
+---
+class: blue-gray, center
+
+# **Acknowledgements**
+&lt;br/&gt;
+### *Sustaining the Open Tree of Life* &amp;nbsp; National Science Foundation (NSF) Grant ABI No. 1759838
+
+.red[&amp;#183; &amp;#183; &amp;#183;]
+
+### Multi-Environment Research Computer for Exploration and Discovery ([MERCED](https://research.ucmerced.edu/node/721)) cluster from the University of California, Merced, supported by the NSF Grant No. ACI-1429783.
+
+.red[&amp;#183; &amp;#183; &amp;#183;]
+
+### Image attributions
+
+&lt;p style="font-size:0.9em"&gt;
+Big data Image by &lt;a href="https://pixabay.com/es/users/geralt-9301/?utm_source=link-attribution&amp;amp;utm_medium=referral&amp;amp;utm_campaign=image&amp;amp;utm_content=2723105"&gt;Gerd Altmann&lt;/a&gt; on &lt;a href="https://pixabay.com/es/?utm_source=link-attribution&amp;amp;utm_medium=referral&amp;amp;utm_campaign=image&amp;amp;utm_content=2723105"&gt;Pixabay&lt;/a&gt; .red[&amp;#183;]
+Cloud Image by &lt;a href="https://imgbin.com/user/aymenmalekrejeb"&gt;aymenmalekrejeb&lt;/a&gt; on &lt;a href="https://imgbin.com/download-png/bqeUeAnj"&gt;imgbin&lt;/a&gt; .red[&amp;#183;]
+Data file Image by &lt;a href="https://imgbin.com/user/kacieHowell9"&gt;Kacie Howell&lt;/a&gt; on &lt;a href="https://imgbin.com/download-png/jEiEHH0m"&gt;imgbin&lt;/a&gt; .red[&amp;#183;]
+Image by &lt;a href="https://pixabay.com/photos/?utm_source=link-attribution&amp;amp;utm_medium=referral&amp;amp;utm_campaign=image&amp;amp;utm_content=1023340"&gt;Free-Photos&lt;/a&gt; from &lt;a href="https://pixabay.com/?utm_source=link-attribution&amp;amp;utm_medium=referral&amp;amp;utm_campaign=image&amp;amp;utm_content=1023340"&gt;Pixabay&lt;/a&gt; .red[&amp;#183;]
+Image by &lt;a href="https://pixabay.com/users/12019-12019/?utm_source=link-attribution&amp;amp;utm_medium=referral&amp;amp;utm_campaign=image&amp;amp;utm_content=2361247"&gt;David Mark&lt;/a&gt; from &lt;a href="https://pixabay.com/?utm_source=link-attribution&amp;amp;utm_medium=referral&amp;amp;utm_campaign=image&amp;amp;utm_content=2361247"&gt;Pixabay&lt;/a&gt; .red[&amp;#183;]
+Image by &lt;a href="https://pixabay.com/users/272447-272447/?utm_source=link-attribution&amp;amp;utm_medium=referral&amp;amp;utm_campaign=image&amp;amp;utm_content=3848290"&gt;272447&lt;/a&gt; from &lt;a href="https://pixabay.com/?utm_source=link-attribution&amp;amp;utm_medium=referral&amp;amp;utm_campaign=image&amp;amp;utm_content=3848290"&gt;Pixabay&lt;/a&gt; .red[&amp;#183;]
+Image by &lt;a href="https://pixabay.com/users/WikiImages-1897/?utm_source=link-attribution&amp;amp;utm_medium=referral&amp;amp;utm_campaign=image&amp;amp;utm_content=62993"&gt;WikiImages&lt;/a&gt; from &lt;a href="https://pixabay.com/?utm_source=link-attribution&amp;amp;utm_medium=referral&amp;amp;utm_campaign=image&amp;amp;utm_content=62993"&gt;Pixabay&lt;/a&gt; .red[&amp;#183;]
+Image by &lt;a href="https://pixabay.com/users/MarcelloRabozzi-2003568/?utm_source=link-attribution&amp;amp;utm_medium=referral&amp;amp;utm_campaign=image&amp;amp;utm_content=1446738"&gt;Marcello Rabozzi&lt;/a&gt; from &lt;a href="https://pixabay.com/?utm_source=link-attribution&amp;amp;utm_medium=referral&amp;amp;utm_campaign=image&amp;amp;utm_content=1446738"&gt;Pixabay&lt;/a&gt; .red[&amp;#183;]
+Image by &lt;a href="https://pixabay.com/photos/?utm_source=link-attribution&amp;amp;utm_medium=referral&amp;amp;utm_campaign=image&amp;amp;utm_content=1030885"&gt;Free-Photos&lt;/a&gt; from &lt;a href="https://pixabay.com/?utm_source=link-attribution&amp;amp;utm_medium=referral&amp;amp;utm_campaign=image&amp;amp;utm_content=1030885"&gt;Pixabay&lt;/a&gt; .red[&amp;#183;]
+Image by &lt;a href="https://pixabay.com/users/steinchen-21981/?utm_source=link-attribution&amp;amp;utm_medium=referral&amp;amp;utm_campaign=image&amp;amp;utm_content=243890"&gt;Gaby Stein&lt;/a&gt; from &lt;a href="https://pixabay.com/?utm_source=link-attribution&amp;amp;utm_medium=referral&amp;amp;utm_campaign=image&amp;amp;utm_content=243890"&gt;Pixabay&lt;/a&gt; .red[&amp;#183;]
+Perfect Magnolia Image by &lt;a href="https://pixabay.com/users/kalasoft-11695/?utm_source=link-attribution&amp;amp;utm_medium=referral&amp;amp;utm_campaign=image&amp;amp;utm_content=1455709"&gt;Ed Hathaway&lt;/a&gt; from &lt;a href="https://pixabay.com/?utm_source=link-attribution&amp;amp;utm_medium=referral&amp;amp;utm_campaign=image&amp;amp;utm_content=1455709"&gt;Pixabay&lt;/a&gt; .red[&amp;#183;]
+Cerura vinula moth face Image by &lt;a href="https://pixabay.com/users/DreamyArt-512893/?utm_source=link-attribution&amp;amp;utm_medium=referral&amp;amp;utm_campaign=image&amp;amp;utm_content=814568"&gt;Selling&lt;/a&gt; from &lt;a href="https://pixabay.com/?utm_source=link-attribution&amp;amp;utm_medium=referral&amp;amp;utm_campaign=image&amp;amp;utm_content=814568"&gt;Pixabay&lt;/a&gt; .red[&amp;#183;]
+Barn owl Image by &lt;a href="https://pixabay.com/users/dannymoore1973-1813225/?utm_source=link-attribution&amp;amp;utm_medium=referral&amp;amp;utm_campaign=image&amp;amp;utm_content=1107397"&gt;danny moore&lt;/a&gt; from &lt;a href="https://pixabay.com/?utm_source=link-attribution&amp;amp;utm_medium=referral&amp;amp;utm_campaign=image&amp;amp;utm_content=1107397"&gt;Pixabay&lt;/a&gt; .red[&amp;#183;]
+Dwarf flying squirrel image from [https://critter.science](https://critter.science/the-adorable-japanese-dwarf-flying-squirrel/) .red[&amp;#183;]
+Treefrog Image by &lt;a href="https://pixabay.com/users/41330-41330/?utm_source=link-attribution&amp;amp;utm_medium=referral&amp;amp;utm_campaign=image&amp;amp;utm_content=765123"&gt;41330&lt;/a&gt; from &lt;a href="https://pixabay.com/?utm_source=link-attribution&amp;amp;utm_medium=referral&amp;amp;utm_campaign=image&amp;amp;utm_content=765123"&gt;Pixabay&lt;/a&gt; .red[&amp;#183;]
+Allosaurus Image by &lt;a href="https://pixabay.com/users/WikiImages-1897/?utm_source=link-attribution&amp;amp;utm_medium=referral&amp;amp;utm_campaign=image&amp;amp;utm_content=60588"&gt;WikiImages&lt;/a&gt; from &lt;a href="https://pixabay.com/?utm_source=link-attribution&amp;amp;utm_medium=referral&amp;amp;utm_campaign=image&amp;amp;utm_content=60588"&gt;Pixabay&lt;/a&gt; .red[&amp;#183;]
+Mammoth wooly Image by &lt;a href="https://pixabay.com/users/tony241969-5126938/?utm_source=link-attribution&amp;amp;utm_medium=referral&amp;amp;utm_campaign=image&amp;amp;utm_content=2722882"&gt;tony241969&lt;/a&gt; from &lt;a href="https://pixabay.com/?utm_source=link-attribution&amp;amp;utm_medium=referral&amp;amp;utm_campaign=image&amp;amp;utm_content=2722882"&gt;Pixabay&lt;/a&gt; .red[&amp;#183;]
+Anomalocaris Image by &lt;a href="https://pixabay.com/users/Goodfreephotos_com-10388/?utm_source=link-attribution&amp;amp;utm_medium=referral&amp;amp;utm_campaign=image&amp;amp;utm_content=347259"&gt;Yinan Chen&lt;/a&gt; from &lt;a href="https://pixabay.com/?utm_source=link-attribution&amp;amp;utm_medium=referral&amp;amp;utm_campaign=image&amp;amp;utm_content=347259"&gt;Pixabay&lt;/a&gt; .red[&amp;#183;]
+Dodo Skull By FunkMonk (Michael B. H.) - Own work, CC BY-SA 3.0, &lt;a href="https://commons.wikimedia.org/w/index.php?curid=19794759"&gt;commons.wikimedia.org&lt;/a&gt; .red[&amp;#183;]
+Rhynia stem By Plantsurfer - Own work, CC BY-SA 2.0 uk, &lt;a href="https://commons.wikimedia.org/w/index.php?curid=3823922"&gt;commons.wikimedia.org&lt;/a&gt;
+&lt;/p&gt;
+
+---
+class: split-20, blue-gray
+
+.row[.content.center.vmiddle[
+# **References**
+]]
+
+.row.split-two[
+
+.column.split-10[
+.column[
+]
+.column[.content.font_small[
+
+
+&lt;p&gt;&lt;cite&gt;Mayr, E.
+(1997).
+&lt;em&gt;This is biology: The science of the living world&lt;/em&gt;.
+Universities Press.&lt;/cite&gt;&lt;/p&gt;
+&lt;p&gt;&lt;cite&gt;Mayr, R. M.
+(2010).
+&amp;ldquo;Tropical Arthropod Species, More or Less?&amp;rdquo;.
+In: &lt;em&gt;Science&lt;/em&gt; 329.July, pp. 41&amp;ndash;42.
+URL: &lt;a href="http://science.sciencemag.org/content/329/5987/41/tab-pdf"&gt;http://science.sciencemag.org/content/329/5987/41/tab-pdf&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
+&lt;p&gt;&lt;cite&gt;Mora, C., D. P. Tittensor, S. Adl, et al.
+(2011).
+&amp;ldquo;How many species are there on earth and in the ocean?&amp;rdquo;.
+In: &lt;em&gt;PLoS Biology&lt;/em&gt; 9.8, pp. 1&amp;ndash;8.
+ISSN: 15449173.
+DOI: &lt;a href="https://doi.org/10.1371/journal.pbio.1001127"&gt;10.1371/journal.pbio.1001127&lt;/a&gt;.
+eprint: NIHMS150003.&lt;/cite&gt;&lt;/p&gt;
+&lt;p&gt;&lt;cite&gt;Hinchliff, C. E., S. A. Smith, J. F. Allman, et al.
+(2015).
+&amp;ldquo;Synthesis of phylogeny and taxonomy into a comprehensive tree of life&amp;rdquo;.
+In: &lt;em&gt;Proceedings of the National Academy of Sciences&lt;/em&gt; 112.41, pp. 12764&amp;ndash;12769.
+DOI: &lt;a href="https://doi.org/10.1073/pnas.1423041112"&gt;10.1073/pnas.1423041112&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
+&lt;p&gt;&lt;cite&gt;Drew, B. T., R. Gazis, P. Cabezas, et al.
+(2013).
+&amp;ldquo;Lost branches on the tree of life&amp;rdquo;.
+In: &lt;em&gt;PLoS biology&lt;/em&gt; 11.9.
+DOI: &lt;a href="https://doi.org/10.1371/journal.pbio.1001636"&gt;10.1371/journal.pbio.1001636&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
+&lt;p&gt;&lt;cite&gt;Magee, A. F., M. R. May, and B. R. Moore
+(2014).
+&amp;ldquo;The dawn of open access to phylogenetic data&amp;rdquo;.
+In: &lt;em&gt;PLoS One&lt;/em&gt; 9.10.
+DOI: &lt;a href="https://doi.org/10.1371/journal.pone.0110268"&gt;10.1371/journal.pone.0110268&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
+&lt;p&gt;&lt;cite&gt;Stenz, N. W., B. Larget, D. A. Baum, et al.
+(2015).
+&amp;ldquo;Exploring tree-like and non-tree-like patterns using genome sequences: an example using the inbreeding plant species Arabidopsis thaliana (L.) Heynh&amp;rdquo;.
+In: &lt;em&gt;Systematic biology&lt;/em&gt; 64.5, pp. 809&amp;ndash;823.
+DOI: &lt;a href="https://doi.org/10.1093/sysbio/syv039"&gt;10.1093/sysbio/syv039&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
+
+]]
+]
+
+.column.split-10[
+.column[
+]
+.column.content.font_small[
+&lt;p&gt;&lt;cite&gt;Sanmartín, I., L. Wanntorp, and R. C. Winkworth
+(2007).
+&amp;ldquo;West Wind Drift revisited: testing for directional dispersal in the Southern Hemisphere using event-based tree fitting&amp;rdquo;.
+In: &lt;em&gt;Journal of Biogeography&lt;/em&gt; 34.3, pp. 398&amp;ndash;416.
+DOI: &lt;a href="https://doi.org/10.1111/j.1365-2699.2006.01655.x"&gt;10.1111/j.1365-2699.2006.01655.x&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
+&lt;p&gt;&lt;cite&gt;Redelings, B. D. and M. T. Holder
+(2017).
+&amp;ldquo;A supertree pipeline for summarizing phylogenetic and taxonomic information for millions of species&amp;rdquo;.
+In: &lt;em&gt;PeerJ&lt;/em&gt; 5, p. e3058.
+DOI: &lt;a href="https://doi.org/10.7717/peerj.3058"&gt;10.7717/peerj.3058&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
+&lt;p&gt;&lt;cite&gt;Magallón, S., L. L. Sánchez-Reyes, and S. L. Gómez-Acevedo
+(2019).
+&amp;ldquo;Thirty clues to the exceptional diversification of flowering plants&amp;rdquo;.
+In: &lt;em&gt;Annals of botany&lt;/em&gt; 123.3, pp. 491&amp;ndash;503.
+DOI: &lt;a href="https://doi.org/10.1093/aob/mcy182"&gt;10.1093/aob/mcy182&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
+&lt;p&gt;&lt;cite&gt;Sakamoto, M., M. J. Benton, and C. Venditti
+(2016).
+&amp;ldquo;Dinosaurs in decline tens of millions of years before their final extinction&amp;rdquo;.
+In: &lt;em&gt;Proceedings of the National Academy of Sciences&lt;/em&gt; 113.18, pp. 5036&amp;ndash;5040.&lt;/cite&gt;&lt;/p&gt;
+&lt;p&gt;&lt;cite&gt;Gaunt, M., S. Turner, L. Rigottier-Gois, et al.
+(2001).
+&amp;ldquo;Phylogenies of atpD and recA support the small subunit rRNA-based classification of rhizobia.&amp;rdquo;
+In: &lt;em&gt;International journal of systematic and evolutionary microbiology&lt;/em&gt; 51.6, pp. 2037&amp;ndash;2048.
+DOI: &lt;a href="https://doi.org/10.1099/00207713-51-6-2037"&gt;10.1099/00207713-51-6-2037&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
+&lt;p&gt;&lt;cite&gt;De-Nova, J. A., L. L. Sánchez-Reyes, L. E. Eguiarte, et al.
+(2018).
+&amp;ldquo;Recent radiation and dispersal of an ancient lineage: The case of Fouquieria (Fouquiericeae, Ericales) in North American deserts&amp;rdquo;.
+In: &lt;em&gt;Molecular phylogenetics and evolution&lt;/em&gt; 126, pp. 92&amp;ndash;104.
+DOI: &lt;a href="https://doi.org/10.1016/j.ympev.2018.03.026"&gt;10.1016/j.ympev.2018.03.026&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
+]
+]
+
+]
+???
+
+code from https://github.com/yihui/xaringan/issues/26
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"ratio": "16:9",
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
