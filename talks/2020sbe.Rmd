@@ -339,24 +339,24 @@ class: split-70 center
 
 [PUmPER](https://github.com/fizquierdo/perpetually-updated-trees) - Izquierdo et al. 2014
 
-DarwinTree - Meng et al. 2014
+[DarwinTree](http://www.darwintree.cn/index.shtml) - Meng et al. 2014
 
-NCBIminer - Xu et al. 2015
+[NCBIminer](https://code.google.com/archive/p/ncbiminer/) - Xu et al. 2015
 
-SUMAC - Freyman et al. 2015
+[SUMAC](https://github.com/wf8/sumac) - Freyman et al. 2015
 
-STBase - McMahon et al. 2015
+[STBase](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0117987) - McMahon et al. 2015
 ]]
 .column[.content.vmiddle[
-BIR - Kumar et al. 2015
+[BIR](https://journals.sagepub.com/doi/10.4137/EBO.S10189?icid=int.sj-full-text.similar-articles.2) - Kumar et al. 2015
 
-SUPERSMART - Antonelli et al. 2017
+[SUPERSMART](https://academic.oup.com/sysbio/article/66/2/152/2418028) - Antonelli et al. 2017
 
-SOPHI - Chesters et al. 2017
+[SOPHI](https://onlinelibrary.wiley.com/doi/abs/10.1111/1755-0998.12256) - Chesters et al. 2017
 
-PhyloSkeleton - Guy et al. 2017
+[PhyloSkeleton](https://bitbucket.org/lionelguy/phyloskeleton/src/master/) - Guy et al. 2017
 
-OneTwoTree - Drori et al. 2018
+[OneTwoTree](http://onetwotree.tau.ac.il/) - Drori et al. 2018
 
 [PhylotaR](https://docs.ropensci.org/phylotaR/) - Bennett et al. 2018
 
