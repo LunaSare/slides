@@ -395,9 +395,9 @@ class: split-20 center
 .column[.content.vmiddle[
 # The good `r emo::ji("raised_hands")`
 <br/>
-### They have contributed to fill holes on our phylogenetic knowledge on the tree of life and also potentially to "fix" knowledge on some branches.
+### Fill and "fix" phylogenetic knowledge on the tree of life.
 <br/>
-### All these efforts contributed to start making the field much more reproducible.
+### A stride towards reproducibility in the field.
 ]]
 ]
 .column[.content.vmiddle[
@@ -407,6 +407,9 @@ class: split-20 center
 <br/>
 ### Manual curation always makes
 ### for better phylogenies!
+<br/>
+### It is hard to maintain software...
+
 ]]
 ]
 ---
