@@ -49,23 +49,26 @@ options(knitr.duplicate.label = 'allow')
 
 <br/>
 
-Slides last updated on  `r format(Sys.Date(), format = "%B %d, %Y")` .red[&#8226;] Find the code for them in [`r anicon::faa("github", animate="passing")` here](https://lunasare.github.io/slides/talks/2020sbe.html#1)
+Slides last updated on  `r format(Sys.Date(), format = "%B %d, %Y")` .red[&#8226;] Find the code for them in [`r anicon::faa("github", animate="passing")` here](https://github.com/LunaSare/slides/blob/master/talks/2020sbe.Rmd)
 ---
-background-image: url("bg/1-gradient1.png")
-background-position: center
-background-size: contain
-
 class: center, middle, black, split-40
 
-.column[.content.vmiddle[
-<img align="center" width="300" src="assets/me.png">
+.column[.content.right[
+<br>
+# .red[<sup>*</sup>] About me &emsp;
+<br><br>
+<img align="right" width="300" src="assets/me.png">
+<br>
 ]]
 
 .column[.content[
 <br>
-# .red[<sup>*</sup>] About me
-<br><br>
-## [www.lunasare.com/](https://www.lunasare.com/)
+## Luna L. Sánchez Reyes
+<br>
+### Postdoctoral Researcher
+### University of California, Merced (UCM)
+<br>
+## [www.lunasare.com](https://www.lunasare.com/)
 <br><br>
 ## Contact .pink[@LunaSare]
 ## on [Github `r anicon::faa("github", animate="float")`](https://github.com/LunaSare) and [Twitter `r anicon::faa("twitter", animate="float")`](https://twitter.com/LunaSare)
@@ -73,15 +76,21 @@ class: center, middle, black, split-40
 ]]
 
 ---
-background-image: url("bg/1-gradient1.png")
-background-position: center
-background-size: contain
+class: left, black
+
+<img align="left" width="250" src="assets/0-physcraper.svg">
+
+.content[.font4.center[<br><br>What is it?]]
+---
+background-image: url("assets/schematic-simple.png")
+background-position: 70% 65%
+background-size: 750px
 
 class: left, black
 
 <img align="left" width="250" src="assets/0-physcraper.svg">
 
-.content[.font4.center[What is Physcraper?]]
+.content[.font4.center[What is it?]]
 ---
 background-image: url("assets/2-data-2723105_1920.jpg")
 background-position: center
@@ -102,16 +111,18 @@ width="20%" alt="Cats typing"/>
 
 
 ---
-background-image: url("bg/1-gradient.png")
-background-position: center
-background-size: contain
-
 class: center
 
 <br/><br/><br/><br/>
 .font3[How can we stay up to date with the .blue[massive] amount of new .orange[data],
 while taking advantage of the already existing .orange[knowledge]?]
 
+
+---
+
+background-image: url("bg/2-past-future1.png")
+background-position: center
+background-size: contain
 
 ---
 background-image: url("assets/4-diversity1.png")
@@ -161,6 +172,8 @@ class: split-20, center
 
 # 3 million seconds are 34 days and 16 hrs
 # 100 million seconds are 3 years and 62 days
+# 3 billion seconds are 95 years
+# 10 billion seconds are 4 thousand years
 > x <- 999*3000000
 > min <- x/60
 > min
@@ -260,7 +273,7 @@ width="46%" alt="Drew Figure"/>
 <br/><br/><br/>
 # Total number of
 # published
-# analyses -*phylogenies*
+# *phylogenies*
 # is around the .amber[10 K's]
 ]]
 .column[.content.left[
@@ -541,67 +554,42 @@ TreeBASE and Open Tree of Life
 Conclusion: this effort is making the practice of phylogenetics more open.
 
 https://www.linuxjournal.com/content/party-its-1994
----
-exclude: true
 
-background-image: url("bg/treebase1.png")
+---
+background-image: url("assets/6-gradient1.png")
 background-position: center
 background-size: contain
-
----
-exclude: true
-
-background-image: url("bg/treebase-search1.png")
-background-position: center
-background-size: contain
-
----
-exclude: true
-
-background-image: url("bg/treebase-search2.png")
-background-position: center
-background-size: contain
-
----
 class: split-two
+
+<img src="assets/opentree-treebase.png"
+style="position:fixed; right:2%; top:5%; border:none;"
+width="46%" alt="OpenTree taxonomy online"/>
 
 .column.split-30[
 .row[.content[
-# The .indigo[TreeBASE] repository
+<img src="https://opentreeoflife.github.io/assets/img/opentreelogo.svg"
+style="position:fixed; left:10%; top:3%; border:none;"
+width="30%" alt="opentree logo"/>
 ]]
-.row[.content[
-````
-    wget "http://purl.org/phylo/treebase/phylows/
-          tree/TB2:Tr109483?format=nexus"
-````
+.row[.content.left[
+### &emsp; &emsp; The .green[OpenTree] project - Released .green[2012]
+<br/><br/>
+### &emsp; &emsp; **The OpenTree Metadata** [go!](https://tree.opentreeoflife.org/curator/study/view/pg_55)
+<br/>
+### &emsp; &emsp; Has repository links from .blue[TreeBASE] *alignments*
+### &emsp; &emsp; But it is not always easy to link automatically
+### &emsp; &emsp; original tree and source alignment
+
 ]]
 ]
-.column[.content[
-<img align="center" width="100%" src="bg/20-treebase-wget-infinite.gif">
+.column[.content.left[
+<br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/>
+.gray[]
 ]]
 ---
-class: split-two
 
-.column.split-30[
-.row[.content[
-# The .green[Open Tree of Life] API
-]]
-.row[.content[
-
-````
-    curl https://api.opentreeoflife.org/v3/study/
-         pg_1144/tree/tree2324
-````
-]]
-]
-.column[.content[
-<img align="center" width="100%" src="bg/21-otol-study-tree-fast.gif">
-]]
-
-???
-
-Conclusion: we need python!
----
 background-image: url("bg/1-gradient.png")
 background-position: center
 background-size: contain
@@ -609,31 +597,28 @@ background-size: contain
 class: center
 
 <br/><br/><br/>
-.font2[If we want to update our knowledge...]
+.font2[If we want to efficiently update <br> our knowledge in a reproducible way ...]
 <br/><br/><br/><br/>
-.font3[We need to .blue[link] the different types of .orange[information] in public .gray[databases]]
+.font3[We need to .blue[automatically link] the different types of .orange[information] in public .gray[databases]]
 
 ---
 background-image: url("bg/1-gradient1.png")
 background-position: center
 background-size: contain
 
-class: split-60
+class: left, black
 
-.column[.content.center[
-<br/><br/><br/><br/><br/><br/><br/>
-.font4[&emsp; &emsp; How does Physcraper work?]
-]]
-.column[.content.center[
-<img align="center" width="270" src="assets/0-physcraper-original.svg">
-]]
+<img align="left" width="250" src="assets/0-physcraper.svg">
+
+.content[.font4.center[<br><br>What does it do?]]
+
 ---
 background-image: url("assets/21-cartoon.png")
 background-position: center
 background-size: contain
 class:split-10
 .row[.content[
-## &emsp; What does physcraper do? &nbsp; **A cartoon example**
+## &emsp; What does Physcraper do? &nbsp; **A cartoon example**
 ]]
 ---
 background-image: url("assets/22-integrate.png")
@@ -644,13 +629,33 @@ class:split-10
 # &emsp; Integrated data can be easily reanalyzed...
 ]]
 ---
-background-image: url("assets/23-update-red.png")
+background-image: url("assets/23-update-red1.png")
+background-position: center
+background-size: contain
+---
+background-image: url("assets/23-update-red2.png")
+background-position: center
+background-size: contain
+
+---
+background-image: url("assets/23-update-red2.png")
 background-position: center
 background-size: contain
 class:split-10
 .row[.content[
 # &emsp; to get updated knowledge!
 ]]
+
+---
+background-image: url("bg/1-gradient1.png")
+background-position: center
+background-size: contain
+
+class: black
+
+<img align="right" width="250" src="assets/0-physcraper.svg">
+
+.content[.font4.center[<br><br>How does it work?]]
 
 ---
 background-image: url("bg/1-gradient1.png")
@@ -664,11 +669,11 @@ class: split-70
 .column.split-70[.content[
 .column[.content[
 
-## What does physcraper do? &nbsp; **A technical description**
+## How does Physcraper work? &nbsp; **A technical description**
 
 <br/>
 
-** 🐍 It is a python toolkit that runs in a .red[virtual environment] or .red[conda]**
+** 🐍 It is a Python toolkit that runs in a .red[virtual environment] or .red[conda]**
 
 ```
 virtualenv -p python3 venv-physcraper
@@ -715,7 +720,7 @@ class: split-70
 .column.split-70[.content[
 .column[.content[
 
-# How does it do it? &nbsp;
+## How does Physcraper work? &nbsp;
 
 <br/>
 
@@ -728,7 +733,7 @@ class: split-70
 
 <br/>
 
-## ** ⚙️ allowing .amber[interoperability] of multiple platforms!**
+## ** ⚙️ allowing .amber[interoperability] of multiple databases!**
 
 ]]
 ]]
@@ -749,14 +754,14 @@ class: split-70
 .column.split-two[
 .row[.content.vmiddle[
 
-##  Update!
+##  **Want to try Physcraper?**
 <br/>
 ## Find all information and illustrated examples on Physcraper's documentation at [Read the docs](https://physcraper.readthedocs.io/en/latest/index.html)
 
 
 ]]
 .row[.content.vmiddle[
-## Our code is open source on Github, obvs!
+## Our code is open source on Github!
 
 ## Check it out over here
 
@@ -769,19 +774,19 @@ class: split-70
 ]]
 
 ---
-class: split-70, right, middle, blue-gray
+class: split-70, center, middle, blue-gray
 
 .column[.content[
 .font3[**Questions?**]
 
 <br/>
 
-.font2[**Try Physcraper!** ]
+.font2[**Tried Physcraper and have feedback?** ]
 .center[
 <p style="font-size:1.55em"> `r anicon::faa("envelope", animate="pulse")` Contact us at <a href="https://www.lunasare.com/about_and_contact/#5-contact-header"> lsanchezreyes2@ucmerced.edu </a>  or <br/>
 at <a href="https://mctavishlab.github.io/contact/"> ejmctavish@ucmerced.edu </a> <br/>
 .red[&#183; &#183; &#183;] <br/>
-`r anicon::faa("github", animate="pulse")` Post an issue on our Github repo  at <a href="github.com/McTavishLab/physcraper/issues">  https://github.com/McTavishLab/physcraper/issues </a> </p>
+`r anicon::faa("github", animate="pulse")` Post an issue on our Github repository at <a href="github.com/McTavishLab/physcraper/issues">  https://github.com/McTavishLab/physcraper/issues </a> </p>
 ]
 ]]
 
