@@ -35,7 +35,7 @@ options(knitr.duplicate.label = 'allow')
 
 .font3[**Physcraper**]
 
-.font2[Continual .red[updating] of evolutionary estimates in the Open Tree of Life]
+.font2[Continual .red[updating] of evolutionary <br> estimates in the Open Tree of Life]
 
 <br/>
 ### .red[<sup>*</sup>] `r params$authorA` .red[&#8226;]  `r params$authorB` .red[&#8226;] `r params$authorC`
@@ -55,16 +55,22 @@ background-image: url("bg/1-gradient1.png")
 background-position: center
 background-size: contain
 
-class: left, black
+class: center, middle, black, split-40
 
-<img align="left" width="350" src="assets/me.png">
+.column[.content.vmiddle[
+<img align="center" width="300" src="assets/me.png">
+]]
 
+.column[.content[
+<br>
+# .red[<sup>*</sup>] About me
+<br><br>
+## [www.lunasare.com/](https://www.lunasare.com/)
+<br><br>
+## Contact .pink[@LunaSare]
+## on [Github `r anicon::faa("github", animate="float")`](https://github.com/LunaSare) and [Twitter `r anicon::faa("twitter", animate="float")`](https://twitter.com/LunaSare)
 
-# .red[<sup>*</sup>] About the speaker
-
-## https://www.lunasare.com/
-
-## Contact: .pink[@LunaSare] on [Github `r anicon::faa("github", animate="float")`](https://github.com/LunaSare) and [Twitter `r anicon::faa("twitter", animate="float")`](https://twitter.com/LunaSare)
+]]
 
 ---
 background-image: url("bg/1-gradient1.png")
@@ -75,7 +81,7 @@ class: left, black
 
 <img align="left" width="250" src="assets/0-physcraper.svg">
 
-# What is it?
+.content[.font4.center[What is Physcraper?]]
 ---
 background-image: url("assets/2-data-2723105_1920.jpg")
 background-position: center
@@ -182,18 +188,20 @@ class: split-60
 style="position:fixed; right:5%; top:0%; border:none;"
 width="46%" alt="Hinchliff Figure 1C"/>
 
-.column.split-two[
+.column.split-30[
 .row[.content[
 <img src="https://opentreeoflife.github.io/assets/img/opentreelogo.svg"
-style="position:fixed; left:5%; top:6%; border:none;"
+style="position:fixed; left:10%; top:3%; border:none;"
 width="30%" alt="opentree logo"/>
 ]]
 .row[.content.left[
-### &emsp; &emsp; The  .green[Open Tree of Life] project - Released .green[2012]
-### &emsp; &emsp; At [https://tree.opentreeoflife.org](https://tree.opentreeoflife.org/opentree/argus/opentree12.3@ott93302)
+### &emsp; &emsp; The .green[OpenTree] project - Released .green[2012]
+<br/><br/>
+
+### &emsp; &emsp;**The OpenTree synthetic tree** [go!](https://tree.opentreeoflife.org/opentree/argus/opentree12.3@ott93302)
 <br/>
-### &emsp; &emsp; Has information from .blue[`r rotl::tol_about()$num_source_trees` analyses] - *phylogenies*
-### &emsp; &emsp; Covers almost .amber[90 K species]
+### &emsp; &emsp; Has information from .blue[`r rotl::tol_about()$num_source_trees` phylogenies]
+### &emsp; &emsp; About .amber[90 K tips] have phylogenetic information
 
 ]]
 ]
@@ -203,7 +211,38 @@ width="30%" alt="opentree logo"/>
 <br/><br/><br/><br/><br/><br/>
 .gray[Figure 1C from Hinchliff et al. 2015)]
 ]]
+---
+background-image: url("assets/6-gradient1.png")
+background-position: center
+background-size: contain
+class: split-two
 
+<img src="assets/opentree-taxonomy.png"
+style="position:fixed; right:2%; top:5%; border:none;"
+width="46%" alt="OpenTree taxonomy online"/>
+
+.column.split-30[
+.row[.content[
+<img src="https://opentreeoflife.github.io/assets/img/opentreelogo.svg"
+style="position:fixed; left:10%; top:3%; border:none;"
+width="30%" alt="opentree logo"/>
+]]
+.row[.content.left[
+### &emsp; &emsp; The .green[OpenTree] project - Released .green[2012]
+<br/><br/>
+### &emsp; &emsp; **The OpenTree Taxonomy** [go!](https://tree.opentreeoflife.org/taxonomy/browse?id=93302)
+<br/>
+### &emsp; &emsp; Has information from .blue[8 different] *taxonomies*
+### &emsp; &emsp; Has taxonomic data from .amber[2.4 M species]
+
+]]
+]
+.column[.content.left[
+<br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/>
+.gray[]
+]]
 ---
 background-image: url("assets/6-gradient1.png")
 background-position: center
