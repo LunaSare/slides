@@ -45,6 +45,10 @@ class: left, middle
 
 Find the code for these slides [here](https://github.com/lunasare/slides/blob/master/reproducibility-2021-02-17.Rmd).
 <!-- `r anicon::faa("github", animate="passing")`  -->
+???
+********************************************************************************
+********************************************************************************
+********************************************************************************
 
 ---
 class: bg-teal
@@ -68,7 +72,7 @@ background-image: url("talks/assets/2-data-2723105_1920.jpg")
 background-position: center
 background-size: cover
 
-class: center white
+class: white
 
 # Still my life as a PhD student...
 
@@ -80,54 +84,52 @@ width="20%" alt="Cats typing"/>
 
 - personally affected by unshared scientific datasets
 - time invested gathering data/repeating analyses
-- what is open science?
+- Fecher B., Friesike S. (2014) **Open Science: One term, five schools of thought**. *In:* &nbsp; Bartling S., Friesike S. (eds) Opening Science. Springer, Cham.
+- Why do "*open*" science? Was it "*closed*"???
 
 ---
+class: bg-teal
+
 <!-- # Why opening Science? -->
 
 <!-- -- -->
 
 <!-- ## Was it closed?? -->
-# What is Open Science?
+# What is *Open* Science?
+<br/><br/>
+
+## Some characteristics
+<br/><br/>
+
+- **Reproducible** (code and data alone are not enough)
+- Shareable (research materials)
+- Transparent
+- Reusable
+- **Accessible** (physically, economically and conceptually)
+
 <br/>
-## `r anicon::nia("[Read](https://link.springer.com/chapter/10.1007/978-3-319-00026-8_2)", animate="float")` &nbsp; Fecher B., Friesike S. (2014) **Open Science: One term, five schools of thought**. *In:* &nbsp; Bartling S., Friesike S. (eds) Opening Science. Springer, Cham.
-<br/>
----
-class: bg-teal
 
-# List some characteristics of Open Science:
-
--
--
--
-
----
-class: bg-orange
-# Take away
-<br/><br/>
 --
-
-# Reproducibility &#8800; Open Science
-<br/><br/>
---
-
-## But a key aspect to it!
-<br/><br/>
---
-
-# Also, doing open science is hard
+- Hard to do...
 
 ---
 class: split-10 bg-light-blue
+
 .row[.content[
-# **Why** should I make my analyses reproducible
+# Reproducibility
+
+## **Why** should *everyone* make their science reproducible
 ]]
 .row.split-two[
 .column[.content[
 <br/>
-## It is good for science... potentially
+### It is good for science... potentially
+
+- It has the potential to serve as a minimum standard for judging scientific claims when a full independent replication study is not possible
+- Alleviate the crisis on science credibility
+
 <br/>
-## Importance of reproducibility for you:
+### Importance of reproducibility for you:
 - develop a framework for writing narratives around code and data
 - speed your research advance and discovery
   - redo analyses faster
@@ -137,18 +139,34 @@ class: split-10 bg-light-blue
 ]]
 .column[.content.v40.center[
 
+<br/>
 ![Science cat](https://github.com/annakrystalli/talks/raw/master/assets/science-cat.jpg)
 
 ]]
 ]
 
-
-
 ---
 class: bg-pink center
-<br/><br/><br/><br/><br/>
+<br/><br/><br/>
 # **How** do I make my analyses reproducible?
 
+--
+
+<br/><br/>
+
+## 1) Version control
+
+--
+
+<br/><br/>
+
+## 2) Project file structure
+
+--
+
+<br/><br/>
+
+## 3) Use markup languages for document generation
 
 ---
 class: split-10
@@ -183,21 +201,12 @@ And a website that allows to store git outputs online while collaborating with o
 ---
 class: split-10
 .row.bg-pink[.content[
-# Hands on `r shiny::icon("github")`
+# Demo `r emo::ji("cat")`
 ]]
-.row[.content.pad10px[
+
 <br/><br/>
 
-## Go to terminal and check that you have `git` installed by running the command:
-
-```{}
-git version
-```
-<br/>
-### &emsp; More on [git](http://annaken.github.io/intro_to_git_course/#/) and installation instructions.
-<br/><br/>
-## Go to your [Github](https://github.com/) account or create an account if you do not have one yet.
-]]
+## [Github](https://github.com/)
 ---
 class: split-10
 .row[.content[
@@ -234,23 +243,7 @@ Option 2: Create a `new project` in RStudio and initialize it with `git`.
 ---
 class: split-10
 .row.bg-pink[.content[
-# Hands on `r emo::ji("card_file_box")`
-]]
-.row[.content.pad10px[
-<br/>
-## Option 1<br/><br/>
-### Go to this repo on Github <https://github.com/LunaSare/project-reproducibility>
-### Press the fork button, to add a copy of this repo to your profile
-### Once in your profile, press the clone button -- copy that -- go to terminal, and do:
-
-```{}
-git clone
-```
-
-## Option 2 <br/><br/>
-
-### From Rstudio go to File > New Project > New Directory
-### Make sure to tick the `Create a git repository` box
+# Demo `r emo::ji("card_file_box")`
 ]]
 
 ---
@@ -446,20 +439,12 @@ ______
 class: split-10
 
 .row.bg-pink[.content[
-# Hands on `r emo::ji("rocket")`
+# Demo `r emo::ji("rocket")`
 ]]
 .row[.content.pad10px[
-<br/><br/>
+<br/><br/><br/><br/>
 
-### Go to the README.md file of the project you just generated
 
-### Edit it on RStudio according to your own project, using markdown
-
-### Save the changes
-
-### Save this version with git:
-### &emsp; Go to your terminal -- navigate to your project directory with `cd`
-### &emsp; Run the commands:
 ```{}
 git add .
 git commit -m "a message describing the changes you made"
@@ -484,7 +469,7 @@ class:split-10
 .column.bg-blue[
 ]
 .column[.content.vmiddle[
-# &emsp; Use R Markdown!
+# &emsp; Use R (markdown)!
 ]]
 ]
 .row.split-60[
@@ -520,170 +505,6 @@ languages]
 ]
 ]
 
----
-class: split-1-2-1 center
-
-.row.bg-blue[
-
-]
-.row[.content.vmiddle[
-# Let's get to it!
-]]
-.row.bg-blue[
-
-]
----
-class: split-four, left
-.row[.content.vmiddle.center[
-#Installing the necessary .blue[R packages]
-]]
-
-.row.bg-blue.slide-in-left[.content.center.v40[
-### &emsp; Install any package in `r shiny::icon("r-project")` with the function  .orange.font-mono[install.packages()]
-]]
-
-.row.bg-amber.slide-in-right[.content.center.v40[
-## &emsp;We will need the packages .blue.font-mono[rmarkdown], .blue.font-mono[knitr], and .blue.font-mono[citr]
-]]
-
-.row[.content.v40[
-### &emsp; Open R and do &nbsp; .blue.font-mono[install.packages(c("rmarkdown", "knitr", "citr"))]
-]]
----
-class: split-1-2-1, center
-
-.row[.content.vmiddle[
-#Creating a new .blue[R markdown] file
-]]
-
-.row.split-two[
-.column.bg-amber[.content.v40[
-### Open a new .Rmd file from RStudio <br/> at .blue[File] > .blue[New File] > .blue[R Markdown].
-]]
-
-.column.slide-in-right[.content.v40[
-### This will generate a .amber[template] of an .Rmd file
-]]
-]
-
-.row.slide-in-left[.content.vmiddle[
-### Alternatively, open an empty file an save it as an .blue[.Rmd file]
-]]
----
-class: split-20
-.row[.content[
-# &emsp; All R markdown files have two main sections
-]]
-.row.split-30[
-.row.slide-in-left.split-two[
-.column[.content.center.font-small[
-### A header, that is called `r emo::ji("sweet_potato")` the YAML `r emo::ji("sweet_potato")`
-
-It sets up various formatting and rendering <br/> options for your report.
-
-]]
-.column.bg-amber[.content[
-```yaml
----
-title: "A report on R markdown possibilities"
-output: html_document
----
-```
-]]
-]
-.row.slide-in-right.split-two[
-.column[.content.center.v40[
-### `r shiny::icon("r-project")` And the text and code section `r shiny::icon("r-project")`
-
-Which contains your actual report!
-]]
-.column.bg-amber[.content[
-````
-``{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-``
-## R Markdown
-
-This is an R Markdown document. Markdown is a simple
-formatting syntax for authoring HTML, PDF, and MS
-Word documents. For more details on using R Markdown see
-<http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be
-generated that includes both content as well as the output
-of any embedded R code chunks within the document. You can
-embed an R code chunk like this:
-
-``{r cars}
-summary(cars)
-```
-
-````
-]]
-]
-]
----
-class: split-20
-.row[.content[
-# `r emo::ji("sweet_potato")` Customizing the YAML header options `r emo::ji("sweet_potato")`
-]]
-
-.row.split-three[
-.row.split-two.slide-in-left[
-.column[.content.left.v40[
-.right[Open the YAML header with ---  ]
-
-The only option you *have* to include in the yaml <br/> is the .light-green[output] option.
-
-It specifies instructions for document rendering, i.e.,  <br/> the final format of the report: .light-green[word], .light-green[pdf], or .light-green[html].
-]]
-.column.bg-light-green[.content[
-```yaml
----
-output:
-  word_document: default
-  pdf_document: default
-  html_document: default
-```
-]]
-]
-.row.split-two.slide-in-right[
-.column[.content.center.v40[
-
-You can add any number of parameters with <br/> the .light-blue[params] option.
-
-Include any of these in your report using <br/> .light-blue['r &nbsp; params$name_of_your_param']
-to avoid repeating yourself!
-
-]]
-.column.bg-light-blue[.content[
-```yaml
-params:
-  title: "A report on R markdown possibilities"
-  date: April 15, 2020
-  place: "Merced, California"
-```
-]]
-]
-
-.row.split-two.slide-in-left[
-.column[.content.right.v40[
-Add a .pink[bibliography] option pointing to a [.bib file](https://www.economics.utoronto.ca/osborne/latex/BIBTEX.HTM) <br/> Any citation manager should be able to <br/> export your references to a .bib file
-
-.left[Close the YAML header with ---  ]
-
-]]
-.column.bg-pink[.content.v40[
-```yaml
-bibliography: my_references.bib
-
-
-
----
-```
-]]
-]
-]
 
 ---
 
@@ -691,29 +512,11 @@ bibliography: my_references.bib
 ```
 
 <!-- Here goes the edit and add code section  -->
-
----
-class: split-four, left
-.row[.content.vmiddle.center[
-#Rendering the .blue[documents]
-]]
-
-.row.bg-amber.slide-in-right[.content.center.v40[
-## &emsp;We will use the .blue.font-mono[render()] function from the .blue.font-mono[rmarkdown] package
-]]
-
-.row.bg-blue.slide-in-left[.content.center.v40[
-### Run <br/> .orange.font-mono.font0-85[rmarkdown::render("my_report.Rmd", output_format = "all")] <br/> to generate a report in all formats defined on the yaml
-]]
-
-.row[.content.v40.center[
-### Alternatively, use the &#x1F9F6; .blue[knit button] &#x1F9F6; from RStudio
-]]
 ---
 class: split-20
 
 .row[.content.vmiddle[
-# &emsp; These are my rendered documents!
+# &emsp; Rendering the .blue[documents] in many formats!
 ]]
 .row.split-three[
 .column.bg-red[.content.center[
