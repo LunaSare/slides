@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Open Science and Reproducibility</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Luna L. Sanchez Reyes" />
+    <link href="libs/remark-css/kunoichi.css" rel="stylesheet" />
+    <link href="libs/remark-css/ninjutsu.css" rel="stylesheet" />
+    <link href="libs/remark-css/metropolis-fonts.css" rel="stylesheet" />
+    <link href="libs/font-awesome-animation/font-awesome-animation-emi.css" rel="stylesheet" />
+    <script src="libs/fontawesome/js/fontawesome-all.min.js"></script>
+    <link href="libs/font-awesome/css/all.min.css" rel="stylesheet" />
+    <link href="libs/font-awesome/css/v4-shims.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../ninjutsu-luna-extras.css" type="text/css" />
+    <link rel="stylesheet" href="assets/ninpo.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+class: left, middle
+
+&lt;br/&gt;
+
+# **On Open Science and Reproducibility**
+
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+
+### **Luna L. Sánchez Reyes**
+### University of California, Merced
+&lt;br/&gt;&lt;br/&gt;
+
+Mathematical Biology Seminar Series
+
+February 17, 2021 &amp;#183; Merced, California
+
+&lt;br/&gt;
+
+Find the code for these slides [here](https://github.com/lunasare/slides/blob/master/reproducibility-2021-02-17.Rmd).
+&lt;!-- `&lt;span&gt;&amp;lt;i class="fab  fa-github faa-passing animated "&amp;gt;&amp;lt;/i&amp;gt;&lt;/span&gt;`{=html}  --&gt;
+
+---
+class: bg-teal
+
+# My life as a PhD student
+
+ &lt;img src="http://www.phdcomics.com/comics/archive/phd070912s.gif" height="300px" alt="Image: Jorge Cham www.phdcomics.com"&gt;
+
+- learning new concepts - &gt; reading papers
+- understanding new methods - &gt; reading papers
+- running analyses - &gt; learning how to code
+- preparing talks - &gt; reading papers
+- preparing papers - &gt; reading papers
+- preparing figures - &gt; learning more core
+- trying to get published - &gt; reading papers
+- graduating - &gt; crying
+- I wasn't even thinking about life after that...
+
+---
+background-image: url("talks/assets/2-data-2723105_1920.jpg")
+background-position: center
+background-size: cover
+
+class: center white
+
+# Still my life as a PhD student...
+
+&lt;img src="https://media2.giphy.com/media/ule4vhcY1xEKQ/giphy.gif"
+style="position:fixed; right:37%; top:35%; border:none;"
+width="20%" alt="Cats typing"/&gt;
+
+--
+
+- personally affected by unshared scientific datasets
+- time invested gathering data/repeating analyses
+- what is open science?
+
+---
+&lt;!-- # Why opening Science? --&gt;
+
+&lt;!-- -- --&gt;
+
+&lt;!-- ## Was it closed?? --&gt;
+# What is Open Science?
+&lt;br/&gt;
+## `&lt;span class=" faa-float animated " style=" display: -moz-inline-stack; display: inline-block; transform: rotate(0deg);"&gt;[Read](https://link.springer.com/chapter/10.1007/978-3-319-00026-8_2)&lt;/span&gt;`{=html} &amp;nbsp; Fecher B., Friesike S. (2014) **Open Science: One term, five schools of thought**. *In:* &amp;nbsp; Bartling S., Friesike S. (eds) Opening Science. Springer, Cham.
+&lt;br/&gt;
+---
+class: bg-teal
+
+# List some characteristics of Open Science:
+
+-
+-
+-
+
+---
+class: bg-orange
+# Take away
+&lt;br/&gt;&lt;br/&gt;
+--
+
+# Reproducibility &amp;#8800; Open Science
+&lt;br/&gt;&lt;br/&gt;
+--
+
+## But a key aspect to it!
+&lt;br/&gt;&lt;br/&gt;
+--
+
+# Also, doing open science is hard
+
+---
+class: split-10 bg-light-blue
+.row[.content[
+# **Why** should I make my analyses reproducible
+]]
+.row.split-two[
+.column[.content[
+&lt;br/&gt;
+## It is good for science... potentially
+&lt;br/&gt;
+## Importance of reproducibility for you:
+- develop a framework for writing narratives around code and data
+- speed your research advance and discovery
+  - redo analyses faster
+  - make your research known faster
+- establish yourself as a trustworthy researcher(?)
+- understand other research faster
+]]
+.column[.content.v40.center[
+
+![Science cat](https://github.com/annakrystalli/talks/raw/master/assets/science-cat.jpg)
+
+]]
+]
+
+
+
+---
+class: bg-pink center
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+# **How** do I make my analyses reproducible?
+
+
+---
+class: split-10
+.row[.content[
+# &amp;emsp; 1) Version control
+]]
+
+.row.split-two[
+.column[.content.center.v40[
+ &lt;img src="http://www.phdcomics.com/comics/archive/phd101212s.gif" height="500px" alt="Image: Jorge Cham www.phdcomics.com"&gt;
+
+&lt;!-- Or, worse --&gt;
+&lt;!-- &lt;img src="http://smutch.github.io/VersionControlTutorial/_images/vc-xkcd.jpg" width="500px" alt= "Image: xkcd CC BY-NC 2.5"&gt; --&gt;
+]]
+.column[.content[
+Or management of changes to documents, computer programs, large web sites, and other collections of information.
+&lt;br/&gt;&lt;br/&gt;
+## Why?
+
+- Prevent messy file-naming situations
+- Avoid loss of work, resources and time
+
+
+## How?
+
+We are going to use an open source (free for use) version control software called `git`
+&lt;br/&gt;&lt;br/&gt;
+And a website that allows to store git outputs online while collaborating with others, called `Github`
+
+]]
+]
+---
+class: split-10
+.row.bg-pink[.content[
+# Hands on `&lt;i class="fab fa-github" role="presentation" aria-label="github icon"&gt;&lt;/i&gt;`{=html}
+]]
+.row[.content.pad10px[
+&lt;br/&gt;&lt;br/&gt;
+
+## Go to terminal and check that you have `git` installed by running the command:
+
+```{}
+git version
+```
+&lt;br/&gt;
+### &amp;emsp; More on [git](http://annaken.github.io/intro_to_git_course/#/) and installation instructions.
+&lt;br/&gt;&lt;br/&gt;
+## Go to your [Github](https://github.com/) account or create an account if you do not have one yet.
+]]
+---
+class: split-10
+.row[.content[
+# &amp;emsp; 2) A self-contained file structure
+]]
+.row.split-two[
+.row.split-two[
+.column[.content.pad10px[
+&lt;br/&gt;
+## Why?
+
+- Keep all materials associated with a particular analysis in the same place
+- The working directory can be set to the one root directory of the project
+- Fresh environment everytime you start working (= faster debugging and testing)
+]]
+.column[.content[
+&lt;br/&gt;&lt;br/&gt;
+&lt;img src="https://media.giphy.com/media/3oEjHWPTo7c0ajPwty/giphy.gif" height="250px" alt="Gif: https://giphy.com/gifs/girly-nest-nesting-3oEjHWPTo7c0ajPwty"&gt;
+]]
+]
+.row[.content.center[
+&lt;br/&gt;
+## How?
+
+Premise: One local project - one Github repo
+
+Option 1: `Fork and clone` a project from `Github`.
+
+Option 2: Create a `new project` in RStudio and initialize it with `git`.
+
+]]
+]
+
+---
+class: split-10
+.row.bg-pink[.content[
+# Hands on 🗃
+]]
+.row[.content.pad10px[
+&lt;br/&gt;
+## Option 1&lt;br/&gt;&lt;br/&gt;
+### Go to this repo on Github &lt;https://github.com/LunaSare/project-reproducibility&gt;
+### Press the fork button, to add a copy of this repo to your profile
+### Once in your profile, press the clone button -- copy that -- go to terminal, and do:
+
+```{}
+git clone
+```
+
+## Option 2 &lt;br/&gt;&lt;br/&gt;
+
+### From Rstudio go to File &gt; New Project &gt; New Directory
+### Make sure to tick the `Create a git repository` box
+]]
+
+---
+class: split-10
+.row[.content[
+# &amp;emsp; 3) A markup language for reports
+]]
+.row.split-two[
+.column[.content.center[
+&lt;br/&gt;
+## Wait, **why** not Word?
+![word clip](https://media.giphy.com/media/13V60VgE2ED7oc/giphy.gif)
+Have you tried opening a word document with a text editor???
+
+It is ***not*** human-readable...
+
+For the purposes of version control, we prefer markup languages: human-readable, plain-text documents that use tags to define elements and give format to documents.
+]]
+.column[.content.center.v30[
+&lt;br/&gt;
+## How?
+
+There are many markup languages around: html, xml, markdown, latex
+
+We will focus on markdown for the purpose of this hands on.
+]]
+]
+---
+class: split-1-2-1
+.row.bg-amber[
+
+]
+.row[.content.vmiddle.center[
+# markdown crash course!
+]]
+.row.bg-amber[
+
+]
+---
+class: split-two
+
+.column.split-10[
+.column.bg-pink[
+
+]
+.column.split-two.bg-blue[
+.row.split-five[
+.row[.content[
+# markdown
+]]
+.row[.content[
+## &amp;emsp; uses hashtags #️⃣
+]]
+.row[.content.vmiddle[
+### &amp;emsp; &amp;emsp; to create headers
+]]
+.row[.content.vmiddle[
+#### &amp;emsp; &amp;emsp; &amp;emsp; &amp;emsp; &amp;emsp; up to 5 levels, I think...
+]]
+.row[.content[
+##### &amp;emsp; &amp;emsp; &amp;emsp; &amp;emsp; &amp;emsp; &amp;emsp; &amp;emsp; &amp;emsp; yes!!!
+]]
+]
+.row.split-two[
+.column[.content.v30[
+- Use hyphens
+- or an asterisk
+- to create a list
+- of some
+- things
+]]
+.column[.content.v30[
+1. Use numbers
+1. to create a
+1. numbered list
+1. of some
+1. other things
+]]
+]
+]
+
+]
+]
+]
+.column.slide-in-right.split-two.bg-amber[
+.row.split-five[
+.row[.content[
+```{}
+# markdown
+```
+]]
+.row[.content[
+```{}
+## uses hashtags #️⃣
+```
+]]
+.row[.content[
+```{}
+### to create headers
+```
+]]
+.row[.content[
+```{}
+#### up to 5 levels, I think...
+```
+]]
+.row[.content[
+```{}
+#####  yes!!!
+```
+]]
+]
+.row.split-two[
+.column[.content.v30[
+
+&amp;emsp; \- Use hyphens
+&amp;emsp; \\\* or an asterisk
+&amp;emsp; \- to create a list
+&amp;emsp; \- of some
+&amp;emsp; \- things
+
+]]
+.column[.content.v30[
+
+.transp[\]1. Use numbers
+.transp[\]1. to create a
+.transp[\]1. numbered list
+.transp[\]1. of some
+.transp[\]1. other things
+
+]]
+]
+]
+]
+---
+class: split-two
+name: markdown2
+
+.column.split-10[
+.column.bg-pink[
+]
+.column.split-four.center[
+.row.bg-light-blue[.content.font_medium[
+markdown emphasizes text with *italics*, **bold**, or  ***both*** using 1, 2, or 3 asterisks respectively, at each side of the text
+]]
+.row.bg-blue[.content.font_medium.v20[
+Add links to [external sites](https://www.markdownguide.org/basic-syntax/) or [internal sections](#internal) of the document
+]]
+.row.bg-light-blue[.content.font_medium[
+Add linked URLs &lt;https://www.markdownguide.org/basic-syntax/&gt;
+]]
+.row.bg-blue[.content[
+Create horizontal rules with three or more asterisks, dashes, or underscores
+******
+______
+______
+]]
+]
+]
+
+.column.split-four[
+.row.bg-amber[.content.v20[
+```
+markdown emphasizes text with *italics*, **bold**,
+or  ***both*** using 1, 2, or 3 asterisks respectively,
+at each side of the text
+```
+]]
+.row.bg-orange[.content.v20[
+```
+Add links to [external sites](https://www.markdownguide.org/
+basic-syntax/) or [internal sections](#internal)
+of the document
+```
+]]
+.row.bg-amber[.content.v30[
+```
+Add linked URLs &lt;https://www.markdownguide.org/basic-syntax/&gt;
+```
+]]
+.row.bg-orange[.content.v10[
+```
+Create horizontal rules with three or more asterisks,
+dashes, or underscores
+******
+------
+______
+```
+]]
+
+]
+---
+class: split-10
+
+.row.bg-pink[.content[
+# Hands on 🚀
+]]
+.row[.content.pad10px[
+&lt;br/&gt;&lt;br/&gt;
+
+### Go to the README.md file of the project you just generated
+
+### Edit it on RStudio according to your own project, using markdown
+
+### Save the changes
+
+### Save this version with git:
+### &amp;emsp; Go to your terminal -- navigate to your project directory with `cd`
+### &amp;emsp; Run the commands:
+```{}
+git add .
+git commit -m "a message describing the changes you made"
+git push
+```
+
+## 🎉 You've made your first version control commit 🎉
+]]
+---
+class: split-1-2-1
+.column.bg-pink[
+]
+.column[.content.center.vmiddle[
+# We're not stopping there...
+]]
+.column.bg-pink[
+]
+---
+class:split-10
+
+.row.split-30.slide-in-left[
+.column.bg-blue[
+]
+.column[.content.vmiddle[
+# &amp;emsp; Use R Markdown!
+]]
+]
+.row.split-60[
+.column[.content.center.font_medium[
+
+.font2[Why?]
+
+.left[Effectively *understands* most markup
+languages]
+
+.right[Not only ***include*** code, but ***run*** the code]
+
+.left[Change formatting for any journal in seconds]
+
+.right[Include citations and format them]
+
+.left[Automatically include a reference list in any &lt;br/&gt; format you need]
+
+.right[Render to different file formats, including word 😜]
+
+.left[And last, but not least: &lt;br/&gt; &amp;emsp; Easily add emojis and icons]
+]]
+.column.split-two[
+.row[.content[
+
+]
+]
+.row.slide-in-right[.content.center.vmiddle[
+.font2.bg-blue[How?]
+&lt;br/&gt;
+.font3.bg-blue[RStudio]
+]]
+]
+]
+
+---
+class: split-1-2-1 center
+
+.row.bg-blue[
+
+]
+.row[.content.vmiddle[
+# Let's get to it!
+]]
+.row.bg-blue[
+
+]
+---
+class: split-four, left
+.row[.content.vmiddle.center[
+#Installing the necessary .blue[R packages]
+]]
+
+.row.bg-blue.slide-in-left[.content.center.v40[
+### &amp;emsp; Install any package in `&lt;i class="fab fa-r-project" role="presentation" aria-label="r-project icon"&gt;&lt;/i&gt;`{=html} with the function  .orange.font-mono[install.packages()]
+]]
+
+.row.bg-amber.slide-in-right[.content.center.v40[
+## &amp;emsp;We will need the packages .blue.font-mono[rmarkdown], .blue.font-mono[knitr], and .blue.font-mono[citr]
+]]
+
+.row[.content.v40[
+### &amp;emsp; Open R and do &amp;nbsp; .blue.font-mono[install.packages(c("rmarkdown", "knitr", "citr"))]
+]]
+---
+class: split-1-2-1, center
+
+.row[.content.vmiddle[
+#Creating a new .blue[R markdown] file
+]]
+
+.row.split-two[
+.column.bg-amber[.content.v40[
+### Open a new .Rmd file from RStudio &lt;br/&gt; at .blue[File] &gt; .blue[New File] &gt; .blue[R Markdown].
+]]
+
+.column.slide-in-right[.content.v40[
+### This will generate a .amber[template] of an .Rmd file
+]]
+]
+
+.row.slide-in-left[.content.vmiddle[
+### Alternatively, open an empty file an save it as an .blue[.Rmd file]
+]]
+---
+class: split-20
+.row[.content[
+# &amp;emsp; All R markdown files have two main sections
+]]
+.row.split-30[
+.row.slide-in-left.split-two[
+.column[.content.center.font-small[
+### A header, that is called 🍠 the YAML 🍠
+
+It sets up various formatting and rendering &lt;br/&gt; options for your report.
+
+]]
+.column.bg-amber[.content[
+```yaml
+---
+title: "A report on R markdown possibilities"
+output: html_document
+---
+```
+]]
+]
+.row.slide-in-right.split-two[
+.column[.content.center.v40[
+### `&lt;i class="fab fa-r-project" role="presentation" aria-label="r-project icon"&gt;&lt;/i&gt;`{=html} And the text and code section `&lt;i class="fab fa-r-project" role="presentation" aria-label="r-project icon"&gt;&lt;/i&gt;`{=html}
+
+Which contains your actual report!
+]]
+.column.bg-amber[.content[
+````
+``{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+``
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple
+formatting syntax for authoring HTML, PDF, and MS
+Word documents. For more details on using R Markdown see
+&lt;http://rmarkdown.rstudio.com&gt;.
+
+When you click the **Knit** button a document will be
+generated that includes both content as well as the output
+of any embedded R code chunks within the document. You can
+embed an R code chunk like this:
+
+``{r cars}
+summary(cars)
+```
+
+````
+]]
+]
+]
+---
+class: split-20
+.row[.content[
+# 🍠 Customizing the YAML header options 🍠
+]]
+
+.row.split-three[
+.row.split-two.slide-in-left[
+.column[.content.left.v40[
+.right[Open the YAML header with ---  ]
+
+The only option you *have* to include in the yaml &lt;br/&gt; is the .light-green[output] option.
+
+It specifies instructions for document rendering, i.e.,  &lt;br/&gt; the final format of the report: .light-green[word], .light-green[pdf], or .light-green[html].
+]]
+.column.bg-light-green[.content[
+```yaml
+---
+output:
+  word_document: default
+  pdf_document: default
+  html_document: default
+```
+]]
+]
+.row.split-two.slide-in-right[
+.column[.content.center.v40[
+
+You can add any number of parameters with &lt;br/&gt; the .light-blue[params] option.
+
+Include any of these in your report using &lt;br/&gt; .light-blue['r &amp;nbsp; params$name_of_your_param']
+to avoid repeating yourself!
+
+]]
+.column.bg-light-blue[.content[
+```yaml
+params:
+  title: "A report on R markdown possibilities"
+  date: April 15, 2020
+  place: "Merced, California"
+```
+]]
+]
+
+.row.split-two.slide-in-left[
+.column[.content.right.v40[
+Add a .pink[bibliography] option pointing to a [.bib file](https://www.economics.utoronto.ca/osborne/latex/BIBTEX.HTM) &lt;br/&gt; Any citation manager should be able to &lt;br/&gt; export your references to a .bib file
+
+.left[Close the YAML header with ---  ]
+
+]]
+.column.bg-pink[.content.v40[
+```yaml
+bibliography: my_references.bib
+
+
+
+---
+```
+]]
+]
+]
+
+---
+
+
+class: split-30
+
+.row.split-two[
+.row[.content[
+# `&lt;i class="fab fa-r-project" role="presentation" aria-label="r-project icon"&gt;&lt;/i&gt;`{=html} Edit the text and code section `&lt;i class="fab fa-r-project" role="presentation" aria-label="r-project icon"&gt;&lt;/i&gt;`{=html}
+&lt;br/&gt;
+]]
+.row[.content[
+&lt;!-- ### &amp;emsp; Besides all the markdown features that we [already saw](#markdown): --&gt;
+## .color-main3[Add citations] along the text using the .amber[@ tags] from the .bib file:
+]]
+]
+.row.split-two[
+.column.slide-in-left.bg-purple[.content.v30[
+### This
+
+```{}
+Characteristics of Open Science, following @Fecher2014:
+
+"Our professional network is valuable. It is also limited. 
+Perhaps there are people who are well-placed to help us, 
+in another university or company, in a different country, 
+but we unfortunately do not know them. Surely science 
+would proceed faster if we could reach those people? 
+Or, better, if they could find us?"[@woelfle2011open; 
+@Fecher2014]
+```
+]]
+.column.slide-in-right[.content.v40[
+### Becomes this
+.font0-85[Characteristics of Open Science, following .color-main3[Fecher and Friesike (2014)]:
+&lt;br/&gt;
+“Our professional network is valuable. It is also limited.   
+Perhaps there are people who are well-placed to
+help us,   
+in another university or company, in a different country,   
+but we unfortunately do not know them.
+Surely science   
+would proceed faster if we could reach those people?   
+Or, better, if they could find us?” .color-main3[(Woelfle,
+Olliaro, and Todd 2011; Fecher and Friesike 2014)].]
+]]
+]
+---
+class: split-30
+
+.row.split-two[
+.row[.content[
+# `&lt;i class="fab fa-r-project" role="presentation" aria-label="r-project icon"&gt;&lt;/i&gt;`{=html} Edit the text and code section `&lt;i class="fab fa-r-project" role="presentation" aria-label="r-project icon"&gt;&lt;/i&gt;`{=html}
+&lt;br/&gt;
+]]
+.row[.content[
+## .blue[Add a list of references] at the end of the document by typing .amber[References]:
+]]
+]
+.row.split-two[
+.column.slide-in-left.bg-indigo[.content.v10[
+### This
+
+```{}
+"Our professional network is valuable. It is also limited. 
+Perhaps there are people who are well-placed to help us, 
+in another university or company, in a different country, 
+but we unfortunately do not know them. Surely science 
+would proceed faster if we could reach those people? 
+Or, better, if they could find us?"[@woelfle2011open; 
+@Fecher2014]
+
+References
+```
+]]
+.column.slide-in-right[.content.v40.pad10px[
+### Becomes this
+.font0-85[
+“Our professional network is valuable. It is also limited.   
+Perhaps there are people who are well-placed to
+help us,   
+in another university or company, in a different country,   
+but we unfortunately do not know them.
+Surely science   
+would proceed faster if we could reach those people?   
+Or, better, if they could find us?” .purple[(Woelfle,
+Olliaro, and Todd 2011; Fecher and Friesike 2014)].
+.font_medium[References]  
+Fecher, Benedikt, and Sascha Friesike. 2014. “Open Science: One Term, Five Schools of Thought.” In
+Opening Science: The Evolving Guide on How the Internet Is Changing Research, Collaboration and Scholarly
+Publishing, edited by Sönke Bartling and Sascha Friesike, 17–47. Cham: Springer International Publishing.
+https://doi.org/10.1007/978-3-319-00026-8_2.  
+Woelfle, Michael, Piero Olliaro, and Matthew H Todd. 2011. “Open Science Is a Research Accelerator.”
+Nature Chemistry 3 (10): 745–48.
+2
+]
+
+]]
+]
+
+---
+class: split-30
+
+.row.split-two[
+.row[.content[
+# `&lt;i class="fab fa-r-project" role="presentation" aria-label="r-project icon"&gt;&lt;/i&gt;`{=html} Edit the text and code section `&lt;i class="fab fa-r-project" role="presentation" aria-label="r-project icon"&gt;&lt;/i&gt;`{=html}
+&lt;br/&gt;
+]]
+.row[.content[
+## .teal[Add R code] along the text using .amber[backticks] and .amber[curly braces]:
+]]
+]
+.row.split-two[
+.column.slide-in-left.bg-teal[.content.v30[
+### This code chunk
+
+````markdown
+```{r eval = FALSE, echo = TRUE} 
+library(ape)
+data(chiroptera)
+str(chiroptera)
+```
+````
+
+
+### And this inline code
+
+You can know th enumberof tips in your Chiroptera tree with `length(chiroptera$tip.label)`.
+
+]]
+.column.slide-in-right[.content.v30[
+### renders this
+
+
+```
+## List of 3
+##  $ edge     : int [1:1344, 1:2] 917 918 919 920 920 921 922 922 921 923 ...
+##  $ tip.label: chr [1:916] "Paranyctimene_raptor" "Nyctimene_aello" "Nyctimene_celaeno" "Nyctimene_certans" ...
+##  $ Nnode    : int 429
+##  - attr(*, "class")= chr "phylo"
+```
+
+### will render this
+
+My Chiroptera tree has 916 tips.
+
+]]
+]
+---
+class: split-30
+
+.row.split-two[
+.row[.content[
+# `&lt;i class="fab fa-r-project" role="presentation" aria-label="r-project icon"&gt;&lt;/i&gt;`{=html} Edit the text and code section `&lt;i class="fab fa-r-project" role="presentation" aria-label="r-project icon"&gt;&lt;/i&gt;`{=html}
+&lt;br/&gt;
+]]
+.row[.content[
+## .green[Embed the output of R code] along the text using .amber[backticks] and .amber[curly braces]:
+]]
+]
+.row.split-two[
+.column.slide-in-left.bg-light-green[.content.v30[
+### This code chunk
+
+````markdown
+```{r eval = TRUE} 
+library(ape)
+data(chiroptera)
+str(chiroptera)
+```
+````
+&lt;!-- tip to embed code from here https://support.rstudio.com/hc/en-us/articles/360018181633-Including-verbatim-R-code-chunks-inside-R-Markdown 
+AND HERE FOR JENNY BRYAN's COMPENDIUM:
+https://rmarkdown.rstudio.com/articles_verbatim.html
+--&gt;
+
+### And this inline code
+
+My Chiroptera tree has ```  `{r} length(chiroptera$tip.label)`  ``` tips.
+
+]]
+.column.slide-in-right[.content.v30[
+### renders this
+
+
+```
+## List of 3
+##  $ edge     : int [1:1344, 1:2] 917 918 919 920 920 921 922 922 921 923 ...
+##  $ tip.label: chr [1:916] "Paranyctimene_raptor" "Nyctimene_aello" "Nyctimene_celaeno" "Nyctimene_certans" ...
+##  $ Nnode    : int 429
+##  - attr(*, "class")= chr "phylo"
+```
+
+### will render this
+
+My Chiroptera tree has 916 tips.
+
+]]
+]
+
+---
+class: split-40
+
+.row.split-30[
+.row[.content[
+# `&lt;i class="fab fa-r-project" role="presentation" aria-label="r-project icon"&gt;&lt;/i&gt;`{=html} Edit the text and code section `&lt;i class="fab fa-r-project" role="presentation" aria-label="r-project icon"&gt;&lt;/i&gt;`{=html}
+&lt;br/&gt;
+]]
+.row[.content[
+## .deep-orange[Add a plot] without showing the code by setting .amber[echo] to .amber[FALSE] &lt;br/&gt; Control its quality with the .amber[fig.retina] option and its size with .amber[fig.height] and .amber[fig.width]:
+]]
+]
+.row.split-60[
+.column.slide-in-left.bg-deep-orange[.content[
+### This code chunk
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+&lt;pre&gt;&lt;code&gt;```{r eval = TRUE, echo = FALSE, fig.height = 5, fig.retina = 3} 
+plot(chiroptera, type = "c", cex = 0.3)
+```&lt;/code&gt;&lt;/pre&gt;
+]]
+.column.slide-in-right[.content[
+### renders this
+
+&lt;img src="reproducibility-2021-02-17_files/figure-html/unnamed-chunk-4-1.png" width="504" /&gt;
+
+
+]]
+]
+---
+class: split-30
+
+.row.split-two[
+.row[.content[
+# `&lt;i class="fab fa-r-project" role="presentation" aria-label="r-project icon"&gt;&lt;/i&gt;`{=html} Edit the text and code section `&lt;i class="fab fa-r-project" role="presentation" aria-label="r-project icon"&gt;&lt;/i&gt;`{=html}
+&lt;br/&gt;
+]]
+.row[.content[
+## .deep-purple[Add a table] with some formatting with the function .amber[kable] from the .amber[knitr] package:
+]]
+]
+.row.split-40[
+.column.slide-in-left.bg-deep-purple[.content[
+### This code chunk
+&lt;br/&gt;&lt;br/&gt;
+&lt;pre&gt;&lt;code&gt;```{r eval = TRUE, echo = FALSE}
+knitr::kable(iris[1:5, ], caption = 'A caption')
+```&lt;/code&gt;&lt;/pre&gt;
+]]
+.column.slide-in-right[.content[
+### Becomes this
+&lt;br/&gt;&lt;br/&gt;
+
+Table: A caption
+
+| Sepal.Length| Sepal.Width| Petal.Length| Petal.Width|Species |
+|------------:|-----------:|------------:|-----------:|:-------|
+|          5.1|         3.5|          1.4|         0.2|setosa  |
+|          4.9|         3.0|          1.4|         0.2|setosa  |
+|          4.7|         3.2|          1.3|         0.2|setosa  |
+|          4.6|         3.1|          1.5|         0.2|setosa  |
+|          5.0|         3.6|          1.4|         0.2|setosa  |
+
+
+]]
+]
+---
+class: split-40
+
+.row.split-two[
+.row[.content[
+# `&lt;i class="fab fa-r-project" role="presentation" aria-label="r-project icon"&gt;&lt;/i&gt;`{=html} Edit the text and code section `&lt;i class="fab fa-r-project" role="presentation" aria-label="r-project icon"&gt;&lt;/i&gt;`{=html}
+&lt;br/&gt;
+]]
+.row[.content[
+## Control your .deep-orange[code variables] globally by setting options on the .amber[setup chunk], i.e., the first R code chunk on the .Rmd file:
+]]
+]
+.row.split-60[
+.column.slide-in-left.bg-deep-orange[.content.v40[
+&lt;pre&gt;&lt;code&gt;```{r setup}
+knitr::opts_chunk$set(fig.retina = 3, warning = FALSE, message = FALSE)
+```&lt;/code&gt;&lt;/pre&gt;
+]]
+.column.slide-in-right[.content.v40.center[
+### These can be individually overriden on each chunk, in case you want to show a code warning, for example.
+]]
+]
+
+&lt;!-- Here goes the edit and add code section  --&gt;
+
+---
+class: split-four, left
+.row[.content.vmiddle.center[
+#Rendering the .blue[documents]
+]]
+
+.row.bg-amber.slide-in-right[.content.center.v40[
+## &amp;emsp;We will use the .blue.font-mono[render()] function from the .blue.font-mono[rmarkdown] package
+]]
+
+.row.bg-blue.slide-in-left[.content.center.v40[
+### Run &lt;br/&gt; .orange.font-mono.font0-85[rmarkdown::render("my_report.Rmd", output_format = "all")] &lt;br/&gt; to generate a report in all formats defined on the yaml
+]]
+
+.row[.content.v40.center[
+### Alternatively, use the &amp;#x1F9F6; .blue[knit button] &amp;#x1F9F6; from RStudio
+]]
+---
+class: split-20
+
+.row[.content.vmiddle[
+# &amp;emsp; These are my rendered documents!
+]]
+.row.split-three[
+.column.bg-red[.content.center[
+ &lt;img src="https://github.com/lunasare/project-reproducibility/raw/master/media/test-pdf.png" width="380px" alt="test-pdf"&gt;
+]]
+.column.bg-blue[.content.center[
+ &lt;img src="https://github.com/lunasare/project-reproducibility/raw/master/media/test-word.png" width="380px" alt="test-word"&gt;
+]]
+.column.bg-orange[.content.center[
+ &lt;img src="https://github.com/lunasare/project-reproducibility/raw/master/media/test-html.png" width="380px" alt="test-html"&gt;
+]]
+]
+---
+background-image: url("https://media.giphy.com/media/DUtSpDzxZZwPu/giphy.gif")
+background-position: 50% 65%
+background-size: 650px
+
+## Questions?
+---
+name: internal
+class: split-two
+.column[.content.vmiddle[
+## References
+
+- [The Turing Way](https://the-turing-way.netlify.app/introduction/introduction.html)
+- [Anna Krystalli's Reproducible Research Talk](https://annakrystalli.me/talks/r-in-repro-research-dc.html#1)
+
+]]
+.column[.content.center[
+### [Go back](#markdown2) to the markdown crash course 🚀
+
+&lt;img src ="https://media.giphy.com/media/cMF3Fa3ZnLs8jk4xM4/giphy.gif" width = "450px" alt="working hard"&gt;
+]]
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"ratio": "16:9",
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
