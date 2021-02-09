@@ -1,0 +1,273 @@
+class: split-30
+
+.row.split-two[
+.row[.content[
+# Edit the text and code section
+<br/>
+]]
+.row[.content[
+<!-- ### &emsp; Besides all the markdown features that we [already saw](#markdown): -->
+## .color-main3[Add citations] along the text using the .amber[@ tags] from the .bib file:
+]]
+]
+.row.split-two[
+.column.slide-in-left.bg-purple[.content.v30[
+### This
+
+```{}
+Characteristics of Open Science, following @Fecher2014:
+
+"Our professional network is valuable. It is also limited.
+Perhaps there are people who are well-placed to help us,
+in another university or company, in a different country,
+but we unfortunately do not know them. Surely science
+would proceed faster if we could reach those people?
+Or, better, if they could find us?"[@woelfle2011open;
+@Fecher2014]
+```
+]]
+.column.slide-in-right[.content.v40[
+### Becomes this
+.font0-85[Characteristics of Open Science, following .color-main3[Fecher and Friesike (2014)]:
+<br/>
+“Our professional network is valuable. It is also limited.   
+Perhaps there are people who are well-placed to
+help us,   
+in another university or company, in a different country,   
+but we unfortunately do not know them.
+Surely science   
+would proceed faster if we could reach those people?   
+Or, better, if they could find us?” .color-main3[(Woelfle,
+Olliaro, and Todd 2011; Fecher and Friesike 2014)].]
+]]
+]
+---
+class: split-30
+
+.row.split-two[
+.row[.content[
+#  Edit the text and code section
+<br/>
+]]
+.row[.content[
+## .blue[Add a list of references] at the end of the document by typing .amber[References]:
+]]
+]
+.row.split-two[
+.column.slide-in-left.bg-indigo[.content.v10[
+### This
+
+```{}
+"Our professional network is valuable. It is also limited.
+Perhaps there are people who are well-placed to help us,
+in another university or company, in a different country,
+but we unfortunately do not know them. Surely science
+would proceed faster if we could reach those people?
+Or, better, if they could find us?"[@woelfle2011open;
+@Fecher2014]
+
+References
+```
+]]
+.column.slide-in-right[.content.v40.pad10px[
+### Becomes this
+.font0-85[
+“Our professional network is valuable. It is also limited.   
+Perhaps there are people who are well-placed to
+help us,   
+in another university or company, in a different country,   
+but we unfortunately do not know them.
+Surely science   
+would proceed faster if we could reach those people?   
+Or, better, if they could find us?” .purple[(Woelfle,
+Olliaro, and Todd 2011; Fecher and Friesike 2014)].
+.font_medium[References]  
+Fecher, Benedikt, and Sascha Friesike. 2014. “Open Science: One Term, Five Schools of Thought.” In
+Opening Science: The Evolving Guide on How the Internet Is Changing Research, Collaboration and Scholarly
+Publishing, edited by Sönke Bartling and Sascha Friesike, 17–47. Cham: Springer International Publishing.
+https://doi.org/10.1007/978-3-319-00026-8_2.  
+Woelfle, Michael, Piero Olliaro, and Matthew H Todd. 2011. “Open Science Is a Research Accelerator.”
+Nature Chemistry 3 (10): 745–48.
+2
+]
+
+]]
+]
+
+---
+class: split-30
+
+.row.split-two[
+.row[.content[
+#  Edit the text and code section
+<br/>
+]]
+.row[.content[
+## .teal[Add R code] along the text using .amber[backticks] and .amber[curly braces]:
+]]
+]
+.row.split-two[
+.column.slide-in-left.bg-teal[.content.v30[
+### This code chunk
+
+````markdown
+`r ''````{r eval = FALSE, echo = TRUE}
+library(ape)
+data(chiroptera)
+str(chiroptera)
+```
+````
+
+
+### And this inline code
+
+You can know the number of tips in your Chiroptera tree with `length(chiroptera$tip.label)`.
+
+]]
+.column.slide-in-right[.content.v30[
+### renders this
+
+```{r eval = TRUE}
+
+library(ape)
+data(chiroptera)
+str(chiroptera)
+```
+
+### will render this
+
+My Chiroptera tree has `r length(chiroptera$tip.label)` tips.
+
+]]
+]
+---
+class: split-30
+
+.row.split-two[
+.row[.content[
+# Edit the text and code section
+<br/>
+]]
+.row[.content[
+## .green[Embed the output of R code] along the text using .amber[backticks] and .amber[curly braces]:
+]]
+]
+.row.split-two[
+.column.slide-in-left.bg-light-green[.content.v30[
+### This code chunk
+
+````markdown
+`r ''````{r eval = TRUE}
+library(ape)
+data(chiroptera)
+str(chiroptera)
+```
+````
+<!-- tip to embed code from here https://support.rstudio.com/hc/en-us/articles/360018181633-Including-verbatim-R-code-chunks-inside-R-Markdown
+AND HERE FOR JENNY BRYAN's COMPENDIUM:
+https://rmarkdown.rstudio.com/articles_verbatim.html
+-->
+
+### And this inline code
+
+My Chiroptera tree has ```  `r ''``{r} length(chiroptera$tip.label)`  ``` tips.
+
+]]
+.column.slide-in-right[.content.v30[
+### renders this
+
+```{r eval = TRUE, echo = FALSE}
+library(ape)
+data(chiroptera)
+str(chiroptera)
+```
+
+### will render this
+
+My Chiroptera tree has `r length(chiroptera$tip.label)` tips.
+
+]]
+]
+
+---
+class: split-40
+
+.row.split-30[
+.row[.content[
+# Edit the text and code section
+<br/>
+]]
+.row[.content[
+## .deep-orange[Add a plot] without showing the code by setting .amber[echo] to .amber[FALSE] <br/> Control its quality with the .amber[fig.retina] option and its size with .amber[fig.height] and .amber[fig.width]:
+]]
+]
+.row.split-60[
+.column.slide-in-left.bg-deep-orange[.content[
+### This code chunk
+<br/><br/><br/>
+<pre><code>```{r eval = TRUE, echo = FALSE, fig.height = 5, fig.retina = 3}
+plot(chiroptera, type = "c", cex = 0.3)
+```</code></pre>
+]]
+.column.slide-in-right[.content[
+### renders this
+
+```{r eval = TRUE, echo = FALSE, fig.height = 5, fig.retina = 3}
+plot(chiroptera, type = "c", cex = 0.3)
+```
+
+
+]]
+]
+---
+class: split-30
+
+.row.split-two[
+.row[.content[
+# Edit the text and code section
+<br/>
+]]
+.row[.content[
+## .deep-purple[Add a table] with some formatting with the function .amber[kable] from the .amber[knitr] package:
+]]
+]
+.row.split-40[
+.column.slide-in-left.bg-deep-purple[.content[
+### This code chunk
+<br/><br/>
+<pre><code>```{r eval = TRUE, echo = FALSE}
+knitr::kable(iris[1:5, ], caption = 'A caption')
+```</code></pre>
+]]
+.column.slide-in-right[.content[
+### Becomes this
+<br/><br/>
+```{r eval = TRUE, echo = FALSE}
+knitr::kable(iris[1:5, ], caption = 'A caption')
+```
+
+
+]]
+]
+---
+class: split-40
+
+.row.split-two[
+.row[.content[
+# Edit the text and code section 
+<br/>
+]]
+.row[.content[
+## Control your .deep-orange[code variables] globally by setting options on the .amber[setup chunk], i.e., the first R code chunk on the .Rmd file:
+]]
+]
+.row.split-60[
+.column.slide-in-left.bg-deep-orange[.content.v40[
+<pre><code>```{r setup}
+knitr::opts_chunk$set(fig.retina = 3, warning = FALSE, message = FALSE)
+```</code></pre>
+]]
+.column.slide-in-right[.content.v40.center[
+### These can be individually overriden on each chunk, in case you want to show a code warning, for example.
+]]
+]
