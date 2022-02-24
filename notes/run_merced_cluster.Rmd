@@ -1,5 +1,5 @@
-#Running a job on the cluster
-## If you are outside UC Merced network, turn your VPN on!
+#Running a job on a cluster
+## If you are outside the UC Merced network, turn your VPN on!
 
 You can only ssh into the cluster from within UC Merced's network
 
@@ -9,8 +9,8 @@ ssh username@merced.ucmerced.edu
 ```
 ## Create a job submission script.
 
-There is one already in /home/help/sample.sub
-It looks like this:
+There is one available in /home/help/sample.sub
+A submission script looks like this:
 
 ```
 # copy that in your home folder and remove THIS first line
@@ -56,7 +56,7 @@ Use the tool called ganglia! Find it at https://merced.ucmerced.edu/ganglia/
 ## Find results of your job
 
 ```
-cat myjob_jobidnumber.stdout
+cat JOB_IDNUMBER.stdout
 ```
 
 ## Use screen to leave work on the background
@@ -86,8 +86,13 @@ Show place that software is looked for
 echo $PATH
 ```
 
-## To finish the ssh connection just press Ctrl + d
+## To finish the ssh connection press Ctrl + d
 
+## copy a file form your computer into the server
+
+```
+scp local/file/address USERNAME@merced.ucmerced.edu:/destinationfolder/
+```
 
 ## Copy a file from the server back to your computer
 
